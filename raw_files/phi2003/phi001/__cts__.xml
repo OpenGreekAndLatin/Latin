@@ -1,9 +1,0 @@
-<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:latinLit:phi2003" xml:lang="lat" urn="urn:cts:latinLit:phi2003.phi001">
-  <ti:title xml:lang="lat">De Re Coquinaria</ti:title>
-  
-  <ti:edition urn="urn:cts:latinLit:phi2003.phi001.opp-lat3" workUrn="urn:cts:latinLit:phi2003.phi001" xml:lang="lat">
-    <ti:label xml:lang="lat">De Re Coquinaria</ti:label>
-    <ti:description xml:lang="mul">Apicius. Apicii Librorum X Qui Dicuntur De Re Coquinaria. Vollmer, Friedrich and Giarratano, Caesar, editors. Leipzig: Teubner, 1922.</ti:description>
-  </ti:edition>
-
-</ti:work>
