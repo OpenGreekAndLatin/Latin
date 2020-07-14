@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+<fileDesc>
+<titleStmt>
+<title xml:lang="lat">Brevis Pimentorum. Excerpta.</title>
+<author>Apicius</author>
+<editor>Friedrich Vollmer</editor>
+<editor>Caesar Giarratano</editor>
+
+<funder>Perseus Digital Library</funder>
+<respStmt>
+<resp>Published original versions of the electronic texts</resp>
+<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>  
+<persName role="principal">Gregory Crane</persName>
+<persName role="principal">Leonard Muellner</persName>
+<persName role="principal">Bruce Robertson</persName>
+</respStmt>
+
+<respStmt>
+<resp>Proofreading</resp>
+<orgName>Tufts University</orgName>
+<persName>Pearl Spear</persName>
+</respStmt>
+
+<respStmt>
+<resp>CTS conversion</resp>
+<orgName>Perseus Digital Library</orgName>
+<persName>Lisa M. Cerrato</persName>
+</respStmt>
+</titleStmt>    
+
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">phi2003.phi003.opp-lat2.xml</idno>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+</availability>
+<date>2020-07-14</date>
+</publicationStmt> 
+
+<sourceDesc>
+<biblStruct>
+<monogr>
+<author>Apicius</author>
+<title xml:lang="lat">Apicii Librorum X Qui Dicuntur De Re Coquinaria.</title>
+<editor>
+<persName><name>Friedrich Vollmer</name></persName>
+<persName><name>Caesar Giarratano</name></persName>
+</editor>
+<imprint>
+<pubPlace>Leipzig</pubPlace>
+<publisher>Teubner</publisher>
+<date type="printing">1922</date>
+</imprint>
+<biblScope unit="volume"/>
+</monogr>
+<ref target="http://digital.slub-dresden.de/id412927675">SLUB</ref>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>    
+<editorialDecl>
+<quotation marks="none"/>
+<normalization>
+<p></p>
+</normalization>
+<correction>
+<p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+</correction>
+</editorialDecl>
+
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+<refsDecl n="CTS">
+<cRefPattern n="paragraph" matchPattern="(\w+)"
+replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+<p>This pointer pattern extracts paragraph</p>
+</cRefPattern>
+</refsDecl>
+</encodingDesc>
+
+<profileDesc>
+<langUsage>
+<language ident="lat">Latin</language>
+</langUsage>
+</profileDesc>
+
+<revisionDesc>      
+<change when="2020-07-14" who="Lisa Cerrato">initial markup of new file</change>
+</revisionDesc>
+</teiHeader>
+
+<text>
+<body>
+<div type="edition" n="urn:cts:latinLit:phi2003.phi003.opp-lat2" xml:lang="lat">
+<div type="textpart" subtype="paragraph" xml:base="urn:cts:latinLit:phi2003.phi003.opp-lat2" n="1">
+<p><pb facs="apicapic_412927675_0079"/>Breuis pimentorum que in domo esse debeant ut condimentis nihil desit: crocu, piper, zingiber, lasar, foliu, baca murre, costu, cariofilu, spica indica, addena, cardamomu, spica nardi. </p></div>
+<div type="textpart" subtype="paragraph" xml:base="urn:cts:latinLit:phi2003.phi003.opp-lat2" n="2">
+<p>De seminibus hoc: papaber, semen rude, baca rute, baca lauri, semen aneti, semen api, semen feniculi, semen ligustici, semen eruce, semen coriandri, cuminu, anesu, petrosilenu, careu, sisama. </p></div>
+<div type="textpart" subtype="paragraph" xml:base="urn:cts:latinLit:phi2003.phi003.opp-lat2" n="3">
+<p>De siccis hoc: laseris radices, menta, nepeta, saluia, cuppressu, origanu, zyniperum, cepa gentima, bacas timmi, coriandrum, piretru, citri, fastinaca, cepa ascalonia, radices iunci, anet, puleiu, ciperum, aliu, ospera, samsucu. innula, silpiu, cardamomu.</p></div>
+ <div type="textpart" subtype="paragraph" xml:base="urn:cts:latinLit:phi2003.phi003.opp-lat2" n="4">
+<p>De liquorib. hoc: mel, defritu, carinu, apiperiu, passu. </p></div>
+ <div type="textpart" subtype="paragraph" xml:base="urn:cts:latinLit:phi2003.phi003.opp-lat2" n="5">
+<p>De nucleis hoc: nuces maiores, nuclos pineos, acmidula, aballana. </p></div>
+<div type="textpart" subtype="paragraph" xml:base="urn:cts:latinLit:phi2003.phi003.opp-lat2" n="6">
+<p>De pomis siccis hoc: damascena, datilos, uba passa, granata. Hec omnia in loco sicco pone, ne odorem et uirtutem perdant. <pb facs="apicapic_412927675_0080"/></p></div>
+</div>
+
+</body>
+</text>
+</TEI>
