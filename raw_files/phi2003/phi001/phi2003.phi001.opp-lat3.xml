@@ -98,6 +98,7 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 </profileDesc>
 
 <revisionDesc>
+<change when="2020-07-14" who="Lisa Cerrato">regularized special tags, added missing words, removed stray digits and odd characters. Some milestones may have dropped out in this process. fixed hyphenization.</change>    
 <change when="2020-07-01" who="Lisa Cerrato">initial markup of new file</change>
 </revisionDesc>
 </teiHeader>
