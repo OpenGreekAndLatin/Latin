@@ -133,7 +133,7 @@
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi002.opp-lat2" n="1">
 <p>Pisces assos: teres piper, ligusticum, satureiam, <milestone unit="section" n="156"/> cepam siccam, suffundes acetum, adicies caryotam, anethum, ovorum vitella, mel, acetum, liquamen, oleum, deiritum. haec omnia in uno mixta perfundes.</p></div></div>
 <div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi002.opp-lat2" n="11">
-<div type="textpart" subtype="2" n="urn:cts:latinLit:phi2003.phi002.opp-lat2:11.">
+ <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi002.opp-lat2" n="1">
 <p>Pisces oenoteganon: friges pisces, teres piper, <milestone unit="section" n="157"/> ligusticum, rutam, condimenta viridia, cepam siccam. adicis oleum, <add>vinum</add>, liquamen et inferes.</p></div></div>
 <div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi002.opp-lat2" n="12">
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi002.opp-lat2" n="1">
@@ -194,6 +194,6 @@
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi002.opp-lat2" n="1">
 <p>Turtures: aperies, ornabis diligenter, teres piper, lasar, liquamen modicum, infundis ipsas turtures ut combibant sibi, et sic assas.</p></div></div>
 <div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi002.opp-lat2" n="31">
-<div type="textpart" subtype="2" n="urn:cts:latinLit:phi2003.phi002.opp-lat2:31.">
+ <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi002.opp-lat2" n="1">
 <p>Ius in perdices: teres in mortario piper, apium, mentam et rutam, suffundis acetum, addis caryotam, mel, acetum, liquamen, oleum. simul coques et inferes. Expli(cit) breuis ciborum. <pb facs="apicapic_412927675_0085"/></p></div></div></div>
 </body></text></TEI>
