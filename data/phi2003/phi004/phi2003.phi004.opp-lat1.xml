@@ -71,10 +71,9 @@
 </editorialDecl>
 <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
 <refsDecl n="CTS">
-<cRefPattern n="section" matchPattern="(\w+)"
-replacementPattern="#xpath(/TEI/text/body/div/div[@n='$1'])">
-<p>This pointer pattern extracts section.</p>
-</cRefPattern>
+<cRefPattern n="section" matchPattern="(\w+)"  replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+<p>This pointer pattern extracts sections</p>
+</cRefPattern>  
 </refsDecl>
 </encodingDesc>
 
@@ -91,7 +90,7 @@ replacementPattern="#xpath(/TEI/text/body/div/div[@n='$1'])">
 </teiHeader>
 
 <text>
-<body xmlns:tei="http://www.tei-c.org/ns/1.0">
+<body>
 <div type="edition" n="urn:cts:latinLit:phi2003.phi004.opp-lat1" xml:lang="lat">
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="1">
 <p rend="indent"><pb facs="apicapic_412927675_0085"/>Athenaeus XII 516c <foreign xml:lang="grc">πρῶτοι δὲ Λυδοὶ καὶ τὴν καρύκην ἐξεὺρον, περὶ ἡς τὴς σκευασίας οἱ τὰ Ὀψαρτυτικὰ συνθέντες εἰρήκασιν, Ἰλαῦκός τε ὁ Λοκρὸς</foreign> (PW VII 1421 n. 41) <foreign xml:lang="grc">καὶ Μίταικος καὶ Διονύσιος</foreign> (PW V 977 n. 133) <foreign xml:lang="grc">Ἠρακλειδαί</foreign> (PW VIII 496 n. 58. 59) <foreign xml:lang="grc">τε δύο γένος Συρακόδιοι καὶ Ἄγις</foreign> (Oder PW I 822 n. 10) <foreign xml:lang="grc">καὶ Ἐπαίνετος</foreign> (PW V 2672 n. 9) [<foreign xml:lang="grc">καὶ Διονύσιος</foreign>], <foreign xml:lang="grc">ἕτι τε Ἡγήσιππος</foreign> (PW VII 2611 n. 5) <foreign xml:lang="grc">καὶ Ἐρασίστρατος</foreign> (PW VI 333—350 n.2) <foreign xml:lang="grc">καὶ Εὐθύδηνος</foreign> (PW VI 1505 n. 15) <foreign xml:lang="grc">καὶ Κρίτων, πρὸς τούτοις δὲ Στέφανος, Ἀρκύτας</foreign> (PW II 602 n. 5. 6) <foreign xml:lang="grc">[Ἀκέστιος], Ακεσίας</foreign> (PW I 1163 n. 1), <foreign xml:lang="grc">Διοκλὴς</foreign> (PW V 802 n. 53), <foreign xml:lang="grc">Φιλιστίων τοσούτους γὰρ οἶδα γράψαωτας Ὀψαρτυτικά</foreign>. </p></div>
@@ -114,7 +113,7 @@ replacementPattern="#xpath(/TEI/text/body/div/div[@n='$1'])">
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="5">
                     <p rend="indent">Suidas <foreign xml:lang="grc">Πάξαμος... Ὀψαρτθτικὰ κατὰ στοιχεῖον</foreign>. </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="6">
-                    <p rend="indent">Ath. VII p. 325f.: <foreign xml:lang="grc">Μίθαικος δ' ἐν Ὀψαρτθτικῷ <q>ταινίαν φησίν' ἐκκοιλίξας, τὰν κεφαλὰν ὰποταμὼν, ἀποπλύνας καὶ ταμὼν τεμάχεα κατάχει τυρὸν καὶ ἔλαιον.</q></foreign> </p></div>
+                    <p rend="indent">Ath. VII p. 325f.: <foreign xml:lang="grc">Μίθαικος δ' ἐν Ὀψαρτθτικῷ</foreign> <q xml:lang="grc">ταινίαν φησίν' ἐκκοιλίξας, τὰν κεφαλὰν ὰποταμὼν, ἀποπλύνας καὶ ταμὼν τεμάχεα κατάχει τυρὸν καὶ ἔλαιον.</q> </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="7">
                     <p>— Ath. II 58b: <foreign xml:lang="grc">Ἐπαίνετος δὲ καὶ Ἡρακλείδης ὁ Συρακούσιος ἐν Ὀψαρτθτικῷ τ῀ν ᾠῶν φασι (φησι trad.) πρωτεύειν τὰ τῶν ταῶν. μεθ' ἂ εἷναι τὰ χηναλωπέκεια· τρίτα καταλέγοωτες</foreign> (<foreign xml:lang="grc">-γει</foreign> E, non C) <foreign xml:lang="grc">τὰ ὀρνίθεια</foreign>. </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="8">
@@ -130,7 +129,7 @@ replacementPattern="#xpath(/TEI/text/body/div/div[@n='$1'])">
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="13">
 <p>Ath. VII 312f <foreign xml:lang="grc">ἐστὶ δὲ λευκόσαρκος</foreign> (scil. <foreign xml:lang="grc">ὁ λειόβατος</foreign> piscis), <foreign xml:lang="grc">ὠς Ἐπαίνετος ἐν Ὀψαρτυτικῷ</foreign>. </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="14">
-<p>— Ath. VII 313b <foreign xml:lang="grc">Ἐπαίνετος δ' ἐν Ὀψαρτυτικῷ φησι· <q>σμαρίδα, ἣν ἔνιοι καλοῦσι κυνὸς εὐναί</q></foreign>. </p></div>
+<p>— Ath. VII 313b <foreign xml:lang="grc">Ἐπαίνετος δ' ἐν Ὀψαρτυτικῷ φησι·</foreign> <q xml:lang="grc">σμαρίδα, ἣν ἔνιοι καλοῦσι κυνὸς εὐναί.</q> </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="15">
 <p>— Ath. IX 371 <foreign xml:lang="grc">Ἐπαίνετος δ' ἐν Ὀχαρτυτι κῷ τὼ κεφαλωτὰ</foreign> herbas <foreign xml:lang="grc">καλεῖθαί φησι γηθυλλίδας</foreign>. </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="16">
@@ -138,13 +137,13 @@ replacementPattern="#xpath(/TEI/text/body/div/div[@n='$1'])">
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="17">
                     <p rend="indent">— Ath. IX 395e <foreign xml:lang="grc">οἱ καλούμενοι παραστάται, ὦν μνημονεύει Ἐπαίνετος ἐν Ὀψαρτυτικῷ.</foreign> </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="18">
- <p>— Ath. XIV p. 662d <foreign xml:lang="grc">Ἐπαίνετος δ' ἐν Ὀψαρτυτικῷ λέγει ταῦτα· <q>μῦμα δὲ παντὸς ἱερείου, καὶ ὄρνιθος δὲ χρὴ ποιεῖν τὰ ἁπαλὰ τῶν κρεῶν μικρὰ Gvvvtuóvre καὶ τὰ σπλάγχνα καὶ τὸ ἔντερον καὶ τὸ αἷμα διαθρύψαντα  καὶ ἀρτύσαντα ὄξει, τυρῷ ὀπτῷ, σιλφίῳ, κυμίνῳ, θύμῳ χλωρῷ καὶ ξηρῷ, θύμβρᾳ, κοριάννῳ χλωρῷ τε καὶ ξηρῷ καὶ γητίῳ καὶ χρομμύῳ καθαρῷ πεφωσμένῳ ἢ μήκωνι καὶ σταφίδι ἢ μέλιτι καὶ ῥόας ὀξείας κόκκοις. εἶναι δέ σοι τὸ αὐτὸ [μῦμα] καὶ ὄψον.</q></foreign></p></div>
+ <p>— Ath. XIV p. 662d <foreign xml:lang="grc">Ἐπαίνετος δ' ἐν Ὀψαρτυτικῷ λέγει ταῦτα·</foreign> <q xml:lang="grc">μῦμα δὲ παντὸς ἱερείου, καὶ ὄρνιθος δὲ χρὴ ποιεῖν τὰ ἁπαλὰ τῶν κρεῶν μικρὰ Gvvvtuóvre καὶ τὰ σπλάγχνα καὶ τὸ ἔντερον καὶ τὸ αἷμα διαθρύψαντα  καὶ ἀρτύσαντα ὄξει, τυρῷ ὀπτῷ, σιλφίῳ, κυμίνῳ, θύμῳ χλωρῷ καὶ ξηρῷ, θύμβρᾳ, κοριάννῳ χλωρῷ τε καὶ ξηρῷ καὶ γητίῳ καὶ χρομμύῳ καθαρῷ πεφωσμένῳ ἢ μήκωνι καὶ σταφίδι ἢ μέλιτι καὶ ῥόας ὀξείας κόκκοις. εἶναι δέ σοι τὸ αὐτὸ [μῦμα] καὶ ὄψον.</q></p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="19">
-                    <p>— Ath. VII 324a <foreign xml:lang="grc">ἐστὶ δὲ τὸ ὐκόσφαγμα ὡς Ἐρασίστρατὸς <pb facs="apicapic_412927675_0087"/> φησιν ἐν Ὀψαρτυτικῷ ὑπότριμμα. γράφει δὲ οὕτως. <q>ὑπόσφαγμα δ' εἷναι κρέασιν ὀπτοῖς ἐκ τοῦ αἵματος τεταραγμένου μέλιτι, τυρῷ, ἁλί, κυμἰνῳ, σιλφίῳ, ὄξει ἑφθοῖς'. καὶ Γλαῦκος δ' ὁ Λοκρὸς ἐν Ὀψαρτυτικῷ οὕτως γράφει· 'ὑπόσφαγμα δ' αἴμα ἑφθὸν καὶ σίλφιον καὶ ἕψημα ἢ μέλι καὶ ὄξος καὶ γάλα καὶ τυρὸς καὶ φύλλα εὐώδη τετμημένα.</q></foreign> </p></div>
+                    <p>— Ath. VII 324a <foreign xml:lang="grc">ἐστὶ δὲ τὸ ὐκόσφαγμα ὡς Ἐρασίστρατὸς <pb facs="apicapic_412927675_0087"/> φησιν ἐν Ὀψαρτυτικῷ ὑπότριμμα. γράφει δὲ οὕτως.</foreign> <q xml:lang="grc">ὑπόσφαγμα δ' εἷναι κρέασιν ὀπτοῖς ἐκ τοῦ αἵματος τεταραγμένου μέλιτι, τυρῷ, ἁλί, κυμἰνῳ, σιλφίῳ, ὄξει ἑφθοῖς'. καὶ Γλαῦκος δ' ὁ Λοκρὸς ἐν Ὀψαρτυτικῷ οὕτως γράφει· 'ὑπόσφαγμα δ' αἴμα ἑφθὸν καὶ σίλφιον καὶ ἕψημα ἢ μέλι καὶ ὄξος καὶ γάλα καὶ τυρὸς καὶ φύλλα εὐώδη τετμημένα.</q> </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="20">
 <p>— Ath. IX 369b <foreign xml:lang="grc">τὴν δὲ ῥάφυν Γλαῦκος ἐν τῷ Ὀφαρτυτικῷ διὰ τοῦ Π ψιλῶς καλεῖ ῥάπυν</foreign>. </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="21">
-                    <p>— Ath. XIV 661e  <foreign xml:lang="grc">καὶ οἱ τὰ Ὀψαρτυτικὰ δὲ συγγράψαντες Ἡρακλείδης τε καὶ Γλαῦκος ὁ Λοκρὸς οὐχ ἀρμόττειν φασὶ <q><add>δούλοισι</add> τὴν μαγειρικἠν, ἀλλ' οὐδὲ τοὶς τυχοῦσι τῶν ἐλευθέρων.</q></foreign></p></div>
+                    <p>— Ath. XIV 661e  <foreign xml:lang="grc">καὶ οἱ τὰ Ὀψαρτυτικὰ δὲ συγγράψαντες Ἡρακλείδης τε καὶ Γλαῦκος ὁ Λοκρὸς οὐχ ἀρμόττειν φασὶ</foreign> <q xml:lang="grc"><add>δούλοισι</add> τὴν μαγειρικἠν, ἀλλ' οὐδὲ τοὶς τυχοῦσι τῶν ἐλευθέρων.</q></p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="22">
                     <p>— Ath. III 105c <foreign xml:lang="grc">κολύβδαιναν</foreign> piscem <foreign xml:lang="grc">δ' εἴρηκεν Ἐπίχαρμος... ὡς δ᾽ ὁ Ἡρακλείδης ἐν Ὀψαρτυτικῷ, τὴν καρῖδα</foreign>. </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="23">
@@ -164,7 +163,7 @@ replacementPattern="#xpath(/TEI/text/body/div/div[@n='$1'])">
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="30">
                     <p rend="indent">Geoponica ed. Beckh 18, 21 p. 499 <foreign xml:lang="grc">Μέλκης σκευσία σύντομος. Παξάμου</foreign> (potius ex georgicis quam ex opsartyticis, modo verum sit nomen). <foreign xml:lang="grc">ἠ καλουμένη μέλκη αὐτοσχέδιος καὶ καλλίων ἔσται εἰ κεραμέοις ἀγγείοις καινοῖς ὄξος ἐμβάλης δριμὺ καὶ ἐπιθῆς αὐτὰ θερμοσποδιᾷ ἢ πυρὶ μαλθακῷ, τουτέστιν ἐπ' ἀνθρακιάν· καὶ ἐάν ὀλίγον ἀναζέσῃ τὸ ὄξος, ἵνα μὴ ἀπὸ τῶν σκευαρίων ἀναποθῇ, ἐλκύσας ἀπὸ τῆς ἀνθρακιᾶς, εἰς τὰ αὐτὰ σκευάρια βάλε γάλα καὶ θὲς αὐτὰ εἰς κιβωτάριον ἢ ἀρμά ριον ἢ ἔνθα ἀκίνητον μένει· καὶ τῇ ὐστεραίᾳ ἕξεις πολλῷ καλλίους μέλκας τῶν πολλῇ τέχνῃ κατασκευαζομένων τὰ μὲντοι σκευάρια μετὰ πρώτην ἢ δευτέραν χρῆσιν ἄλλασσε.</foreign> cf. Columella 12, 8 Apic. 7, 1 (308). </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="31">
-                    <p rend="indent">Ath. XIV 663d <foreign xml:lang="grc">ὁ Ἀρτεμίδωρος ἐν ταῖς Ὀψαρτυτικαῖς γλώσσαις τὴν ματτύην ἀποφαίνει κοινὸν εἶναι πάντων ὄνομα τῶν πολυτελὼν ἐδεσμάτων (ἡδυσ- <foreign xml:lang="lat">trad.</foreign>) γράφων οὔτως· <q>ἔστι τις (εἴτις τῆς <foreign xml:lang="lat">trad.</foreign>) ὄρνιθος ματτύης. ἐσφάχθω μὲν διὰ τοὺ στόματος εἰς τὴν κεφαλήν. ἔστω δὲ ἕωλος χαθάπερ ὁ πέρδιξ. ἐὰν δὲ θέλῃς. ὡς ἕχει αὐτοῖς περοῖς ἑᾶν τετιλμένην.</q> εἷτα τὸν τρόπον ἐχθεὶς τῆς ἀρτύσεως καὶ τῆς ἑψήσεως ἐπιφέρει εὐθύς. <q>καὶ νομάδα παχεῖαν ἕψε καὶ νεσσοὺς τῶν ἤδη κοκκυζόντων, ἐὰν θέλῃς παρὰ πότον χρῆσθαι. εἷτ' ἐκελὼν τὰ λάχανα εἰς τρυβλίον καὶ τῆς ὄρνιθος τῶν κρεῶν ἐπιθεὶς παρατίθει· τοῦ θέρους ἀντὶ τοῦ ὄξους τῆς ὅμφακος ἐμβαλὼν εἰς τὸν ζωμὸν ὡς ἔχει τοὺς βὸτρυς· ἐπαιδὰν δὲ ἑφθὴ γένηται, ἔξελε μετὰ τοῦ βοτρυδίου πρὸ τοῦ τὸ γίγαρτου ἐξαφεῖναι εἷθ οὕτως τὸ λάγανον κατάθρυπτε. οὗτος <add>ὁ</add> ματτύης ἐν τοῖς ἡδίστοις.</q></foreign></p></div>
+                    <p rend="indent">Ath. XIV 663d <foreign xml:lang="grc">ὁ Ἀρτεμίδωρος ἐν ταῖς Ὀψαρτυτικαῖς γλώσσαις τὴν ματτύην ἀποφαίνει κοινὸν εἶναι πάντων ὄνομα τῶν πολυτελὼν ἐδεσμάτων (ἡδυσ- <foreign xml:lang="lat">trad.</foreign>) γράφων οὔτως·</foreign> <q xml:lang="grc">ἔστι τις (εἴτις τῆς <foreign xml:lang="lat">trad.</foreign>) ὄρνιθος ματτύης. ἐσφάχθω μὲν διὰ τοὺ στόματος εἰς τὴν κεφαλήν. ἔστω δὲ ἕωλος χαθάπερ ὁ πέρδιξ. ἐὰν δὲ θέλῃς. ὡς ἕχει αὐτοῖς περοῖς ἑᾶν τετιλμένην.</q> <foreign xml:lang="grc">εἷτα τὸν τρόπον ἐχθεὶς τῆς ἀρτύσεως καὶ τῆς ἑψήσεως ἐπιφέρει εὐθύς.</foreign> <q xml:lang="grc">καὶ νομάδα παχεῖαν ἕψε καὶ νεσσοὺς τῶν ἤδη κοκκυζόντων, ἐὰν θέλῃς παρὰ πότον χρῆσθαι. εἷτ' ἐκελὼν τὰ λάχανα εἰς τρυβλίον καὶ τῆς ὄρνιθος τῶν κρεῶν ἐπιθεὶς παρατίθει· τοῦ θέρους ἀντὶ τοῦ ὄξους τῆς ὅμφακος ἐμβαλὼν εἰς τὸν ζωμὸν ὡς ἔχει τοὺς βὸτρυς· ἐπαιδὰν δὲ ἑφθὴ γένηται, ἔξελε μετὰ τοῦ βοτρυδίου πρὸ τοῦ τὸ γίγαρτου ἐξαφεῖναι εἷθ οὕτως τὸ λάγανον κατάθρυπτε. οὗτος <add>ὁ</add> ματτύης ἐν τοῖς ἡδίστοις.</q></p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="32">
                     <p rend="indent">Pollux Onom. VI 57 p. 242 Bekker <foreign xml:lang="grc">τὸ δὲ θρῖον ὧδε ἐσκεύαζον· στέαρ ὕειον ἑφθὸν μετὰ γάλακτος μίγνυ χόνδρῳ παχεῖ, συμφυράσας δ' αὐτὰ τυρῷ χλωρῷ καὶ λεκίθοις ᾠῶν καὶ ἐγκεφάλοις, περιβαλὼν συκῆς φύλλῳ εὐώδει, ζωμῷ ὐρνιθείῳ ἢ ἐριφείῳ ἔνεψε, ἔπειτα ἐξελὼν καὶ τὸ φύλλον ἀφελὼν ἔμβαλε εἰς ἀγγεῖον γέμον μέλιτος ζέοντος. καὶ τὸ μὲν ὅνομα τῷ ἐδέσματι <pb facs="apicapic_412927675_0089"/> προςέθηκε τὸ φύλλον. ἠ δὲ μεῖξις πάντα ἐξ ἴσου δέχεται, τῶν δὲ λεχίυων πλέον. ὄτι κηγνύουσι καὶ συνιστᾶσιν.</foreign></p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="33">
