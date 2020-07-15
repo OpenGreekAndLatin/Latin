@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+
+<fileDesc>
+<titleStmt>
+<title xml:lang="lat">De Re Coquinaria</title>
+<author>Apicius</author>
+    <editor>Friedrich Vollmer</editor>
+    <editor>Caesar Giarratano</editor>
+
+<funder>Perseus Digital Library</funder>
+<respStmt>
+<resp>Published original versions of the electronic texts</resp>
+<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>  
+<persName role="principal">Gregory Crane</persName>
+<persName role="principal">Leonard Muellner</persName>
+<persName role="principal">Bruce Robertson</persName>
+</respStmt>
+
+<respStmt>
+<resp>Proofreading</resp>
+<orgName>Tufts University</orgName>
+<persName>Pearl Spear</persName>
+</respStmt>
+
+<respStmt>
+<resp>CTS conversion</resp>
+<orgName>Perseus Digital Library</orgName>
+<persName>Lisa M. Cerrato</persName>
+</respStmt>
+</titleStmt>    
+
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">phi2003.phi001.opp-lat3.xml</idno>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+</availability>
+<date>2020-07-01</date>
+</publicationStmt> 
+
+<sourceDesc>
+<biblStruct>
+<monogr>
+<author>Apicius</author>
+<title xml:lang="lat">Apicii Librorum X Qui Dicuntur De Re Coquinaria.</title>
+<editor>
+<persName><name>Friedrich Vollmer</name></persName>
+<persName><name>Caesar Giarratano</name></persName>
+</editor>
+<imprint>
+<pubPlace>Leipzig</pubPlace>
+<publisher>Teubner</publisher>
+<date type="printing">1922</date>
+</imprint>
+<biblScope unit="volume"/>
+</monogr>
+<ref target="http://digital.slub-dresden.de/id412927675">SLUB</ref>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>    
+<editorialDecl>
+<quotation marks="none"/>
+<normalization>
+<p></p>
+</normalization>
+<correction>
+<p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+</correction>
+</editorialDecl>
+
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+<refsDecl n="CTS">
+<cRefPattern n="section" matchPattern="(\w+).(\w+).(\w+)"
+replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])">
+<p>This pointer pattern extracts book and chapter and section</p>
+</cRefPattern>
+<cRefPattern n="chapter" matchPattern="(\w+).(\w+)"
+replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+<p>This pointer pattern extracts book and chapter</p>
+</cRefPattern>
+<cRefPattern n="book" matchPattern="(\w+)"
+replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+<p>This pointer pattern extracts book</p>
+</cRefPattern>
+</refsDecl>
+</encodingDesc>
+
+<profileDesc>
+<langUsage>
+<language ident="lat">Latin</language>
+</langUsage>
+</profileDesc>
+
+<revisionDesc>
+<change when="2020-07-14" who="Lisa Cerrato">regularized special tags, added missing words, removed stray digits and odd characters. Some milestones may have dropped out in this process. fixed hyphenization.</change>        
+<change when="2020-07-01" who="Lisa Cerrato">initial markup of new file</change>
+</revisionDesc>
+</teiHeader>
+
+<text>
+<body>
+    <div type="edition" n="urn:cts:latinLit:phi2003.phi001.opp-lat3" xml:lang="lat">
+
+<div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><pb facs="apicapic_412927675_0007"/>CONDITVM PARADOXVM. Conditi paradoxi compositio: mellis pondo XV in aeneum vas mittuntur, praemissis vini sextariis duobus, ut in coctura mellis vinum decoquas. quod igni lento et aridis lignis calefactum, commotum ferula dum coquitur, si effervere coeperit, vini <pb facs="apicapic_412927675_0008"/>rore compescitur, praeter quod subtracto igni in se redit. cum perfrixerit, rursus accenditur. hoc secundo ac tertio fiet, ac tum demum remotum a foco postridie despumatur. tum <add>mittis</add> piperis uncias IV, iam triti masticis scripulos III, folii et croci dragmas singulas, dactylorum ossibus torridis quinque, isdemque dactylis vino mollitis, intercedente prius suffusione vini de suo modo ac numero, ut tritura lenis habeatur. his omnibus paratis supermittis vini lenis sextarios XVIII. carbones perfecto aderunt dum bulliat. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>CONDITVM. MELIZOMVM VIATORIVM. Conditum melizomum perpetuum, quod subministratur per viam peregrinanti: piper tritum cum melle despumato in cupellam mittis conditi loco, et ad momentum quantum sit bibendum, tantum aut mellis proferas aut vini misceas. sed si <add>maius</add> vas erit, nonnihil vini melizomo mittas, adiciendum propter mellis exitum solutiorem. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>APSINTHIVM ROMANVM. Apsinthium Romanum sic facies: conditi Camerini praeceptis, utique <del>pro</del> apsinthio cessante; in cuius vicem apsinthi Pontici purgati terebinthique uncias <add>singulas et unam</add> Thebaicum dabis, masticis <add>et</add> folii <add>scripulos</add> III, costi scripulos senos, croci scripulos III, vini vetusti sextarios XVIII. carbones amaritudo non exigit.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><add>ROSATVM ET VIOLATIVM</add>. Rosatum sic facies: folia rosarum, albo sublato, lino inseris et sutilis facias, et vino quam plurimas infundes, ut septem diebus in vino sint. post septem dies rosam de vino tollis, et alias sutiles recentes similiter mittis, ut per dies septem in vino requiescant, et rosam eximis. similiter et tertio facies, et rosam eximis, et vinum colas, et, cum ad bibendum voles uti, addito melle rosatum conficies. sane custodito ut rosam a rore siccam et optimam mittas. Similiter, ut supra, et de <add>viola</add> violatium facies, et eodem modo melle temperabis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Rosatum sine rosa sic facies: folia citri viridia in sportella palmea in dolium musti mittes antequam ferveat, et post quadraginta dies exime. cum necesse fuerit, mel addes et pro rosato utere.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Oleum Liburnicum sic facies: in oleo Hispano mittes helenium et cyperi et folia lauri non vetusta, tunsa omnia et cribellata, ad levissimum pulverem red <pb facs="apicapic_412927675_0010"/>acta, et sales frictos et tritos, et per triduum vel plus permisce diligenter. post haec aliquanto tempore patere requiescere, et Liburnicum omnes putabunt. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Vinum ex atro candidum facies: lomentum ex faba factum vel ovorum trium alborem in lagonam mittis et diutissime agitas: alia die erit candidum. et cineres vitis albae idem faciunt. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Deliquamine emendando: liquamen si odorem malum fecerit, vas inane inversum fumiga lauro et cupresso, et in hoc liquamen infunde ante ventilatum. si salsum fuerit, mellis sextarium mittis et move spica, et emendasti, sed et mustum recens idem praestat. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Vt carnes sine sale quovis tempore recentes sint: carnes recentes quales volueris melle tegantur, sed vas pendeat, et, quando volueris, utere. hoc hieme melius fit, aestate paucis diebus durabit. et in carne cocta <milestone unit="section" n="9"/> itidem facies. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Callum porcinum vel bubulum et unguellaecoctae ut diu durent: in sinapi ex aceto, sale, melle facta mittis ut tegantur, et, quando volueris, utere: miraberis. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Vt carnem salsam dulcem facias: carnem salsam dulcem facies, si prius in lacte coquas et postea in aqua. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Vt pisces fricti diu durent: eodem momento,  quo friguntur et levantur, ab aceto calido perfunduntur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p><milestone unit="section" n="12"/>Ostrea ut diu durent: lavas ab aceto, aut ex aceto vasculum picitum lava, et ostrea compone. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Vt uncia laseris toto tempore utaris: laser in spatiosum doliolum vitreum mittis et nucleos pineos ut puta viginti, cumque utendum fuerit lasere, nucleos conteres, <pb facs="apicapic_412927675_0011"/> et in cibis miraberis sapores; et tantundem numero nucleorum doliolo referetur.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="11">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Vt dulcia de melle diu durent: accipies quod <milestone unit="section" n="14"/> Graeci dicunt cnecon et facies farinam et admisces cum melle eo tempore quo dulcia facturus es. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Vt mel malum <milestone unit="section" n="15"/> bonum facias: mel malum bonum facies ad vendendum, unam partem mali et duas boni si simul miscueris. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Mel <milestone unit="section" n="16"/> corruptum ut probes: helenium infundes in melle et incende: si incorruptum est, lucet. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="12">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Vvae ut diu serventur: accipies uvas de vite <milestone unit="section" n="17"/> inlaesas, et aquam pluvialem ad tertias decoques, et mittis in vas, in quo et uvas mittis. vas picari et gypsari facies, et in locum frigidum, ubi sol accessum non habet, reponi facies, et, quando volueris, uvas virides invenies. et ipsam aquam pro hydromelli aegris dabis. et si in hordeo obruas, inlaesas invenies. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Vt mala et mala granata diu durent: in calidam ferventem merge, et statim leva et suspende. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Vt mala Cydonia diu serventur: eligis mala sine vitio cum ramulis et foliis, et condes in vas, et suffundes mel et defritum; diu servabis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Ficum recentem, <milestone unit="section" n="20"/> mala, pruna, pira, cerasia ut diu serves: omnia cum peciolis diligenter legito et in melle ponito, ne <pb facs="apicapic_412927675_0012"/><milestone unit="section" n="21"/>  se contingant. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Citria ut diu durent: in vas vitreum <milestone unit="section" n="22"/> mitte, gypsa, suspende. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Mora ut diu durent: ex moris sucum facito, et cum sapa misce, et in vitreo vase cum <milestone unit="section" n="23"/>  moris mitte: custodies multo tempore. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Holera ut diu  serventur: holera electa non satis matura in vas picitum <milestone unit="section" n="24"/> repone. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>Rapae ut diu serventur: ante accuratas et compositas asperges myrtae bacis cum melle et aceto. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<p>Aliter: sinapi tempera melle, aceto, sale, et super compositas <milestone unit="section" n="25"/> rapas infundes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<p>Tubera ut diu serventur. tubera, quae aquae non vexaverint, componis in vas alternis, alternis scobem siccam mittis, cooperis et gypsas, et loco frigido pones.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="11">
+<p>Duracina Persica ut diu durent: eligito optima, et mitte in muriam. postera die exime, et spongiabis diligenter, et collocabis in vas. fundes salem, acetum, </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="13">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Sales conditos ad multa: Sales conditi <add>faciunt</add> ad digestionem, ad ventrem movendum, et omnes morbos et pestilentiam et omnia frigora prohibent generari, sunt autem et suavissimi ultra quam speras. Sales communes frictos lib. I, sales Hammoniacos frictos lib. II, piperis albi unc. III, zingiberis unc. II, ammeos unc. I semis, thymi unc. I semis, apii seminis uno. I semis (si apii semen mittere nolueris, petroselini mittis unc. III), origani unc. III, erucae seminis unc. I semis, piperis nigri unc. III, croci unc. I, hysopi Cretici unc. II, folii unc. II, petroselini unc. II, anethi unc. II. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="14">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Olivas virides servare ut quovis tempore oleum facias: olivas de arbore sublatas in illud mittis, et erunt tales quovis tempore quasi mox de arbore demptae. de quibus, si volueris, oleum viride facies.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="15">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Cuminatum in ostrea et conchylia: piper, ligusticum, petroselinum, mentam siccam, folium, malabathrum, cuminum plusculum, mel, acetum et liquamen. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter: piper, ligusticum, petroselinum, mentam siccam, cuminum plusculum, mel, acetum, liquamen. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="16">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Laseratum: laser Cyrenaicum vel Parthicum tepida <milestone unit="section" n="31"/> dissolvis cum aceto <add>et</add> liquamine temperatum, vel piper, petroselinum, mentam siccam, laseris radicem, mel, acetum, liquamen. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter: piper, careum, anethum, petroselinum, mentam siccam, silfi, folium, malabathrum, spicam Indicam, costum modicum, mel, acetum, liquamen. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="17">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+ <p>Oenogarum in tubera: piper, ligusticum, coriandrum,  <milestone unit="section" n="32"/> rutam, liquamen, mel et oleum modice. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter:  thymum, satureiam, piper, ligusticum, mel, liquamen et oleum. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="18">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Oxyporum: cumini unc. II, zingiberis unc. I, <milestone unit="section" n="33"/> rutae viridis unc. I, nitri scripulos VI, dactylorum pinguium scripulos XII, piperis unc. I, mellis unc. IX. cuminum aut Aethiopicum aut Syriacum aut Libycum aceto infundes, sicca et sic tundes. postea melle comprehendis. cum necesse fuerit, <add>ex</add> oxygaro uteris. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="19">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Hypotrimma: piper, ligusticum, mentam aridam, <milestone unit="section" n="34"/> nucleos pineos, uvam passam, caryotam, caseum dulcem, mel, acetum, liquamen, oleum, vinum, defritum aut caroenum. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="20">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Oxygarum digestibile: piperis semunciam, <milestone unit="section" n="35"/> <pb facs="apicapic_412927675_0014"/>silis Gallici scripulos III, cardamomi scripulos VI, cumini scripulos VI, folii scripulum I, mentae siccae scripulos VI tunsa cribrataque melle colligis. cum opus fuerit, liquamen  et acetum addis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter: piperis unc. I, petroselini, carei,  ligustici unc. singulas. melle colliguntur. cum opus fuerit, liquamen et acetum addes. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="21">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Moretaria: mentam, rutam, coriandrum, feniculum, omnia viridia, ligusticum, piper, mel, liquamen. si opus fuerit, acetum addes. </p></div>
+</div>
+</div>
+<div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>ISICIA. Isicia fiunt marina de cammaris et  astacis, de lolligine, de sepia, de lucusta. isicium condies <milestone unit="section" n="38"/> pipere, ligustico, cumino, laseris radice. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Isicia de lolligine: sublatis crinibus in fulmento tondes, sicuti adsolet. pulpa et in mortario et in liquamine diligenter fricatur, <milestone unit="section" n="39"/>  et exinde isicia plassantur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Isicia de scillis vel de cammaris amplis: cammari vel scillae de testa sua  eximuntur, et in mortario teruntur cum pipere et liquamine <milestone unit="section" n="40"/>  optimo. pulpa isicia plassantur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Omentata ita fiunt: assas iecur porcinum et <del>eum</del> enervas. ante tamen teres piper, rutam, liquamen, et sic superinmittis iecur et teres et misces. suitur pulpa omentata, et singula involvuntur folia lauri, et ad fumum suspenduntur quamdiu voles. cum <milestone unit="section" n="41"/> manducare volueris, tolles de fumo et denuo assas. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p><add>Aliter</add> isicium: adicies in mortarium piper, ligusticum, origanum, <pb facs="apicapic_412927675_0015"/> fricabis, suffundes liquamen, adicies cerebella cocta, teres diligenter, ne assulas habeat. adicies ova quinque et dissolves diligenter, ut unum corpus efficias. liquamine temperas et in patella aenea exinanies, coques. cum coctum fuerit, versas in tabula munda, tessellas concides. adicies in mortarium piper, ligusticum, origanum, fricabis in se, commisces, <add>mittes</add> in caccabum, facies ut ferveat. cum ferbuerit, tractum confringes, obligas, coagitabis, et exinanies in boletari. piper asperges et appones. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Isicia exsphondylis: <milestone unit="section" n="42"/> elixatos sphondylos conteres et nervos eorum eximos, deinde cum eis alicam elixatam <add>et</add> ova conteres, pipere <add>posito</add>. in omento assabis, oenogaro perfundes, et pro isiciis inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Isicia omentata: pulpam concisam <milestone unit="section" n="43"/> teres cum medulla siliginis in vino infusi. piper, liquamen, si velis, et bacam myrtae exenteratam simul conteres. pusilla isicia formabis, intus nucleis et pipere positis. involuta omento subassabis cum caroeno.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>HYDROGARATVM ET APOTHERMVM ET AMVLATVM. Isicia plena: accipies adipes fasiani recentes, <milestone unit="section" n="44"/> praeduras et facis ex eo tessellas. cum pipere, liquamine, caroeno in isicio includes, ex hydrogaro coques et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Hydrogarata isicia sic facies: teres piper, <milestone unit="section" n="45"/> ligusticum, pyrethrum minimum, suffundes liquamen; temperas aqua cisternina, dum inducet; exinanies in cacabo, et cum isicio ad vaporem ignis pones, et caleat, et sic sorbendum inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>In isicia de pullo: olei floris <milestone unit="section" n="46"/> <pb facs="apicapic_412927675_0016"/><milestone unit="section" n="47"/>  lib. I, liquaminis quartarium, piperis semunciam. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter de pullo: piperis grana XXXI conteres, mittis liquaminis optimi calicem, caroeni tantundem, aquae XI mittes, <milestone unit="section" n="48"/>  et ad vaporem ignis pones. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Isicium simplex: ad unum  liquaminis acetabulum aquae septem mittes, modicum apii viridis, triti piperis cocleare. isiciola incoques, et sic ad ventrem solvendum dabis. hydrogaro faeces conditi addes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p><milestone unit="section" n="49"/> Isicia de pavo primum locum habent ita si fricta fuerint ut callum vincant. Item secundum locum habent de fasialonis, item tertium locum habent de cuniculis, item quartum locum habent de pullis, item quintum locum habent de <milestone unit="section" n="50"/>  porcello tenero. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Isicia amulata ab aheno sic facies: teres piper, ligusticum, origanum, modicum silfi, zingiber minimum, mellis modicum; liquamine temperabis, misces; adicies super isicia, facies ut ferveat. cum bene bullierit, amulo obligas spisso, et sorbendum. inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p><milestone unit="section" n="51"/>  Amulatum aliter: piper teres pridie infusum, cui subinde liquamen suffundes ita ut bene tritum ac lutulentum facias piperatum. cui defritum admisces, quod fit de cotoniis, quod sole torrente in mellis substantiam cogitur. quod si non fuerit, vel Caricarum defritum mittes, quod Romani <q>colorem</q> vocant. ac deinceps amulum infusum adicies vel oryzae sucum et lento igni fervere facias. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<p><milestone unit="section" n="52"/>  Amulatum aliter: ossucla de pullis exbromas. deinde  mittis in caccabum porros, anethum, salem. cum cocta fuerint, addes piper, apii semen, deinde oryzam infusam teres, addes liquamen et passum vel defritum. omnia misces et cum isiciis inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<p>Apothermum sic facies: <pb facs="apicapic_412927675_0017"/>alicam elixa cum nucleis et amygdalis depellatis et in aqua infusis et lotis ex creta argentaria, ut ad candorem pariter perducantur. cui ammiscebis uvam passam, caroenum vel passum, desuper <add>piper</add> confractum asperges et in boletari inferes. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>VVLVVLAE BOTELLL Vulvulae isiciatae <milestone unit="section" n="54"/> sic fiunt: piper tritum et cuminum, capita porrorum brevia duo ad molle purgata, ruta, liquamen admiscentur pulpae bene tunsae et fricatae. denuo ipso subtrito ita ut commisceri possit, mittas piperis grana et nucleos, et calcabis in <sic>materia</sic> bene lota. et sic coquuntur ex aqua, oleo, liquamine, fasciculo porrorum et anetho. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Botellum  <milestone unit="section" n="55"/> sic facies: sex ovi vitellis coctis, nucleis pineis concisis cepam, porrum concisum, ius crudum misces, piper minutum <add>asparges</add>, et sic intestinum farcies. adicies liquamen et vinum, et sic coques.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>LVCANICAE. Lucanicas similiter ut supra scriptum est: <del>Lucanicarum confectio</del> teritur piper, cuminum, satureia, ruta, petroselinum, condimentum, bacae lauri, liquamen, et admiscetur pulpa bene tunsa, ita ut denuo bene cum ipso subtrito fricetur. cum liquamine admixto, pipere integro et abundanti pinguedine et nucleis inicies in intestinum perquam tenuatim productum, et sic ad fumum suspenditur. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>FARCIMINA. Ova et cerebella teres, nucleos pineos,  <milestone unit="section" n="57"/> piper, liquamen, laser modicum, et his intestinum implebis. elixas; postea assas et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter: coctam  <milestone unit="section" n="58"/> alicam et tritam cum pulpa concisa et trita una cum pipere et liquamine et nucleis. farcies intestinum et elixabis, <pb facs="apicapic_412927675_0018"/> deinde cum sale assabis et cum sinapi inferes, vel sic <milestone unit="section" n="59"/> concisum in disco. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter: alicam purgas et cum liquamine intestini et albamine porri concisi minutatim simul elixas. elixa tolles, pinguedinem concides et copadia pulspae, in se omnia commisces. teres piper, ligusticum, ova tria, haec omnia in mortario permisces cum nucleis et pipere integro. liquamen suffundes, intestina imples, elixas <milestone unit="section" n="60"/> et subassas, vel elixa tantum: appones. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter circellos isiciatos: reples intestinum impensa isicii et circellum facies rotundum; fumas. cum miniaverit, subassas, exornas, oenogaro fasiani perfundes, sed cuminum addes.</p></div>
+</div>
+</div>
+<div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="61"/> DE HOLERIBVS. Vt omne holus smaragdinum fiat: omne holus smaragdinum fiat, si cum nitro coquatur.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="62"/> PVLMENTARIVM AD VENTREM: betas minutas et porros requietos elixabis, in patina compones. teres piper, cuminum, suffundes liquamen, passum, ut quaedam  dulcedo sit. facias ut ferveat. cum ferbuerit, inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Similiter: polypodium in tepidam mittes. ubi mollierit, rades, et minutum cum pipere et cumino trito in patinam ferventem <milestone unit="section" n="63"/> mittes et uteris. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter ad ventrem: facies <pb facs="apicapic_412927675_0019"/>betaciorum fasces; deterge, ne laves. in eorum medium nitrum asparges et alligas singulos fasces. mittes in aquam. cum coxeris, condies patinam, cum eadem passum vel caroenum et cuminum et piper asparges et oleum modicum. ubi ferbuerit, polypodium et frusta nucum cum liquamine teres, <add>in</add> ferventem patinam fundes, cooperies. statim depones et uteris. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p><del>Aliter betacios Varronis. Varro: <quote>betacios, sed nigros, quorum detersas radices et mulsa decoctas cum sale modico et oleo vel sale, aqua et oleo in se coctas iusculum facere et potari, melius etiam si in eo pullus sit decoctus</quote>.</del> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter ad ventrem: apios virides cum suis radicibus lavabis et siccabis ad solem. deinde albamen et capita porrorum simul elixabis in cacabo novo, ita ut aqua ad tertias deferveat <del>id est ut ex tribus eminis aquae una remaneat</del>. postea teres piper, liquamen et aliquantum mellis humore temperabis, et aquam apiorum decoctorum colabis in mortario, et superfundes apio. cum simul ferbuerit, appones, et, si libitum fuerit, apios adicies.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>ASPARAGOS. Asparagos siccabis, rursum in calidam summittes: callosiores reddes.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>CVCVRBITAS. Gustum de cucurbitis: cucurbitas coctas expressas in patinam compones. adicies in mortarium piper, cuminum, silfi modice, <del>id est laseris radicem</del>, rutae modicum, liquamine et aceto temperabis, <pb facs="apicapic_412927675_0020"/>mittes defritum modicum ut coloretur, ius exinanies in patinam. cum ferbuerint iterum ac tertio, depones et piper <milestone unit="section" n="68"/>  minutum asparges. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter cucurbitas iure colocasiorum: cucurbitas coques ex aqua in modum colocasiorum. teres piper, cuminum, rutam, suffundes acetum, liquamen, temperabis, <add>mittes</add> in caccabum, cui adicies ... et eas cucurbitas incisas, expressas in ius mittes ut <milestone unit="section" n="69"/>  ferveant. amulo obligas, piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p><add>Aliter</add> cucurbitas more Alexandrino: elixatus cucurbitas exprimis, sale asparges, in patina compones. teres piper, cuminum, coriandri semen, mentam viridem, laseris radicem, suffundes acetum, adicies caryotam, nucleum, teres, melle, aceto, liquamine, defrito et oleo temperabis,  et cucurbitas perfundes. cum ferbuerint, piper asparges <milestone unit="section" n="70"/>  et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter cucurbitas elixatus: ex liqna <milestone unit="section" n="71"/> mine, oleo, mero. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter cucurbitas frictas: oenogaro <milestone unit="section" n="72"/> simplici et pipere. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Aliter cucurbitas elixatus et frictas: in patina compones, cuminatum superfundes, <milestone unit="section" n="73"/> modico oleo super adiecto. fervere facies et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Aliter cucurbitas frictas tritas: piper, ligusticum, cuminum, origanum, cepam, vinum, liquamen et oleum. amulo <milestone unit="section" n="74"/>  obligabis in patina, et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>Aliter cucurbitas cum gallina: duracina, tubera, piper, careum, cuminum, silfi, condimenta viridia, mentam, apium, coriandrum, puleium,  <sic>caromentam</sic>, mel, vinum, liquamen, oleum et acetum.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="75"/> CITRIVM. Sil montanum, silfi, mentam siccam, acetum, </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="76"/> CVCVMERES. Cucumeres rasos: sive ex liquamine, sive ex oenogaro: sine ructu et gravitudine teneriores <milestone unit="section" n="72"/> senties. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter cucumeres rasos: elixabis cum cerebellis elixis, cumino et melle modico, <add>vel</add> apii semine, liquamine et oleo. ovis obligabis, piper asparges et <pb facs="apicapic_412927675_0021"/>inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter cucumeres: piper, puleium, mel vel  <milestone unit="section" n="78"/> passum, liquamen et acetum. interdum et silfi accedit.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>PEPONES ET MELONES. Piper, puleium, mel vel <milestone unit="section" n="79"/> passum, liquamen, acetum: interdum et silfi accedit. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>MALVAS. Malvas minores <add>in</add> oenogaro ex liquamine, <milestone unit="section" n="80"/> oleo, aceto. — Malvas maiores in oenogaro, pipere, liquamine, caroeno vel passo.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>CYMAS ET CAVLICVLOS. Cymas: cuminum, <milestone unit="section" n="81"/> salem, vinum vetus et oleum. si voles, addes piper et ligusticum, mentam, rutam, coriandrum, folia cauliculorum, liquamen, vinum, oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter: cauliculos elixatos mediabis, <milestone unit="section" n="82"/> summa foliorum teres cum coriandro, cepa, cumino, pipere, passo vel caroeno et oleo modico. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter: cauliculi <milestone unit="section" n="83"/> elixati in patina compositi condiuntur liquamine, oleo, mero, cumino. piper asparges, porrum, cuminum, coriandrum viride super concides. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter: cauliculi conditi ut <milestone unit="section" n="84"/> supra cum elixis porris coquantur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter: cauliculos condies <milestone unit="section" n="85"/> ut supra, admisces olivas virides et simul ferveant. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Aliter: cauliculis conditis ut supra superfundes alicam <milestone unit="section" n="86"/> elixam cum nucleis et uva passa; piper asparges. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>PORROS. Porros maturos fieri: pugnum <milestone unit="section" n="87"/> salis, aquam et oleum: mixtum facies et ibi coques et eximes. cum oleo, liquamine, mero <del>et</del> inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter <milestone unit="section" n="88"/> porros: opertos foliis cauliculorum <del>et</del> in prunis coques, ut supra, et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter porros: in  <sic>baca</sic> coctos ut <milestone unit="section" n="89"/> supra inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter porros: <add>si</add> in aqua elixati erunt, <milestone unit="section" n="90"/> fabae nondum conditae plurimum admisce conditurae, in qua eos manducaturus es. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="11">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="91"/>  BETAS. Concides porrum, coriandrum, cuminum, uvam passam  <sic>farinam</sic>, et omnia in medullam mittes. ligabis et ita inferes ex liquamine, oleo et aceto. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter betas elixas: ex sinapi, oleo modico et aceto bene inferuntur. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="12">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="93"/> HOLISERA. holisera in fasciculum redacta <add>a</add> manu ex liquamine, oleo et mero bene inferuntur, vel cum piscibus assis. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="13">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="94"/>  RAPAS SIVE NAPOS. Rapas sive napos: elixatos exprimes, deinde teres cuminum plurimum, rutam minus, laser parthicum, mel, acetum, liquamen, defritum et oleum modice. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p><milestone unit="section" n="95"/> fervere facies et inferes. Aliter rapas sive napos: elixas, inferes. oleum superstillabis: si voles, acetum adde.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="14">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="96"/> RAFANOS. Ratfanos cum piperato, ita ut piper cum liquamine teras.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="15">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="97"/> HOLVS MOLLE. Holus molle ex holisatro: coctum ex aqua nitrata expressum concides minutatim, et teres piper, ligusticum, satureiam siccam cum cepa sicca, <milestone unit="section" n="98"/>  liquamen, oleum et vinum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+    <p>Aliter holus molle: apium coques ex aqua nitrata, exprimes et concides minutatim. in mortario teres piper, ligusticum, origanum, cepam, vinum, liquamen et oleum. coques in pultario, et sic apium commisces. <milestone unit="section" n="99"/>  </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter holus molle ex foliis lactucarum cum cepis: coques ex aqua nitrata, expressum concides minutatim. in mortario teres piper, ligusticum, apii semen, mentam siccam, cepam, liquamen, oleum et vinum. <milestone unit="section" n="100"/> <del>Aliter</del> Holus molle ne arescat, summa quaeque amputantur, et purgamenta et caules madefactos in aqua apsinthi contegito.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="16">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="101"/> HERBAE RVSTICAE. Liquamine, oleo, aceto a manu vel in patina pipere, cumino, bacis lentisci. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="17">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>VRTICAE. Vrticam feminam, sole in ariete posito, adversus aegritudinem sumes, si voles.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="18">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>INTVBA ET LACTVCAE. Intuba ex liquamine, <milestone unit="section" n="103"/> oleo modico,  <sic>medere</sic> cepa concisa. pro lactucis vero hieme intuba ex embammate vel melle et aceto acri. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Lactucas <milestone unit="section" n="104"/> cum oxyporio et aceto et modico liquamine. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Ad <milestone unit="section" n="105"/> digestionem et inflationem et ne lactucae laedant: cumini unc. II, zingiberis unc. I, rutae viridis unc. I, dactylorum pinguium scripulos XII, piperis unc. I, mellis unc. IX; cuminum aut Aethiopicum aut Syriacum aut Libycum. tundes cuminum et postea infundes in aceto, cum siccaverit; postea melle omnia comprehendes. cum necesse fuerit, dimidium cocleare cum aceto et liquamine modico misces aut post cenam dimidium cocleare accipies. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="19">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>CARDVI. Carduos: liquamine, oleo et ovis concisis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter carduos: rutam, mentam, coriandrum, feniculum, omnia viridia teres. addes piper, ligusticum, mel, liquamen et oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter carduos elixos: piper, cuminum, liquamen et oleum. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="20">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>SPHONDYLI <del>vel fundili</del>. Sphondyli fricti ex oenogaro simplici. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter: Sphondyli elixi ex sale, oleo, mero, coriandro viridi conciso et pipere integro. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter: sphondylos elixos perfundes amulato infra scripto: apii semen, rutam, mel, piper teres, passum, liquamen et oleum modice. amulo obligas, piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter sphondylos: teres cuminum, rutam, liquamen, caroenum modice, oleum, coriandrum viride et <pb facs="apicapic_412927675_0024"/><milestone unit="section" n="110"/> porrum. et sphondylos inferes pro salso. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter:sphondylos elixatos praedurabis, mittes in caccabum oleum, <milestone unit="section" n="111"/> liquamen, piper. passo colorabis et obligas. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Aliter: sphondylos oleo, liquamine complebis, vel oleo et sale <milestone unit="section" n="112"/>  assabis. piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p><del>Aliter: sphondylos elixatos conteres et nervos eorum eximes. deinde cum eis alicam elixatam et ova conteres, liquamen, piper. isicia ex his facies cum nucleis et pipere in omento. asabis, oenogaro continges et pro isiciis inferes</del>.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="21">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="113"/> CAROETAE SEV PASTINACAE. Caroetae  frictae oenogaro inferuntur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter caroetas: sale,  oleo puro et aceto. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter: caroetas elixatas concisas in cuminato oleo modico coques et inferes. cuminatum colorium ffacies.</p></div>
+</div>
+</div>
+<div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="116"/> SALA CATTABIA. (?) Sala cattabia: piper, mentam, apium, puleium aridum, caseum, nucleos pineos, mel, acetum, liquamen, ovorum vitella, aquam recentem. panem ex posca maceratum exprimes, caseum bubulum, cucumeres in caccabulo compones, interpositis nucleis. mittes concisi capparis minuti ... iocusculis gallinarum. ius perfundes, super frigidam collocabis et sic appones. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter sala cattabia Apiciana: adicies in mortario apii semen, puleium aridum, mentam aridam, zingiber, coriandrum viride, uvam passam enucleatam, mel, acetum, oleum <pb facs="apicapic_412927675_0025"/>et vinum. conteres. adicies in caccabulo panis Picentini frusta, interpones pulpas pulli, glandulas haedinas, caseum Vestinum, nucleos pineos, cucumeres, cepas aridas minute concisas. ius supra perfundes. insuper nivem sub ora asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter sala cattabia: panem Alexandrinum excavabis, in posca macerabis. adicies in mortarium piper, mel, mentam, alium, coriandrum viride, caseum bubulum sale conditum, aquam, oleum. insuper nivem, et inferes. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>PATINAE PISCIVM HOLERVM POMORVM. Patina cotidiana: cerebella elixata teres cum pipere. cuminum, laser cum liquamine, caroeno, lacte et ovis. ad ignem lenem vel ad aquam calidam coques. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter patina versatilis: nucleos, nuces fractas; torres eas et teres cum melle, pipere, liquamine, lacte et ovis. olei modicum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter patina: thyrsum lactucae teres cum pipere, liquamine, caroeno, aqua, oleo. coques, ovis obligabis; piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter patina fusilis:  <milestone unit="section" n="124"/> accipies holisatra, purgas, lavas, coques, refrigerabis, restringes. accipies cerebella IV, enervabis, coques. adicies in mortario piperis scripulos VI, suffundes liquamen, fricabis. postea adicies cerebella, fricabis iterum. adicies holisatra et simul conteres. postea franges ova VIII, adicias cyathum liquaminis, vini cyathum, passi cyathum, contrita simul temperabis. patinam perunges, impones in thermospodio. postea cum coctum fuerit, piper asparges et inferes, </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter patina de asparagis frigida: accipies asparagos purgatos, in mortario fricabis, aqua suffundes, per <pb facs="apicapic_412927675_0026"/>fricabis, per colum colabis. Et mittes <add>in caccabum</add> ficedulas curatas. teres in mortario piperis scripulos VI, adicies liquamen, fricabis, <add>postea adicies</add> vini cyathum unum, passi cyathum unum, mittes in caccabum olei uncias  III. illic ferveant. perunges patinam, in ea ova VI cum oenogaro misces, cum suco asparagi impones cineri calido, mittes impensam supra scriptam. tunc ficedulas compones. <milestone unit="section" n="126"/>  coques, piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Aliter patina de asparagis: adicies in mortario asparagorum praecisuras, quae proiciuntur. teres, suffundes vinum, colas. teres piper, ligusticum, coriandrum viride, satureiam, cepam, vinum, liquamen et oleum. sucum transferes in. patellam perunctam, et, si volueris, ova dissolves ad ignem, ut obliget. piper minutum asperges <add>et inferes</add>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p><milestone unit="section" n="127"/>  Patinam ex rusticis, sive tamnis sive sinapi viridi sive cucumere sive cauliculis: item facies: si volueris, substernes pulpas piscium vel pullorum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p><del>Aliter</del> Patina de sabuco calida et frigida: accipies semen de sabuco, purgabis, ex aqua decoques, paulum exsiccabis, patinam perunges et in patinam compones ad surcellum. adicies piperis scripulos VI, suffundes liquamen, <add>fricabis</add>, postea adicies liquaminis cyathum unum, vini cyathum, passi cyathum, teres, tandem in patinam mittes olei unc. IV, pones in thermospodio et facies ut  ferveat. cum ferbuerit, franges postea ova VI, agitabis et patinam sic obligabis. cum obligaveris, piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<p>Patinam de rosis: accipies rosas et exfoliabis: <pb facs="apicapic_412927675_0027"/>album tolles, mittes in mortarium, suffundes liquamen, fricabis. postea mittes liquaminis cyathum unum semis, et sucum per colum colabis. accipies cerebella IV, enervabis et teres piperis scripulos VIII. suffundes ex suco, fricabis. postea ova VIII frangis, <add>mittis</add> vini cyathum unum semis et passi cyathum unum, olei modicum. postea patinam perunges et eam impones cineri calido, et sic impensam supra scriptam mittes. cum cocta fuerit in thermospodio, piperis pulverem super asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<p>Patina de cucurbitis: cucurbitas elixas et frictas in patina compones, cuminatum superfundes, modico oleo. super adiecto. fervere facias et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="11">
+<p>Patina de apua: apuam lavas, ex oleo maceras, in Cumana compones, adicies oleum, liquamen, vinum. alligas fasciculos rutae et orizani, et subinde fasciculos apa <sic>babtidiabis</sic>. cum cocta fuerit, proicies fasciculos, et piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="12">
+<p>Patina de apua sine apua: pulpas piscis assi vel elixi minutatim facies ita abundanter, ut patinam qualem voles implere possis. teres piper et modicum rutae, suffundes liquamen quod satis erit et olei modicum, et commisces in patina cum pulpis, sic et ova cruda confracta, ut unum corpus fiat. desuper leniter compones urticas marinas, ut non cum ovis misceantur. impones ad vaporem, ut cum ovis ire non possint, et, cum siccaverint, super aspergis piper tritum et inferes. ad mensam nemo agnoscet quid manducet. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="13">
+<p>Patinam ex lacte: nucleos infundes et siccas. echinos recentes iam praeparatos habebis: accipies patinam, et in eam compones singula infra scripta: mediana <pb facs="apicapic_412927675_0028"/>malvarum et betarum et porros maturos, apios, holus molle et viridia elixa, pullum carptum ex iure coctum, cerebella elixa, Lucanicas, ova dura per medium incisa. mittes longaones porcinos ex iure Terentino farsos, coctos, concisos, iecinera pullorum, pulpas piscis aselli fricti, urticas marinas, pulpas ostreorum, caseos recentes. alternis compones, nucleos et piper integrum asparges. ius tale perfundes: piper, ligusticum, apii semen, silfi. coques. at ubi cocta fuerit, lacte colas, cui cruda ova commisces, ut unum corpus fiat, et super illa omnia perfundes. cum cocta fuerit, <add>addes</add> echinos recentiores, piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="14">
+<p><milestone unit="section" n="134"/>  Patinam Apicianam sic facies: <add>accipies</add> frusta suminis cocti, pulpas piscium, pulpas pulli, ficedulas vel pectora turdorum cocta et quaecumque optima fuerint; haec omnia concides diligenter praeter ficedulas. ova vero cruda cum oleo dissolvis. teres piper, ligusticum, suffundes liquamen, vinum, passum, et in caccabum mittis ut calefiat, et amulo obligas. antea tamen pulpas concisas universas illuc mittes, et sic bulliat. at, ubi coctum fuerit, levabis cum iure suo et in patellam alternis de trulla refundes cum piperis granis integris et nucleis pineis, ita ut per singula coria substernas diploidem, dein laganum similiter; quotquot lagana posueris, tot trullas impensae desuper adicies. unum vero laganum fistula percuties et sues per impones. piper asparges. ante tamen illas pulpas ovis confractis obligabis, et sic in caccabum mittes cum impensa. patellam aeneam qualem debes habere infra ostenditur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="15">
+<p>Patina cotidiana: accipies frusta suminis cocti, pulpas piscium coctas, pulpas pulli coctas. haec omnia  concides diligenter. accipias patellam aeneam, ova conSEIT <pb facs="apicapic_412927675_0029"/>fringes in caccabum et dissolves. adicies in mortarium piper, ligusticum, fricabis, suffundes liquamen, vinum, passum, oleum modice, reexinanies in caccabum, facies ut ferveat. cum ferbuerit, et obligas. pulpas, quas subcultrasti. in ius mittis. substerne diploides ... patinam aeneam, et trullam plenam pulpae, et disparges oleum, <add>et</add> laganum pones similiter. quotquot lagana posueris, tot trullas impensae adicies. unum laganum fistula percuties, a superficie versas in discum, in superficiem pones. piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="16">
+<p>Patina versatilis vice dulcis: nucleos  <milestone unit="section" n="136"/> pineos, nuces fractas et purgatas, attorrebis eas, teres cum melle, pipere, liquamine, lacte, ovis, modico mero et oleo. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="17">
+<p>Patellam tyrotaricham ex quocumque salso volueris: coques ex oleo, exossabis. et cerebella cocta, pulpas piscium, iocuscula pullorum, ova dura, caseum mollem excaldatum, haec omnia calefacies in patella. teres piper, ligusticum, origanum, rutae bacam, vinum, mulsum, oleum, <add>in</add> patella ad lentum ignem <add>pones</add> ut coquatur. ovis crudis obligabis, adornabis, cuminum minutum asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="18">
+<p>Patellam siccam: isicia de thurreione: enervabis, concides minutatim. teres piper, ligusticum, origanum, petroselinum, coriandrum, cuminum, rutae bacam, mentam siccam, ipsum thursionem. isicia deformabis. <add>Adicies</add> vinum, liquamen, oleum. coques. coctum in patellam collocabis. ius in ea facies: piper, ligusticum, satureiam, cepam, vinum, liquamen, oleum. <add>In</add> patellam pones ut coquatur. ovis obligabis, piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="19">
+<p>Patellam ex holisatro: elixas ex aqua nitrata, exprimis in patellam. teres piper, ligusticum, coriandrum, <pb facs="apicapic_412927675_0030"/>satureiam, cepam, vinum, liquamen, acetum, oleum. transferes in patellam, coques, amulo obligas. thymum et piper minutum asparges. et de quacumque herba, si volueris, <milestone unit="section" n="140"/>  facies ut supra. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="20">
+<p>Patina de apua fricta: apuam lavas,  ova confringes et cum apua commisces. adicies liquamen, vinum, oleum, facies ut ferveat, et cum ferbuerit, mittes apuam. cum duxerit, subtiliter versas. facies ut coloret, oenogarum simplex perfundes. piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="21">
+<p><milestone unit="section" n="141"/> Patina ex lagitis et cerebellis: friges ova dura,  cerebella elixas et enervas, gigeria pullorum coques. haec omnia divides praeter piscem, compones in patina praemixta salsum coctum in medio pones. teres piper, ligusticum, suffundes <add>passum</add>, ut dulce sit. piperatum mittes  in patinam, facies ut ferveat. cum ferbuerit, ramo rutae <milestone unit="section" n="142"/>  agitabis et amulo obligabis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="22">
+<p>Patina mullorum loco salsi: mullos rades, in patina munda compones, adicies <add>olei quod satis est et salsum interpones. facies</add> ut ferveat. cum ferbuerit, mulsum mittes aut passum. piper asparges <milestone unit="section" n="143"/>  et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="23">
+<p>Patina piscium loco salsi: pisces quales?o libet curatos friges, in patinam compones, adicies olei quod satis est et salsum interpones. facies ut ferveat. cum ferbuerit, mittes mulsam et ius agitabis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="24">
+<p>Patina piscium: pisces qualeslibet rades et curatos mittes. cepas siccas Ascaloniae vel alterius generis concides in patinam et pisces  super compones. adicies liquamen, oleum. cum coctum fuerit, salsum coctum in medio pones. addendum acetum. <milestone unit="section" n="145"/>  asparges et coronam bubulam. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="25">
+<p>Patellam Lucretianum: cepas pallachanas purgas (viridia earum proicies), in patinam concides. liquaminis modicum, oleum et aquam. dum coquitur, salsum crudum in medium ponis. at ubi cum salso prope cocta fuerit, mellis cocleare asparges, aceti et <pb facs="apicapic_412927675_0031"/>defriti pusillum. gustas. si fatuum fuerit, liquamen adicies, si salsum, mellis modicum. et coronam bubulam aspergis, et bulliat.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="26">
+<p>Patinam de lagitis: lagitas rades, lavas, ova confringis et cum lagitis commisces. adicies liquamen, vinum, oleum, facies ut ferveat. cum ferbuerit, oenogarum simplex perfundis. piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="27">
+<p>Patina zomoteganon: a crudo quoslibet pisces lavas, in patina compones. adicies oleum, liquamen, vinum, cocturam, fasciculum porri, coriandri. dum coquitur, teres piper, ligusticum, origanum <add>et coctum</add> fasciculum, de suo sibi fricabis, suffundes ius de suo sibi, ova cruda dissolves, temperas. exinanies in patinam, facies ut obligetur. cum tenuerit, piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="28">
+<p>Patina solearum: soleas battues et curatas compones in patina. adicies oleum, liquamen, vinum. dum coquitur, teres piper, ligusticum, origanum, fricabis, suffundes ius, ova cruda et unum corpus facies. super soleas refundes, lento igni coques. cum duxerit, piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="29">
+<p>Patina  <milestone unit="section" n="149"/> de piscibus: piperis unciam, caroeni heminam, conditi heminam, olei unc. II. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="30">
+<p>Patina de pisciculis: uvam  <milestone unit="section" n="150"/> passam, piper, ligusticum, origanum, cepam, vinum, liquamen, oleum. transferes in patellam. cum cocta fuerit, adicies in ipsam pisciculos coctos. amulo obligas et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="31">
+<p>Patina de piscibus dentice, aurata et  <milestone unit="section" n="151"/> <pb facs="apicapic_412927675_0032"/>mugile: accipies pisces, curatos subassabis, postea eos in pulpas carpes. deinde ostrea curabis. adicies in mortarium piperis scripulos VI, suffundes liquamen, fricabis. postea adicies liquaminis cyathum unum, vini cyathum unum, mittes in caccabum et olei unc. III et ostrea. oenogarum facies fervere. cum ferbuerit, patinam perunges et in pulpam supra scriptam mittes et in condituram de ostreis. facies ut ferveat. cum ferbuerit, franges ova XI, infundes super ostrea. cum strinxerint, piper asparges et <milestone unit="section" n="152"/>  inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="32">
+<p>Patina de pisce lupo: teres piper, cuminum, petroselinum, rutam, cepam, mel, liquamen, passum, olei <milestone unit="section" n="166"/>  guttas. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="33">
+<p>Patina de sorbis calida et frigida: accipies sorba, purgas, in mortario fricabis, per colum colabis. cerebella enervabis IV cocta, mittes in mortario piperis scripulos VIII, suffundes liquamen, fricabis. adicies sorba, in se contemperabis, franges ova VIII, adicies cyathum liquaminis unum. patinam mundam perunges et in thermospodio pones, et sic eam impensam mittes, ac subtus  supra thermospodium <add>calidam</add> habeat. cum cocta fuerit, piper minutum asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="34">
+<p>Patina de Persicis: Persica duriora purgabis, frustatim concides, elixas, in patina compones, olei modicum superstillabis et cum <milestone unit="section" n="168"/>  cuminato inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="35">
+<p>Patina de piris: pira elixa et purgata e medio teres cum pipere, cumino, melle, passo, liquans mine, oleo modico. ovis missis patinam facies, piper super <milestone unit="section" n="169"/>  asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="36">
+<p>Patina urticarum calida et frigida: urticam accipies, lavas, colas per colum, exsiccabis in tabula, eam concides. teres piperis scripulos X, suffundes liquamen, fricabis. postea adicies liquaminis cyathos II, olei uncias VI. caccabus ferveat. cum ferbuerit, coctum tolles ut refrigescat. postea patinam mundam perunges, franges ova VIII et agitabis. perfundes, subtus supra cinerem calidam habeat. <add>cum</add> cocta <add>fuerit</add>, piper <pb facs="apicapic_412927675_0033"/>minutum asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="37">
+<p>Patina de Cydoneis:  <milestone unit="section" n="170"/> mala Cydonia cum porris, melle, liquamine, oleo, detrito coques et inferes, vel elixata ex melle. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>MINVTAL DE PISCIBVS VEL ISICHS. Minutal marinum: <add>pones</add> pisces in caccabum, adicies liquamen, oleum, vinum, cocturam. porros capitatos, coriandrum minutatim concides, isiciola de pisce minuta facies et pulpas piscis cocti concerpis, urticas marinas bene lotas mittes. haec omnia cum cocta fuerint, teres piper, ligusticum, origanum, fricabis, liquamen suffundes, ius de suo sibi, exinanies in caccabum. cum ferbuerit, tractam confringes, obliBas, coagitas. piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Minutal Terentinum: concides in caccabum albamen de porris minutatim, adicies oleum, liquamen, cocturam, isiciola valde minuta, et sic temperas ut tenerum sit. isicium Terentinum facies: inter isicia confectionem invenies. ius tale facies: piper, ligusticum, origanum, fricabis, suffundes liquamen, ius de suo sibi, vino et passo temperabis. mittes <add>in</add> caccabum. cum ferbuerit, tractam confringes, obligas. piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Minutal Apicianum: oleum, liquamen, vinum, porrum capitatum, mentam, pisciculos, isiciola minuta, testiculos caponum, glandulas porcellinas. haec omnia in se coquantur. teres piper, ligusticum, coriandrum viride vel semen, suffundis liquamen, adicies mellis modicum et ius de suo sibi, vino et melle temperabis. facies ut ferveat. cum ferbuerit, tractam confringes, obligas, coagitas. piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Minutal Matianum: adicies in caccabum oleum, liquamen, cocturam, concides porrum, coriandrum, isicia minuta. spatulam porcinam coctam tessellatim concides cum sua sibi tergilla. facies ut simul coquantur. media coctura mala <pb facs="apicapic_412927675_0034"/>Matiana purgata intrinsecus, concisa tessellatim mittes. dum. coquitur, teres piper, cuminum, coriandrum viride vel semen, mentam, laseris radicem, suffundes acetum, mel, liquamen, defritum modice et ius de suo sibi, aceto  modico temperabis. facies ut ferveat. cum ferbuerit, tractam confringes et ex ea obligas. piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p><milestone unit="section" n="175"/>  Minutal dulce ex citris: adicies in caccabo oleum, liquamen, cocturam, porrum capitatum, concides coriandrum minutatim, spatulam porcinam coctam et isiciola minuta. dum coquitur, teres piper, cuminum, coriandrum <add>viride</add> vel semen, rutam viridem, laseris radicem, suftundis acetum, defritum, ius de suo sibi, aceto temperabis. facies ut ferveat. cum ferbuerit, citrium purgatum intro foras, tessellatim concisum et elixatum in caccabum mittes. tractam confringes et ex ea obligas. piper asparges et inferes. <milestone unit="section" n="176"/> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Minutal ex praecoquis: adicies in caccabum oleum, liquamen, vinum, concides cepam Ascaloniam aridam, spatulam porcinam coctam tessellatim concides. his omnibus coctis teres piper, cuminum, mentam siccam. anethum, suffundis mel, liquamen, passum, acetum modice, ius de suo sibi, temperabis. praecoqua enucleata mittis. facies ut ferveant, donec percoquantur. tractam confringes. <milestone unit="section" n="177"/>  ex ea obligas. piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Minutal ex iecineribus et pulmonibus leporis: invenies inter  lepores quemadmodum facies. adicies <add>in</add> caccabum liquamen, vinum, oleum, cocturam, porrum et coriandrum concisum, isicia minuta, spatulam porcinam coctam tessellatim concisam, et in eundem caccabum immittes. dum coquitur, teres piper, ligusticum, origanum, ius de suo sibi, <pb facs="apicapic_412927675_0035"/>vino et passo temperabis. facies ut ferveat. cum ferbuerit, tractam confringes et ex ea obligas. piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>Minutal ex rosis: eodem iure supra scripto, sed passum plus adicies. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>TISANAM VEL SVCVM. Tisanam sic facies: tisanam lavando fricas, quam ante diem infundes. impones supra ignem <del>calidum</del>. cum bullierit, mittes olei satis et anethi modicum fasciculum, cepam siccam, satureiam et coloefium, ut ibi coquantur propter sucum. mittes coriandrum viride et salem simul tritum et facies ut ferveat. cum bene ferbuerit, tolles fasciculum et transferes in alterum caccabum tisanam sic, ne fundum tangat propter combusturam. lias <add>bene</add> et colas in caccabulo super acronem coloefium. teres piper, ligusticum, pulei aridi modicum, cuminum et silfi frictum, ut bene tegatur. suffundis <add>mel</add>, acetum, defritum, liquamen, refundis in caccabum super coloefium acronem. facies ut ferveat super ignem lentum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Tisanam barricam: infundis cicer, lenticulam, pisam. defricas tisanam et cum leguminibus elixas. ubi bene bullierit, olei satis mittis et super viridia concidis porrum, coriandrum, anethum, feniculum, betam, malvam, cauliculum mollem. haec viridia minutatim concisa in caccabum mittis. cauliculos elixas et teres feniculi semen satis, origanum, silfi, ligusticum. postquam triveris, liquamine temperabis, et super legumina refundis et agitas. cauliculorum minutas super concidis. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="181"/> GVSTVM. Gustum versatile: albas betas minutas, porros requietos, apios, bulbos, cocleas elixas, gigeria pullorum <add>et</add> ascellas, isicia coques ex iure. perungis patinam et folia malvarum substernis et praemixta holera componis sic ut laxa <add>mentum habeant</add>, permisces bulbos inversos, Damascena, cocleas, isicia, Lucanicas breves concidis, liquamine, oleo, vino, aceto ponis ut ferveat. cum ferbuerit, teres piper, ligusticum, zingiber, pyrethrum modicum, fricabis, suffundis et facies ut bulliat patina. ova complura confringis et ius mortarii reliquum commoves, commisces, patinam obligabis. dum ducit, oenogarum ad eam sic facies: teres piper, ligusticum, fricabis, suffundis liquamen et vinum, passo temperabis vel vino dulci. temperabis in caccabulo, mittis olei modicum, facies ut ferveat. cum ferbuerit, amulo obligas. patinam versas in lancem, folia malvarum ante tollis, oenogaro perftundis, insuper piper aspargis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Gustum de holeribus: condies bulbos liquamine, oleo et vino. cum cocti fuerint, iecinera porcelli et gallinarum et ungellas et ascellas divisas <add>adicies</add>. haec omnia cum bulbis ferveant. cum ferbuerint, teres piper, ligusticum, suffundis liquamen, vinum et passum, ut dulce sit, ius de suo sibi suffundis, revocas in bulbos. cum ferbuerint, ad momentum amulo obligas. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p><milestone unit="section" n="183"/> Gustum de cucurbitis farsilibus: cucurbitas a latere subtiliter ad modum tessellae oblongae decidis et excavas et mittis in frigidam. impensam ad eas sic facies: teres piper, ligusticum, origanum, suffundis liquamen, cerebella cocta teres, ova cruda dissolves et mittes ut unum <pb facs="apicapic_412927675_0037"/>corpus efficias; liquamine temperabis. et cucurbitas supra scriptas non plene coctas ex ea impensa imples, de tessella sua recludis, surclas et coctas eximis et frigis. oenogarum sic facies: teres piper, ligusticum, suffundis vinum et liquamen, passo temperabis, olei modicum mittis in caccubum et lfacies ut ferveat. cum ferbuerit, amulo obligas, et cucurbitas frictas oenogaro perfundis et piper aspargis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Gustum de praecoquis: duracina primotina <del>pusilla praecoquia</del> purgas, enucleas, in frigidam mittis, in patina componis. teres piper, mentam siccam, suffundis liquamen, adicies mel, passum, vinum et acetum. refundis in patinam super praecoqua, olei modicum mittis et lento igni ferveat. cum ferbuerit, amulo obligas. piper aspargis et inferes.</p></div>
+</div>
+</div>
+<div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>PVLTES. Pultes Iulianae sic coquuntur: <milestone unit="section" n="186"/> alicam purgatam infundis, coques, facies ut ferveat. cum ferbuerit, oleum mittis, cum spissaverit, lias diligenter. adicies cerebella duo cocta et selibram pulpae quasi ad isicia liatae, cum cerebellis teres et in caccabum mittis, teres piper, ligusticum, feniculi semen, suffundis liquamen et vinum modice, mittis in caccabum supra cerebella et pulpam. ubi satis ferbuerit, cum iure misces. ex hoc paulatim alicam condies, et ad trullam permisces et lias, ut quasi sucus videatur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Pultes cum iure oenococti: <milestone unit="section" n="187"/> pultes oenococti iure condies, copadia, similam sive alicam <pb facs="apicapic_412927675_0038"/>coctam hoc iure condies, et cum copadiis porcinis apponis <milestone unit="section" n="188"/> aenococti iure conditis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Pultes tractogalatae: lactis sextarium et aquae modicum mittes in caccabo novo et lento igni ferveat. tres orbiculos tractae siccas et confringis et partibus in lac summittis. ne uratur, aquam miscendo agitabis. cum cocta fuerit, ut est, super agninam mittis. <milestone unit="section" n="189"/> ex melle et musteis cum lacte similiter facies, salem et <milestone unit="section" n="185"/>  oleum minus mittis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Pultes: alicam purgatam infundis, coques. cum ferbuerit, oleum mittis. cum spissaverit, adicies cerebella duo cocta et selibram pulpae quasi ad isicia liatae, cum cerebellis teres et in caccabum mittes. teres piper, ligusticum, feniculi semen, suffundis liquamen et meri modicum, et mittis in caccabum supra cerebella et pulpam. ubi satis ferbuerit, cum iure misces. ex hoc paulatim alicam condies, et lias ut quasi sucus videatur.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="190"/>  LENTICVLA. Lenticula ex sfondylis <del>sive fondilis</del>: accipies caccabum mundum, <add>mittes, coques</add>. adicies in mortarium piper, cuminum, semen coriandri, mentae, rutae, puleium, fricabis, suffundis acetum, adicies mel, liquamen et defritum, aceto temperabis, reexinanies in caccabo. sfondylos elixatos teres et mittis ut ferveant. cum bene ferbuerint, obligas. adicies in boletari oleum <milestone unit="section" n="191"/>  viride. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Lenticulam de castaneis: accipies caccabum novum, et castaneas purgatas diligenter mittis. adicies aquam et nitrum modice, facies ut coquatur. cum coquitur, mittis in mortario piper, cuminum, semen coriandri, mentae, rutae, laseris radicem, puleium, fricabis. suffundis acetum, <add>adicies</add> mel, liquamen, aceto temperabis, et super castaneas coctas refundis. adicies oleum, facies ut ferveat. <pb facs="apicapic_412927675_0039"/>cum bene ferbuerit, tudiclabis <del>ut in mortario teres</del>. gusias: si quid deest, addes. cum in boletar miseris, addes oleum viride. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter lenticulam: coquis. cum despumaverit, porrum et coriandrum viride supermittis. <add>teres</add> coriandri semen, puleium, laseris radicem, semen mentae et rutae, suffundis acetum, adicies mel, liquamine, aceto, defrito temperabis, adicies oleum, agitabis. si quid opus fuerit, mittis. amulo obligas, insuper oleum viride mittis, piper aspargis et inferes. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>PISA. Pisam coques. cum despumaverit, porrum, coriandrum et cuminum supra mittis. teres piper, ligusticum, <del>careum hoc est caravita</del> careum, anethum, ocimum viride, suffundis liquamen, vino et liquamine temperabis, facies ut ferveat, cum ferbuerit, agitabis. si quid defuerit, mittis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+    <p>Pisam farsilem: <add>pisam</add> coques. cui oleum mittis. <add>accipies</add> abdomen, et mittis in caccabum liquamen et porrum capitatum, coriandrum viride. imponis ut coquatur. isicia minuta facies quadrata, et coques simul turdos vel aucellas vel de pullo concisa et cerebella prope cocta cum iuscello coques. Lucanicas assas, petasonem elixas, porros ex aqua coques, nucleorum heminam frigis. teres piper, ligusticum, origanum, zingiber, ius abdominis fundis, lias. angularem accipies, qui versari potest, et omentis tegis. oleo perfundis, deinde nucleos aspargis et supra pisam mittis ut tegas fundum angularis, et sic componis supra petasonis pulpas, porros, Lucanicas concisas. iterum pisam supermittis. item alternis aptabis obsonia, quousque impleatur angularis. novissime pisam mittis, ut intus omnia contineat. coques in furno vel lento igni imponis, ut ducat ad se deorsum. ova dura facies, vitella <pb facs="apicapic_412927675_0040"/>cicies, in mortario mittis cum pipere albo, nucleis, melle, vino candido et liquamine modico. teres et mittis in vas ut ferveat. cum ferbuerit, pisam mittis in lancem, et hoc iure perfundis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p><milestone unit="section" n="195"/>hoc ius candidum appellatur. Pisam Indicam: pisam coques. cum despumaverit, porrum et coriandrum concidis et mittis in caccabum ut ferveat. et accipies sepias minutas, sic quomodo sunt cum atramento suo, ut simul coquantur. adicies oleum, liquamen et vinum, fasciculum porri et coriandri. facies ut coquantur. cum coctum fuerit, teres piper, ligusticum, origanum, carei modicum, suffundis ius de suo sibi, vino et passo temperabis. sepias minutatim concidis et in pisam mittis. piper asparges <add>et inferes. Aliter:</add> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>pisam coques, agitabis et mittis in frigidam. cum refrigeraverit, denuo agitabis. concidis cepam. minutatim et albamentum ovi, oleo et sale condies, aceti modicum adicies. in boletari vitellum ovi cocti colas, <milestone unit="section" n="197"/>  insuper oleum viride mittis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Pisam Vitellianum sive fabam: pisam coques, lias. teres piper, ligusticum, zingiber, et super condimenta mittis vitella ovorum, quae dura coxeris, mellis unc. III, liquamen, vinum et acetum. haec omnia mittis in caccabum et condimenta quae trivisti. adiecto oleo ponis ut ferveat. condies <milestone unit="section" n="198"/> pisam, lias, si aspera fuerit. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>mel mittis et inferes. Aliter pisam sive fabam: ubi despumaverit, teres mel, liquamen, caroenum, cuminum, rutam, apii semen, oleum et vinum. tudiclabis. cum pipere trito et cum isiciis inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p><milestone unit="section" n="199"/>  Aliter pisam sive fabam: despumatam subtrito lasere Parthico, liquamine et caroeno condies. oleum modice <milestone unit="section" n="200"/>  superfundis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>Pisam adulteram versatilem: coques pisam. cerebella vel aucellas vel turdos <pb facs="apicapic_412927675_0041"/>exossatos a pectore, Lucanicas, iecinera, gigeria pullorum in caccabum mittis, liquamen, oleum. fasciculos porri capitati, coriandrum viride concidis, et cum cerebellis coques. teres piper, ligusticum et liquamen. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<p>Pisam sive fabam <milestone unit="section" n="201"/> Vitellianam: pisam sive fabam coques. cum despumaverit, mittis porrum, coriandrum et flores malvarum. dum coquitur, teres piper, ligusticum, origanum feniculi semen, suffundis liquamen et vinum, <add>mittis</add> in caccabum, adicies oleum. cum ferbuerit, agitas. oleum viride insuper mittis et inferes.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>CONCHICLA. <add>Conchiclam</add> cum faba: coques. teres piper, ligusticum, cuminum, coriandrum viride, suffundis liquamen, vino et liquamine temperabis, mittis in caccabum, adicies oleum. lento igni ferveat et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Conchiclam Apicianum: accipies Cumanam mundam, ubi coques pisam, cui mittis Lucanicas concisas, isiciola porcina, pulpas, petasonem. teres piper, ligusticum, orisanum, anethum, cepam siccam, coriandrum viride, sufiundis liquamen, vino et liquamine temperabis. mittis in Cumanam, cui adicies oleum, pungis ubique, ut combibat oleum. igni lento coques ita ut ferveat et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Conchiclam de pisa simplici: pisam coques. cum despumaverit, fasciculum porri et coriandri mittis. dum coquitur teres piper, ligusticum, origanum, fasciculum, de suo sibi fricabis, suffundis <add>liquamen, vino et</add> liquamine temperabis, mittis <add>in Cumanam</add>. super adicies oleum, et lento igni ferveat, et inferes: </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Conchicla Commodiana: pisam coques. cum despumaverit, teres piper, ligusticum, anethum, cepam siccam, suffundis liquamen, vino et liquamine temperabis. mittis in caccabum ut combibat. deinde ova quattuor solves, in sextarium pisae mittis, agitas, <pb facs="apicapic_412927675_0042"/> mittis in Cumanam, ad ignem ponis, ut ducat, et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter conchiclam sic facies: concidis pullum minutatim, liquamine, oleo et vino ferveat. concidis cepam, coriandrum minutum, cerebella enervata, mittes in eundem pullum. cum coctus fuerit, levas et exosas. concides minutatim cepam et coriandrum, colas ibi pisam coctam non conditam. accipies conchiclarem, pro modo componis varie. deinde teres piper, cuminum, suffundis ius de suo sibi. item in mortario ova duo dissolves, temperas, ius de suo sibi suffundis pisae integre elixae, vel nucleis <milestone unit="section" n="207"/> adornabis, et lento igni fervere facies et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Aliter conchiclatus pullus vel porcellus: exossas pullum a pectore, femora eius iungis in porrectum, surculo alligas, et impensam <del>conciola farsilis</del> paras. et farcies alternis pisam lotam, cerebella, Lucanicas et cetera. teres <add>piper</add>, ligusticum, origanum et zingiber, liquamen suffundis, passo et vino temperabis. facies ut ferveat, et, cum ferbuerit, mittis modice. et impensam cum condieris, alternis in pullo componis, omento tegis et in operculo deponis et in furnum mittis, ut coquantur paulatim, et inferes.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="208"/> TISANAM ET ALICAM. Alicam vel sucum tisanae sic facies: tisanam vel alicam lavando fricas, quam ante diem infundis. Imponis supra ignem. cum bullierit, mittis olei satis et anethi modicum fasciculum, cepam  siccam, satureiam et coloefium, ut ibi coquantur. propter sucum mittis coriandrum viride et salem simul tritum et facies ut ferveat. cum bene ferbuerit, tollis fasciculum et transferes in alterum caccabum tisanam, sic ne fundum tangat propter combusturam. lias bene et colas in caccabo  super acronem coloefium. teres piper, ligusticum, pulei <pb facs="apicapic_412927675_0043"/>aridi modicum, cuminum silfi frictum, ut bene tegatur. suftundis mel, acetum, defritum, liquamen, refundis in caccubum super coloefium acronem. facies ut ferveat super ignem lentum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter tisanam: infundis cicer, lenticulam, pisam, defricas tisanam et cum leguminibus elixas. ubi bene bullierit, olei satis mittis et super viridia concidis porrum, coriandrum, anethum, feniculum, <add>betam, malvam cauliculum</add> mollem. haec viridia minutatim concisa in caccabum mittis. cauliculos elixas et teres feniculi semen satis, origanum, silfi, ligusticum. postquam triveris, liquamine temperas et super legumina refundis. agitas. cauliculorum minutas super concidis. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>FABACIAE VIRIDES ET BAIANAE. Fabaciae <milestone unit="section" n="210"/> virides ex liquamine, oleo, coriandro viridi, cumino et porro conciso coctae inferuntur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter: fabaciae frictae ex liquamine inferuntur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter: fabaciae ex sinapi trito, melle, nucleis, ruta, cumino et aceto inferuntur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Baianas elixas minutatim concidis. ruta, apio viridi,  porro, aceto, oleo, liquamine, caroeno vel passo modico inferes. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>FAENVM GRAECVM. Faenum graecum ex liquamine, <milestone unit="section" n="211"/> oleo et vino. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>FASEOLI ET CICER. virides et cicer ex sale, cumino, oleo et mero modico inferuntur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter faseolus sive cicer: frictos ex oenogaro et pipere gustabis. et elixati, sumpto semine cum ovis, in patella feniculo viridi, pipere, liquamine et caroeno modico pro salso inferuntur, vel simpliciter, ut solet. </p></div>
+</div>
+</div>
+<div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="212"/> IN STRVTHIONE. In struthione elixo: piper, mentam, cuminum assum, apii semen, dactylos vel caryotas, mel, acetum, passum, liquamen et oleum modice.  et in caccabo facies ut bulliat. amulo obligas, et sic partes struthionis in lance perfundis, et desuper piper aspargis si autem in condituram coquere volueris, alicam addis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p> Aliter <add>in</add> struthione elixo: piper, ligusticum, thymum aut satureiam, mel, sinape, acetum, liquamen et oleum.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="213"/> IN GRVE VEL ANATE PERDICE TVRTVRE PALVMBO COLVMBO ET DIVERSIS AVIBVS. Gruem vel anatem lavas et ornas et includis in olla. adicies aquam, salem, anethum, dimidia coctura decoques, dum obduretur, levas et iterum in caccabum mittis cum oleo et liquamine, cum fasciculo origani et coriandri. prope cocturam defritum modice mittis, ut coloret. teres piper, ligusticum, cuminum, coriandrum, laseris radicem, rutam, caroenum, mel, suffundis ius de suo sibi, aceto temperas. in caccabo reexinanies ut calefiat, amulo obligabis. imponis <milestone unit="section" n="214"/>  in lance et ius perfundis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>In grue <add>vel</add> in anate vel in pullo: piper, cepam siccam, ligusticum, cuminum, apii semen, pruna <del>uel</del> Damascena enucleata, mulsum, acetumi <milestone unit="section" n="215"/> liquamen, defritum, oleum et coques gruem. cum coquis, caput eius aqua quam non contingat, sed sit foris ab aqua. cum cocta fuerit, de sabano calido involves gruem et caput eius trahe: cum nervis sequetur, ut pulpae vel <pb facs="apicapic_412927675_0045"/>ossa remaneant; cum nervis enim manducare non potes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Gruem vel anatem ex rapis: lavas, ornas et in olla <milestone unit="section" n="216"/> elixabis cum aqua, sale et anetho dimidia coctura. rapas coque, ut exbromari possint. levabis de olla, et iterum lavabis, et in caccabum mittis anatem cum oleo et liquamine et fasciculo porri et coriandri. rapam lotam et minutatim concisam desuper mittis, facies ut coquatur. modica coctura mittis defritum ut coloret. ius tale parabis: piper, cuminum, coriandrum, laseris radicem, suffundis acetum et ius de suo sibi, reexinanies super anatem ut ferveat. cum ferbuerit, amulo obligabis, et super rapas adicies. piper aspargis et adponis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter in gruem vel anatem  <milestone unit="section" n="217"/> elixam: piper, ligusticum, cuminum, coriandrum siccum, mentam, origanum, nucleos, caryotam, liquamen, oleum, mel, sinape et vinum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter gruem vel anatem <milestone unit="section" n="218"/> assam: eas de hoc iure perfundis: teres piper, ligusticum, origanum, liquamen, mel, aceti modicum et olei. ferveat bene. mittis amulum et supra ius rotulas cucurbitae elixae vel colocasiae ut bulliunt. si sunt, et ungellas coques et iecinera pullorum. in boletari piper minutum aspargis et  inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Aliter in grue vel anate elixa: piper, ligusticum, <milestone unit="section" n="219"/> apii semen, erucam vel coriandrum, mentam, caryotam, mel, acetum, liquamen, detritum et sinape. idem facies et si in caccabo assas. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>IN PERDICE ET ATTAGENA ET IN TVRTVRE ELIXIS. <add>In perdice</add>: piper, ligusticum, apii semen, <milestone unit="section" n="220"/> mentam, myrtae bacas vel uvam passam, mel, vinum, acetum, liquamen et oleum. uteris frigido. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p><add>Aliter</add> perdicem: <milestone unit="section" n="221"/> cum pluma sua elixabis et madefactam depilabis. <del>perdices coctura</del>. occisa perdix potest ex iure coqui, ne <pb facs="apicapic_412927675_0046"/>
+</p>
+</div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p><milestone unit="section" n="222"/> indurescat; si <sic>dierum</sic> fuerit, elixa coqui debet. In perdice et attagena et in turture: piper, ligusticum, mentam, rutae semen, liquamen, merum et oleum. calefacies. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="223"/> IN PALVMBIS COLVMBIS <del>auibus in altile et in fenicoptero</del> In assis: piper, ligusticum, coriandrum, careum, cepam siccam, mentam, ovi vitellum, <milestone unit="section" n="224"/> caryotam, mel, acetum, liquamen, oleum et vinum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter <add>in</add> elixis: piper, careum, apii semen, petroselinum,  condimenta moretaria, caryotam, mel, acetum, vinum. <milestone unit="section" n="225"/>  oleum et sinape. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter: piper, ligusticum, petroselinum, apii semen, rutam, nucleos, caryotam, mel, acetum, liquamen, <milestone unit="section" n="226"/> sinape et oleum modice. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter: Piper, ligusticum, laser vivum, suffundis liquamen, vino et liquamine temperabis, et mittis super columbum vel palumbum. pipere aspersum inferes.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="227"/> IVS IN DIVERSIS AVIBVS. Piper, cuminum frictum, ligusticum, mentam, uvam passam enucleatam aut Damascena, mel modice. vino myrteo temperabis, aceto, liquamine et oleo. calefacies et agitabis apio et satureia. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p><milestone unit="section" n="228"/>  Aliter ius in avibus: piper, petroselinum, ligusticum mentam siccam, cneci flos, vino suffundis, adicies Ponticam vel amygdala tosta, mel modicum <add>cum</add> vino et aceto, liquamine temperabis. oleum in pultarium super  ius mittis, calefacies, ius agitabis apio viridi et nepeta. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p><milestone unit="section" n="229"/>  incarxas et perfundis. Ius candidum in avem elixam: piper, ligusticum, cuminum, apii semen, Ponticam vel amygdala tosta vel nuces depellatas, mel modicum, liquamen, acetum et oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Ius viride in avibus: piper, <pb facs="apicapic_412927675_0047"/>careum, spicam Indicam, cuminum, folium, condimenta viridia omne genus, dactylum, mel, acetum, vinum modice, liquamen et oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Ius candidum in ansere elixo: <milestone unit="section" n="231"/> piper, careum, cuminum, apii semen, thymum, cepam, laseris radicem, nucleos tostos, mel, acetum, liquamen et oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Ad aves hircosas omni genere: piper, ligusticum, <milestone unit="section" n="232"/> thymum, mentam aridam, calvam, caryotam, mel, acetum, vinum, liquamen, oleum, defritum, sinape. avem sapidiorem et altiliorem facies et ei pinguedinem servabis, si eam farina oleo subacta contextam in furnum miseris. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Aliter avem: in ventrem eius fractas olivas novas mittis <milestone unit="section" n="233"/>  et consutam sic elixabis. deinde coctas olivas eximes. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>IN PHOENICOPTERO. Phoenicopterum eliberas, lavas, ornas, includis in caccabum, adicies aquam, salem, anethum et aceti modicum. dimidia coctura alligas fasciculum porri et coriandri, et coquatur. prope cocturam defritum mittis, coloras. adicies in mortarium piper, cuminum, coriandrum, laseris radicem, mentam, rutam, fricabis, suffundis acetum, adicies caryotam, ius de suo sibi perfundis. reexinanies in eundem caccabum, amulo obligas, ius perfundis et inferes. idem facies et in psittaco. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter: assas avem, teres piper, ligusticum, apii semen, sesamum frictum, petroselinum, mentam, cepam siccam, caryotam; melle, vino, liquamine, aceto, oleo et defrito temperabis. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>AVES OMNES NE LIQVESCANT: cum plumis <milestone unit="section" n="236"/> elixare omnibus melius erit. prius tamen exenterantur per guttur vel a navi <sic>as</sic> sublata. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><add>IN ANSERE.</add> Anserem elixum calidum ex iure frigido Apiciano: teres piper, ligusticum, coriandri semen, mentam, rutam, refundis liquamen et oleum modice, temperas. anserem elixum ferventem sabano mundo exsiccabis, ius perfundis et inferes. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="238"/> <add>IN PVLLO.</add> In pullo elixo ius crudum: adicies in mortarium anethi semen, mentam siccam, laseris radicem, suffundis acetum, adicies caryotam, refundis li*quamen, sinapis modicum et oleo <add>et</add> defrito temperas <milestone unit="section" n="239"/> et sic mittis. pullum anethatum mellis modico <add>et</add> liquamine temperabis. levas pullum coctum et sabano mundo siccas, caraxas et ius scissuris infundis, ut combibat, et cum combiberit, assabis et suo sibi iure penitus tangis. <milestone unit="section" n="240"/>  pipere aspersum inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Pullum Parthicum: pullum aperies a navi et in quadrato ornas. teres piper, ligusticum, carei modicum; suffunde liquamen; vino temperas. componis in Cumana pullum et condituram super pullum facies. laser <del>et</del> vivum in tepida dissolvis, et in pullum mittis simul, et coques. pipere aspersum inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Pullum oxyzomum: olei acetabulum maius, <add>laseris</add> satis modice, liquaminis acetabulum minus, aceti acetabulum perquam minus, piperis scripulos sex, petroselini scripulum, <milestone unit="section" n="242"/> porri fasciculum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Pullum Numidicum: pullum curas, elixas, lavas, lasere ac pipere <add>aspergis</add> et assas. teres  piper, cuminum, coriandri semen, laseris radicem, rutam, caryotam, nucleos, suffundis acetum, mel, liquamen et oleum, temperabis. cum ferbuerit, amulo obligas, pullum <milestone unit="section" n="243"/> perfundis, piper aspergis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Pullum laseratum: pullum aperies a navi, lavabis, ornabis et <add>in</add> Cumana ponis. teres piper, ligusticum, laser vivum, suffundis <pb facs="apicapic_412927675_0049"/> liquamen, vino et liquamine temperabis, et mittis pullo. coctus si fuerit, pipere aspersum inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Pullum paroptum: <milestone unit="section" n="244"/> laseris modicum, piperis scripulos sex, olei acetabulum, liquaminis acetabulum, petroselini modice. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Pullum <milestone unit="section" n="245"/> elixum ex iure suo: teres piper, cuminum, thymi modicum, feniculi semen, mentam, rutam, laseris radicem, suffundis acetum, adicies caryotam et teres; melle, aceto, liquamine et oleo temperabis <add>et in</add> pullum refrigeratum et siccatum mittis; quem perfusum inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>Pullum  <milestone unit="section" n="246"/> elixum cum cucurbitis elixis: iure supra scripto, addito sinapi, perfundis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<p>Pullum elixum cum  <milestone unit="section" n="247"/> colocasiis elixis: supra scripto iure perfundis et imeres. <add>idem</add> facis et in elixum cum olivis columbadibus . . . . .  </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<p>non valde, ita ut laxamentum habeat, ne dissiliat <milestone unit="section" n="248"/> dum coquitur in olla, submissus in sportella. cum bullierit, frequenter levas et ponis ne dissiliat. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="11">
+<p>Pullus Vardanus:  <milestone unit="section" n="249"/> pullum coques iure hoc: liquamine, oleo, vino, <add>cui mittis</add> fasciculum porri, coriandri, satureiae. cum coctus fuerit, teres piper, nucleos, <add>adicies liquaminis</add> cyathos duos et ius de suo sibi suffundis et fasciculos proicies. lacte temperas, et reexinanies mortarium supra pullum, ut ferveat. obligas eundem albamentis ovorum tritis, ponis in lance et iure supra scripto perfundis. hoc ius candidum appellatur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="12">
+<p>Pullum Frontonianum: pullum praedura, condies liquamine, oleo mixto, cui mittis fasciculum anethi, porri, satureiae et coriandri viridis, et coques. ubi coctus fuerit, levabis eum, in lance defrito perunges, piper asparvis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="13">
+<p>Pullus tractogalatus: pullum coques <milestone unit="section" n="251"/> <pb facs="apicapic_412927675_0050"/>liquamine, oleo, viro, cui mittis fasciculum coriandri, cepam. deinde, cum coctus fuerit, levabis eum de iure suo et mittis in caccabum novum lac et salem modicum, mel et aquae minimum, id est tertiam partem. ponis ad ignem lentum ut tepescat, tractum confringis et mittis paulatim, assidue agitas, ne uratur. pullum illic mittis integrum vel carptum, versabis in lancem, perfundis ius tale: piper, ligusticum, origanum, suffundis mel et defritum modicum, et ius de suo sibi, temperas. in caccabulo facies ut bulliat. <milestone unit="section" n="252"/>  cum bullierit, amulo obligas et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="14">
+<p>Pullus farsilis: pullum sicuti liquaminatum a cervice expedies. teres piper, ligusticum, zingiber, pulpam caesam, alicam elixam, teres cerebellum ex iure coctum, ova confringis et commisces, ut unum corpus efficias. liquamine temperas et oleum modice mittis, piper integrum, nucleos abundanter. fac impensam et imples pullum vel porcellum, ita ut laxamentum habeat. similiter in capo facies. ossibus eiectis <milestone unit="section" n="254"/>  coques. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="15">
+<p>Pullus leucozomus: accipies pullum et ornas ut supra. aperies illum a pectore. accipiat aquam et oleum Hispanum abundans. agitatur ut ex se amulet et humorem consumat. postea, cum coctus fuerit, quodcumque porro remanserit inde levas. piper aspargis et inferes. </p></div>
+</div>
+</div>
+<div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>VVLVAE STERILES, CALLVM, LIBELLI, COTICVLAE ET VNGELLAE. Vulvae steriles: lasere Cyrenaico vel Parthico, aceto et liquamine temperato appones. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>In vulva <del>et</del> sterili: piper, apii semen, mentam siccam, laseris radicem, mel, acetum et liquamen. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Vulvae <del>et</del> steriles: pipere et liquamine, cum lasere Parthico apponis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Vulvae steriles: pipere, liquamine et condito modico apponis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Callum, libelli, coticulae,  <milestone unit="section" n="259"/> ungellae: cum pipere, liquamine, lasere apponis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Vulvam <milestone unit="section" n="260"/> ut tostam facias, in cantabro involve et postea in muriam mitte et sic coque. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>SVMEN. Sumen elixas, de cannis surclas, sale <milestone unit="section" n="261"/> aspargis et in furnum mittis vel in craticulam. subassas. teres piper, ligusticum, liquamen, mero et passo <add>temperabis</add>, amulo obligas et sumen perfundis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Sumen plenum: <milestone unit="section" n="262"/> teritur piper, careum, echinus salsus. consuitur et sic coquitur. manducatur cum allece <add>et</add> sinapi. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>FICATVM. In ficato oenogarum: piper, thymum, <milestone unit="section" n="263"/>  ligusticum, liquamen, vinum modice, oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter: <milestone unit="section" n="264"/> <pb facs="apicapic_412927675_0052"/>ficatum praecidis ad cannam, infundis in liquamine. <add>teres</add> piper, ligusticum, bacas lauri duas. involves in omento et in craticula assas et inferes.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="265"/>OFELLAE. Ofellas Ostienses. <del>in ofillam</del> designas ofellas in cute, ita ut cutis sic remaneat. teres piper, ligusticum, anethum, cuminum, silfium, bacam lauri unam, suffundis liquamen, fricas, in angularem refundis simul cum ofellis. ubi requieverint in condimentis biduo vel triduo, promis, surclas decussatim, et in furnum mittis. cum coxeris, ofellas, quas designaveras, separabis et teres piper, ligusticum, suffundis liquamen et passum modicum, ut dulce fiat. cum ferbuerit, ius amulo obligas. ofellas <milestone unit="section" n="256"/>  satias et, inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Ofellas Apicianas: ofellas exossas, in rotundum complicas, surclas, ad furnum admoves. postea praeduras, levas et, <add>ut</add> humorem exspuant, in craticula igni lento exsiccabis, ita ne urantur. teres piper, ligusticum, cyperi, cuminum; liquamine et passo temperabis. cum hoc iure ofellas in caccabum mittis. cum coctae fuerint, levas et siccas, sine iure, pipere asperso, et inferes. si pinx) gues fuerint, cum surclas, tollis cutem. potes et de abdomine huiusmodi ofellas facere. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Ofellae aprugineo more: ex oleo <add>et</add> liquamine condiuntur, et mittitur eis condimentum, cum coctae fuerint. et super adicitur his, cum in foco sunt, conditura, et denuo bulliunt. piper tritum, condimentum, mel, liquamen, amulum, cum iam bulliunt. et sine liquamine et oleo elixantur, coquuntur et sic pipere perfunduntur. <add>mittis</add> ius supra scriptum, et sic bulliunt. <milestone unit="section" n="208"/> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter ofellae: recte friguntur ut paene assae reddantur.:Liquaminis sumis cyathum, aquae cyathum, aceti cyathum, olei cyathum. simul mixtis et immissis in patellam <pb facs="apicapic_412927675_0053"/>fictilem, frigis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter ofellas: in sartagine <milestone unit="section" n="269"/> abundanti oenogaro. piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Aliter ofellas: ofellae prius sale et cumino infusae in aquam recte friguntur. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>ASSATVRAE. Assaturam: assam a furno simplicem salis. plurimo conspersam cum melle inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter assaturas: petroselini scripulos Vl, asareos scripulos VI, zingiberis scripulos VI, lauri bacas V, condimenti <add>satis</add>, laseris radicis scripulos VI, origani scripulos VI, cyperis scripulos VI, costi modice, pyrethri scripulos III, apii seminis scripulos VI, piperis scripulos XII, liquaminis et olei quod sufficit. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter assaturas: myrtae <milestone unit="section" n="273"/> siccae bacam exenteratam cum cumino, pipere, melle, liquamine, defrito et oleo teres, et fervefactum amulas. carnem elixam sale subassatam perfundis, piper aspargis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter assaturas: piperis scripulos VI, ligustici <milestone unit="section" n="274"/> scripulos VI, petroselini scripulos VI, apii seminis scripulos VI, anethi scripulos VI, laseris radicis scripulos VI, asareos scripulos VI, pyrethri modice, cyperis scripulos VI, carei scripulos VI, cumini scripulos VI, zingiberis scripulos VI, liquaminis heminam, olei acetabulum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Assaturae in collari: elixatur et infunditur in fretali piper, condimentum, mel, liquamen, et attorretur in clibano quousque coquatur. elixum vero collare, si voles, sine conditura assas, et siccum calidum perfundis.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>IN ELIXAM ET COPADIA. Ius in elixam omnem: piper, ligusticum, origanum, rutam, silfium, cepam siccam, vinum, caroenum, mel, acetum, olei modicum. persiccatam et sabano expressam elixam perfundis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>lus in elixam: piper, petroselinum, liquamen, acetum, caryotam, cepulam, olei modicum. perfundis calido iure. <pb facs="apicapic_412927675_0054"/>
+</p>
+</div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Ius in elixam: teres piper, rutam aridam, feniculi semen, cepam, caryotam, liquamen et oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Ius candidum in elixam: piper, liquamen, vinum, rutam, cepam, nucleos, conditum, modicum de buccellis maceratis unde stringat, <milestone unit="section" n="279"/> oleum. cum coxerit, ius perfundis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter iuscandidum in elixam: piper, careum, ligusticum, thymum, origanum, cepulam, dactylum, mel, acetum, liquamen, oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p><milestone unit="section" n="280"/> In copadiis ius album: piper, cuminum, ligusticum, rutae semen, Damascena. infundis vinum, oenomeli et aceto <milestone unit="section" n="281"/> temperabis. <add>agitabis</add> thymo et origano. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Aliter ius candidum in copadiis: piper, thymum, cuminum, apii semen, feniculum, mentam, bacam myrtae, uvam passam. <milestone unit="section" n="282"/> mulso temperas. agitabis ramo satureiae. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>Ius in copadiis: piper, ligusticum, careum, mentam, nardostachyum, ovi vitellum, mel, mulsam, acetum, liquamen et <milestone unit="section" n="283"/> oleum. agitabis satureia et porro, amulabis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<p>Ius album in copadiis: piper, ligusticum, cuminum, apii semen, thymum, nucleos infusos, nuces infusas et purgatas, mel, <milestone unit="section" n="284"/> acetum, liquamen et oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<p>Ius in copadiis: piper, apii  semen, careum, satureiam, cneci flos, cepulam, amygdala tosta, caryotam, liquamen, oleum, sinapis modicum. defrito coloras. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="11">
+<p>Ius in copadiis: piper, ligusticum, petroselinum, cepulam, amygdala tosta, dactylum, mel, acetum, <milestone unit="section" n="286"/> liquamen, defritum, oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="12">
+<p>Ius in copadiis: ova dura concidis, piper, cuminum, petroselinum, porrum coctum, myrtae bacas, plusculum mel, acetum, liquamen, <milestone unit="section" n="287"/> oleum, </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="13">
+<p><add>Ius</add> in elixam anethatum crudum: piper, anethi semen, mentam siccam, laseris radicem, suffundis acetum, adicies caryotam, mel, liquamen, sinapis modicum, defrito <add>et</add> oleo temperabis. et hoc in collari porcino. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="14">
+<p><milestone unit="section" n="288"/> Ius in elixam allecatum: piper, ligusticum, careum, apii semen, thymum, cepulam, dactylum, allecem colatum; <pb facs="apicapic_412927675_0055"/>melle et vino temperas; apium viridem concisum super aspargis, oleum mittis et inferes.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>VENTRICVLA. Ventrem porcinum bene <milestone unit="section" n="289"/> exinanies, aceto et sale, postea aqua lavas, et sic hac impensa imples: pulpam porcinam tunsam tritam, ita ut enervata commisceas cerebella tria et ova cruda, cui nucleos infundis et piper integrum mittis et hoc iure temperas. teres piper, ligusticum, silfium, anesum, zingiber, rutae modicum, liquamen optimum et olei modicum. reples aqualiculum sic ut laxamentum habeat, ne dissiliat in coctura. surclas, amulas et in ollam bullientem summittis. levas et pungis acu, ne crepet. cum ad dimidias coctus fuerit, levas et ad fumum suspendis ut coloretur. et denuo eum perelixabis, ut coqui possit, deinde liquamine, mero, oleo modico <add>temperabis</add>, et cultello aperies et cum liquamine <milestone unit="section" n="290"/> et ligustico apponis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Ventrem ut tostum facias, in <milestone unit="section" n="291"/> cantabro involve, postea in muriam mittis et sic coque. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>LVMBI ET RENES. Lumbuli assi ita fiunt: <milestone unit="section" n="292"/> aperiuntur in duas partes ita ut expansi sint, et aspergitur eis piper tritum, nuclei et coriandrum concisum, minutatim factum et semen feniculi tritum. deinde lumbuli recluduntur <del>assi</del> et consuuntur et involvuntur omento et sic praedurantur in oleo et liquamine, inde assantur in clibano vel craticula. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>PERNA. Pernam, ubi eam cum Caricis plurimis <milestone unit="section" n="293"/> elixaveris et tribus lauri foliis, detracta cute tessellatim incides et melle complebis. deinde farinam oleo subactam contexes et ei corium reddis. et, cum farina cocta fuerit, eximas furno et ut est inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Pernae cocturam: <milestone unit="section" n="294"/> ex aqua cum Caricis cocta simpliciter, ut solet, in <pb facs="apicapic_412927675_0056"/>lata cum buccellis, caroeno vel condito. melius, si cum musteis.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="295"/> PETASONEM EX MVSTEIS: petasonem elixas cum bilibri hordei et Caricis XXV. cum elixatus fuerit, decarnas et arvillam illius candenti vatillo uris et melle contingis. quod melius, missum in furnum, melle obligas. cum coloraverit, mittis in caccabum passum, piper, fasciculum rutae, merum, temperas. cum fuerit temperatum, dimidium in petasonem profundis et alia parte piperati buccellas musteorum factas perfundis. cum sorbuerint, quod mustei recusaverint, petasoni refundis.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="11">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="296"/> LARIDI COCTVRA: Tectum aqua cum multo anetho coques, oleum modicum destillabis et modicum salis.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="12">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="297"/> IECINORA SIVE PVLMONES. Iecinera haeisdina vel agnina sic coques: aquam mulsam facies, et ova <add>et</add> partem lactis admisces eis ut incisa iecinera sorbeant, coques ex oenogaro, pipere asperso, et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter <del>iecinera</del> in pulmonibus: ex lacte lavas pulmones et colas quod capere possunt, et confringis ova duo cruda, salis grana pauca, mellis ligulam, et simul commisces et imples pulmones. elixas et concidis. teres piper, suffundis liquamen, passum, merum. pulmones confringis et hoc oenogaro perfundis.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="13">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="300"/> DVLCIA DOMESTICA ET MELCAE. Dulcia domestica: palmulas vel dactylos excepto semine, nuce vel nucleis vel pipere trito infercies. sale foris contingis, <milestone unit="section" n="301"/> frigis in melle cocto, et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter dulcia: musteos Atros optimos rades et in lacte infundis. cum biberint, in <pb facs="apicapic_412927675_0057"/>furnum mittis, ne arescant, modice. eximes eos calidos, melle perfundis, compungis ut bibant. piper aspergis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter dulcia: siligineos rasos frangis, et buccellas <milestone unit="section" n="302"/>  maiores facies. in lacte infundis, frigia, ex <del>in</del> oleo, mel superfundis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p><add>Aliter</add> dulcia: piperato <milestone unit="section" n="303"/> mittis mel, merum, passum, rutam. eo mittis nucleos, nuces, alicam elixatam. concisas nuces Abellanas tostas adicies, et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter dulcia: piper, nucleos, mel, <milestone unit="section" n="304"/> rutam et passum teres, cum lacte et tracta coques. coagulum coque cum modicis ovis. perfusum melle, aspersum <add>pipere</add> inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Aliter dulcia: accipies similam, coques <milestone unit="section" n="305"/>  <del>et</del> in aqua calida, ita ut durissimam pultem facias, deinde in patellam expandis. cum refrixerit, concidis quasi <add>ad</add> dulcia et frigis in oleo optimo. levas, perfundis mel, piper aspergis et inferes. melius feceris, si lac pro aqua miseris. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Tyropatinam: accipies lac, quod adversus patinam aestimabis, temperabis lac cum melle quasi ad lactantia, ova quinque ad sextarium mittis, si ad heminani, ova tria. in lacte dissolvis ita ut unum corpus facias, in Cumana colas et igni lento coques. cum duxerit ad se, piper aspargis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>Ova spongia ex lacte: ova quattuor, lactis heminam, olei unciam in se dissolvis, ita ut unum corpus facias. in patellam subtilem adicies olei modicum, facies ut bulliat, et adicies impensam quam parasti. una parte cum fuerit coctum, in disco vertes, melle perfundis, piper aspargis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<p>Melca. .... stum <milestone unit="section" n="308"/> pipere et liquamine, vel sale, oleo et coriandro. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="14">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="309"/> BVLBOS. Bulbos oleo, liquamine, aceto inferes, modico cumino asperso. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter: bulbos tundes atque ex aqua coques, deinde oleo frigis. ius sic facies: thymum, puleium, piper, origanum, mel, acetum modice et, si placet, et modice liquamen. piper aspargis et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p><milestone unit="section" n="310"/> Aliter: bulbos elixas in pultarium pressos, mittis thymum, origanum, mel, acetum, defritum, caryotam, liqamen <milestone unit="section" n="32"/>  et oleum modice. piper aspargis et inferes. <del>Varro: <quote>si quid de bulbis, dixi: <q>in aqua, qui Veneris ostium quaerunt</q>, deinde ut legitimis nuptiis in cena ponuntur, sed et cum nucleis pineis aut cum erucae suco et pipere</quote></del>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p><milestone unit="section" n="312"/> Aliter. bulbos frictos: oenogaro inferes.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="15">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="313"/> XV. FVNGI FARNEI VEL BOLETI. Fungi farnei: elixi, calidi, exsiccati oenogaro pipere accipiuntur, <milestone unit="section" n="314"/> ita ut piper cum liquamine teras. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>In fungis farneis: <milestone unit="section" n="315"/> piper, caroenum, acetum et oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter fungi farnei: elixi ex sale, oleo, mero, coriandro conciso inferuntur. <milestone unit="section" n="316"/> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Boletos fungos: caroenum, fasciculum coriandri viridis. ubi ferbuerint, exempto fasciculo inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Boletos aliter: calyculos eorum liquamine vel sale aspersos inferunt. Boletos aliter: thyrsos eorum concisos in patellam novam perfundis, addito pipere, ligustico, modico melle. liquamine temperabis. oleum modice.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="16">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="319"/> TVBERA. Tubera radis, elixas, sale aspergis, et surculo infiges. subassas, et mittes in caccabum oleum, liquamen, caroenum, vinum, piper et mel. cum ferbuerit, <milestone unit="section" n="320"/> amulo obligas. tubera exornas et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter tubera: elixas et, asperso sale, in surculis adfigis et subassas. et mittes in caccabum liquamen, oleum viride, <pb facs="apicapic_412927675_0059"/>caroenum, vinum modice et piper confractum et mellis modicum, et ferveat. cum ferbuerit, amulo obligas, et tubera compunges, ut combibant illud. exornas. cum bene sorbuerint, inferes, si volueris, eadem tubera omento porcino involves et assabis et sic inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter tubera: <milestone unit="section" n="321"/> oenogarum, piper, ligusticum, coriandrum, rutam, liquamen, mel, vinum, oleum modice. calefacies. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter tubera: piper, mentam, rutam, mel, oleum, vinum modicum. calefacies et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter tubera: elixa cum porro, <milestone unit="section" n="323"/> deinde sale, pipere, coriandro conciso, mero, oleo modico inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Aliter tubera: piper, cuminum, silfi, mentam, <milestone unit="section" n="324"/> apium, rutam, mel, acetum vel vinum, salem vel liquamen et oleum modice.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="17">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>IN COLOCASIO. In colocasio: piper, cuminum, <milestone unit="section" n="325"/> rutam, mel, liquamen, olei modicum. cum ferbuerit, amulo obligas.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="18">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>COCLEAS. Cocleas lacte pastas: accipies <milestone unit="section" n="326"/> cocleas, spongizabis, membranam tolles, ut possint prodire. adicies in vas lac et salem uno die, ceteris diebus <del>in</del> lac per se, et omni hora mundabis stercus. cum pastae fuerint, ut non possint se retrahere, ex oleo friges. mittes oenogarum. similiter et pulpa pasci possunt. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Cocleas: <milestone unit="section" n="327"/> sale puro et oleo assabis cocleas: lasere, liquamine, pipere, oleo suffundis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Cocleas assas: liquamine, pipere, cumino, suffundis assidue. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter cocleas: viventes in <milestone unit="section" n="328"/> lac siligineum infundes: ubi pastae fuerint, coques. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="19">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>OVA. Ova frixa: oenogarata: </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Ova elixa: <milestone unit="section" n="329"/> liquamine, oleo, mero vel ex liquamine, pipere, lasere. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>In ovis hapalis: piper, ligusticum, nucleos infusos. suifundes mel, acetum: liquamine temperabis. </p></div>
+</div>
+</div>
+<div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="330"/> IN APRO. Aper ita conditur: Spongiatur, et sic aspergitur ei sal et cuminum frictum, et sic manet. alia die mittitur in furnum. cum coctus fuerit, perfunditur piper tritum, <del>condimentum aprunum</del> mel, liquamen, caroenum et passum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter in apro: aqua marina cum ramulis lauri aprum elixas quousque madescat. corium ei <milestone unit="section" n="332"/> tolles. cum sale, sinapi, aceto inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter in apro: teres piper, ligusticum, origanum, bacas myrtae exenJoteratas, coriandrum, cepas, suffundes mel, vinum, liquamen, oleum modice, calefacies, amulo obligas. aprum in furno coctum perfundes. hoc et in omne genus carnis <milestone unit="section" n="333"/> ferinae facies. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>In aprum assum iura ferventia facies sic: piper, cuminum frictum, apii semen, mentam, thymum, satureiam, cneci flos, nucleos tostos vel amygdala tosta, mel, vinum, liquamen, acetum, oleum modice. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p><milestone unit="section" n="334"/> Aliter in aprum assum iura ferventia: piper, ligusticum, apii semen, mentam, thymum, nucleos tostos, vinum, acetum, liquamen et oleum modice. cum ius simplex bullierit, tunc triturae globum mittes et agitas cepae et rutae fasciculo. si volueris pinguius facere, obligas ius albo ovorum liquido, moves paulatim, aspergis piper tritum et <milestone unit="section" n="335"/> inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Ius in aprum elixum: piper, ligusticum, cuminum, silfi, origanum, nucleos, caryotam, mel, sinape, acetum, <milestone unit="section" n="336"/>  liquamen et oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Ius frigidum in aprum elixum: piper, careum, ligusticum, coriandri semen frictum, anethi semen, apii semen, thymum, origanum, cepulam, <milestone unit="section" n="337"/> mel, acetum, sinape, liquamen, oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>Aliter ius fri <pb facs="apicapic_412927675_0061"/>gidum in aprum elixum: piper, ligusticum, cuminum, anethi semen et thymum, origanum, silfi modicum, erucae semen plusculum, suffundes merum, condimenta viridia modica, cepam, Ponticas vel amygdala fricta, dactylum, mel, acetum, merum modicum, colorus defrito, liquamen, oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<p>Aliter <add>ius</add> in apro: teres piper, ligusticum, origanum, apii semen, laseris radicem, cuminum, feniculi semen, rutam, liquamen, vinum, passum. facies ut ferveat. cum ferbuerit, amulo obligas. aprum intro foras <add>tanges</add> et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<p>Perna apruna ita impletur Terentina: per articulum pernae palum mittes ita ut cutem a carne separes, ut possit condimentum accipere per cornulum et universa impleatur. teres piper, bacam lauri, rutam; si volueris, laser adicies, liquamen optimum, caroenum et olei viridis guttas. cum impleta fuerit, constringitur illa pars, qua impleta est, ex lino et mittitur in zemam. elixatur in aqua marina cum lauri turionibus et anetho. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>IN CERVO. Ius in cervum: teres piper, ligusticum, careum, origanum, apii semen, laseris radicem, feniculi semen, fricabis, suffundes liquamen, vinum, passum, oleum modice. cum ferbuerit, amulo obligas. cervum coctum intro foras tanges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>In platonem similiter <milestone unit="section" n="342"/> et in omne genus venationis eadem conditura uteris. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter: cervum elixabis et subassabis. teres piper, ligusticum, <milestone unit="section" n="343"/> careum, apii semen, suffundes mel, acetum, liquamen, oleum. calefactum amulo obligas et carnem perfundes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Ius in cervo: piper, ligusticum, cepulam, origanum, <milestone unit="section" n="344"/>  nucleos, caryotas, mel, liquamen, sinape, acetum, oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Cervinae conditura: piper, cuminum, condimentum, <milestone unit="section" n="345"/> petroselinum, cepam, rutam, mel, liquamen, mentam, passum, caroenum et oleum modice. amulo obligas, cum iam bulliit. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Iura ferventia in cervo: piper, ligusticum, <milestone unit="section" n="346"/> petroselinum, cuminum, nucleos tostos aut <pb facs="apicapic_412927675_0062"/>amygdala. suffundes mel, acetum, vinum, oleum modice, <milestone unit="section" n="347"/> liquamen, et agitabis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Embamma in cervinam assam: piper, nardostachyum, folium, apii semen, cepam aridam, rutam viridem, mel, acetum, liquamen,  <sic>adiectam</sic>, <milestone unit="section" n="348"/> caryotam, uvam passam et oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>Aliter in cervum assum iura ferventia: piper, ligusticum, petroselinum, Damascena macerata, vinum, mel, acetum, liquamen, oleum modice. agitabis porro et satureia.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="349"/> IN CAPREA. Ius in caprea: piper, ligusticum, careum, cuminum, petroselinum, rutae semen, mel, <milestone unit="section" n="350"/> sinape, acetum, liquamen et oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Ius in caprea assa: piper, condimentum, rutam, cepam, mel, liquamen, passum, <milestone unit="section" n="351"/> oleum modice. amulum, <add>cum</add> iam bulliit. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter ius in caprea: piper, condimentum, petroselinum, origanum modicum, rutam, liquamen, mel, passum et olei modicum. amulo obligabis.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="352"/> IN OVIFERO <del>hoc est ovis silvatica</del>. Ius in ovifero fervens: piper, ligusticum, cuminum, mentam siccam, thymum, silfi, suffundes vinum, adicies Damascena macerata, mel, vinum, liquamen, acetum, passum ad colorem, oleum. agitabis fasciculo origani et mentae siccae. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p><milestone unit="section" n="353"/> Ius in venationibus omnibus elixis et assis: piperis scripulos VIII, rutam, ligusticum, apii semen, iuniperum, thymum, mentam aridam scripulos senos, pulei scri:;pulos III. haec omnia ad levissimum pulverem rediges et in uno commisces et teres. adicies in vasculum mel quod <milestone unit="section" n="354"/> satis erit, et his uteris cum oxygaro. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Ius frigidum in ovifero: piper, ligusticum, thymum, cuminum frictum, nucleos tostos, mel, acetum, liquamen et oleum. piper asperges.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="355"/> BVBVLA SIVE VITELLINA. Vitellina fricta. piper, ligusticum, apii semen, cuminum, origanum, cepam SicLEER <pb facs="apicapic_412927675_0063"/>cam, uvam passam, mel, acetum, vinum, liquamen, oleum, devitum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Vitulinam sive bubulam cum porris <add>vel</add> Cydoneis velcepis vel colocasiis: liquamen, piper, laser et olei modicum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>In vitulinam elixam: teres piper, ligusticum, careum, apii semen, suffundes mel, acetum, liquamen, oleum. calefacies, amulo obligas et carnem perfundes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter in vitulina elixa: piper, ligusticum, feniculi semen, origanum, nucleos, caryotam, mel, acetum, liquamen, sinapi et oleum. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>IN HAEDO VEL AGNO. Copadia haedina sive agnina: pipere <add>et</add> liquamine coques cum faseolis faratariis, liquamine, pipere, lasere cum  <sic>inbracto</sic>, buccella panis et oleo modico. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter haedinam sive agninam excaldatam: mittes in caccabum copadia. cepam, coriandrum minutatim succides, teres piper, ligusticum, cuminum, liquamen, oleum, vinum. coques, exinanies in patina, amulo obligas. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p><del>Aliter haedinam sive agninam excaldatam</del> <add>agnina</add> a crudo trituram mortario accipere debet, caprina autem cum coquitur accipit trituram. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Haedum sive agnum assum: haedi cocturam <add>cura</add>. ubi eum ex liquamine et oleo coxeris, incisum inTundes in pipere, lasere, liquamine, oleo modice, et in craticula assabis. eodem iure continges. piper asparges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter haedum sive agnum assum: piperis semunciam, asareos scripulos VI, zingiberis modicum, petroselini scripulos VI, laseris modice, liquaminis optimi heminam, olei acetabulum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Haedus sive agnus syringiatus <del>id est  <sic>mammotestus</sic></del>: exossatur diligenter a gula, sic ut uter fiat, et intestina eius integra <pb facs="apicapic_412927675_0064"/>exinaniuntur, ita ut in caput intestina sufflentur, et per novissimam partem stercus exinanibitur. aqua lavantur diligenter et sic implentur admixto liquamine, et ab umeris consuitur et mittitur in clibanum. cum coctus fuerit, perfunditur ius bulliens: lac, piper tritum, liquamen, caroenum, defritum modice, sic et oleum, et iam bullienti mittis amulum. vel certe mittitur in reticulo vel in sportella et diligenter constringitur et bullienti zemae cum modico salis summittitur. cum bene illic tres undas bullierit, levatur, et denuo bullit cum umore supra scripto. bulliente <milestone unit="section" n="365"/> conditura perfunditur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Aliter haedus sive agnus syringiatus: lactis sextarium unum, mellis unc. IV, piperis unc. I, salis modicum, laseris modicum. ius in  <sic>ipsius</sic>: olei acetabulum, liquaminis acetabulum, mellis acetabulum, dactylos tritos octo, vini boni heminam, amulum modice. <milestone unit="section" n="366"/></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>Haedus sive agnus crudus: oleo, pipere fricabis et asparges foris salem purum multo cum coriandri <milestone unit="section" n="367"/> semine. in furnum mittis, assatum inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<p>Haedum sive agnum Tarpeianum: antequam coquatur, ornatus consuitur. piper, rutam, satureiam, cepam, thymum modicum. et liquamine collues haedum, macerabis in furno <add>aut</add> in patella, quae oleum habeat. cum percoxerit, perfundes in patella. impensam, teres satureiam, cepam, rutam, dactylos, liquamen, vinum, caroenum, oleum. cum: bene duxerit <milestone unit="section" n="368"/> impensam, in disco pones, piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<p>Haedumsive agnum Parthicum: mittes in furnum. teres piper, rutam, cepam, satureiam, Damascena enucleata, laseris modicum, vinum, liquamen, et oleum <del>uinum</del>. fervens <milestone unit="section" n="369"/> colluitur in disco, ex aceto sumitur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="11">
+<p>Haedum laureatum ex lacte: haedum curas, exossas, interanea eius <pb facs="apicapic_412927675_0065"/>cum coagulo tolles, lavas. adicies in mortarium piper, ligusticum, laseris radicem, bacas lauri duas, pyrethri modicum, cerebella duo vel tria. haec omnia teres, suffundes liquamen, temperabis ex sale. super trituram colas lactis sextarios duos, mellis ligulas duas. hac impensa intestina reples et super haedum componis in gyro, et omento <add>vel</add> charta cooperis, surclas. in caccabum vel patellam compones haedum, adicies liquamen, oleum, vinum. cum ad mediam cocturam venerit, teres <add>piper</add>, ligusticum, et ius de suo sibi suffundes. mittes defriti modicum, teres, reexinanies in caccabum. cum percoctus fuerit, exornas, amulo obligas et inferes. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>IN PORCELLO. Porcellum farsilem duobus generibus: curas, a gutture exenteras, a cervice ornas. antequam praedures, subaperies auriculam sub cutem, mittes impensam Terentinam in vesicam bubulam et fistulam aviarii rostro vesicae alligabis, per quam exprimes in aurem quantum ceperit. post a charta praecludes et infiblabis et praeparabis aliam impensam. sic facies: teres piper, ligusticum, origanum, laseris radicem modicum, suffundes liquamen, adicies cerebella cocta, ova cruda, alicam coctam, ius de suo sibi, <add>si</add> fuerint, aucellas. nucleos, piper integrum; liquamine temperas. imples porcellum, charta obduras et fiblas. mittes in furnum. cum coctus fuerit, exornas, perunges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter porcellum: Salem, cuminum, laser. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Porcellum liquaminatum: de porcello eicis utriculum, ita ut aliquae pulpae in eo remaneant. teres piper, ligusticum, origanum, suffundes liquamen, adicies unum cerebellum, ova duo, misces in se. porcellum praeduratum imples, fiblabis, in sportella ferventi ollae summittis. cocto fiblas tolles, ut <pb facs="apicapic_412927675_0066"/><milestone unit="section" n="374"/> ius ex ipso manere possit. pipere aspersum inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Porcellum elixum farsilem: de porcello utriculum eicies, praeduras. teres piper, ligusticum, origanum, suffundes liquamen, cerebella cocta quod satis sit, similiter ova dissolves, liquamine temperabis, farcimina cocta integra praecides. sed ante porcellum praeduratum liquamine delavas, deinde imples, infiblas, in sportella ferventi ollae <milestone unit="section" n="375"/> summittes. coctum spongizas, sine pipere inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Porcellum assum tractomelinum: porcellum curatum a gutture exenteras, siccas. teres piperis unciam, mel, vinum, impones ut ferveat, tractam siccatam confringes et partibus caccabo permisces. agitabis surculo lauri viridis, tam diu coques, donec levis fiat et impinguet. hac impensa porcellum imples, surculas, obduras <milestone unit="section" n="376"/> charta, in furnum mittes, exornas et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Porcellum lacte pastum elixum calidum iure frigido crudo Apiciano: adicies in mortarium piper, ligusticum, coriandri semen, mentam, rutam, fricabis, suffundes liquamen, adicies mel, vinum, et liquamine <add>temperabis</add>. porcellum elixum ferventem sabano mundo siccatum perfundes et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Porcellum Vitellianum: porcellum ornas quasi aprum, sale asperges, in furno assas. adicies in mortarium piper, ligusticum, suffundes liquamen, vino et passo temperabis. in caccabo cum olei pusillo ferveat. et porcellum assum iure asperges, ita ut sub <milestone unit="section" n="378"/> cute ius recipiat. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>Porcellum Flaccianum: porcellum ornas in modum apri, sale asperges et in furnum mittes. dum coquitur, adicies in mortarium piper, ligusticum, careum, apii semen, laseris radicem, rutam viridem, frisocabis, suffundes liquamen, vino et passo temperabis. In <pb facs="apicapic_412927675_0067"/>caccabo cum olei modico ferveat. amulo obligas. porcellum cocto ab ossibus tanges, apii semen teres ita ut fiat pulvis, asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<p>Porcellum laureatum: porcellum exossas, quasi oenogaratum ornas, praeduras. laurum viridem in medio franges satis, in furno assas, et mittes in mortarium piper, ligusticum, careum, apii semen, laseris radicem, bacas lauri. fricabis, suffundes liquamen, et vino et passo temperabis. adicies in caccabo cum olei modico, ut ferveat. obligas. porcellum lauro eximes et iure ab ossibus tanges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<p>Porcellum Frontinianum: exossas, praeduras, ornas. adicies in caccabum liquamen, vinum, obligas fasciculum porri, anethi, media coctura mittes defritum. coctum lavas et siccum mittes. piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="11">
+<p>Porcellum aenococtum: porcellum praeduras, ornas; adicies in caccabum oleum, liquamen, vinum, aquam, obligas fasciculum porri, coriandri, media coctura colorabis defrito. adicies in mortarium piper, ligusticum, careum, origanum, apii semen, laseris radicem, fricabis, suffundes liquamen, ius de suo sibi; vino et passo temperabis; exinanies in caccabum, facies ut ferveat. cum ferbuerit, amulo obligas. porcellum compositum in patina perfundes, piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="12">
+<p>Porcellum Celsinianum: ornas, infundes pipere, ruta, cepa, satureia, siculo  <sic>suo</sic>, et ova infundes per auriculam, et ex pipere, liquamine, vino modico in acetabulum temperas, et sumes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="13">
+<p>Porcellum assum: teres piper, rutam, satureiam, cepam, ovorum coctorum media, liquamen, vinum, oleum, conditum. bulliat. conditura porcellum in boletari perfundes et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="14">
+<p>Porcellum hortolanum: porcellus hortolanus exossatur per gulam in modum utris. mittitur in eo pullus isiciatus particulatim concisus, turdi, ficedulae, isicia de pulpa sua, Lucanicae, dactyli exossati, <pb facs="apicapic_412927675_0068"/>fabriles bulbi, cocleae exemptae, malvae, betae, porri, apium, cauliculi elixi, coriandrum, piper integrum, nuclei, ova XV super infunduntur, liquamen piperatum, ova. mittuntur trita. et consuitur et praeduretur. in furno assatur: deinde a dorso scinditur, et iure hoc perfunditur. piper teritur, ruta, liquamen, passum, mel, oleum modicum. cum <milestone unit="section" n="385"/> bullierit, amulum mittitur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="15">
+<p>Ius frigidum in porcellum elixum ita facies: teres piper, careum, anethum, origanum modice, nucleos pineos, suffundes acetum, liquamen, caryotam, mel, sinape factum, superstillabis <milestone unit="section" n="386"/> oleum, piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="16">
+<p>Porcellum Traianum sic facies: exossas porcellum et aptabis sicuti aenococtum et ad fumum suspendes, et adpendeas, et quantum adpendeas, tantum salis in ollam mittes. et elixas ut coquatur, et siccum in lance inferes <add>pro</add> salso recente. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="17">
+<p><milestone unit="section" n="387"/> In porcello lactante: piperis unc. I, vini heminam, olei optimi acetabulum maius, liquaminis acetabulum, aceti acetabulum. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="395"/> LEPOREM. Leporem madidum: in aqua praecoquitur modice, deinde componitur in patin <del>ac</del> coquendus <add>ex</add> oleo in furno, et cum prope sit coctus ex alio oleo. pertangito de conditura infra scripta: teres piper, <add>ligusticum</add>, satureiam, cepam, rutam, apii semen, liquamen, laser, vinum et modice olei. aliquotiens versatur; <milestone unit="section" n="396"/> in ipsa percoquitur conditura. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Item aliam ad eum impensam: cum prope tolli debeat, teres piper, dactylum, laser, uvam passam, caroenum, liquamen, oleum. suffundes, <milestone unit="section" n="397"/> et, cum bullierit, piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Leporem farsum: nucleos integros, amygdala, nuces sive glandes concisas, piperis grana solida, pulpam de ipso lepore. et ovis fractis obligatur, de<add>inde tegitur</add> omento porcino <pb facs="apicapic_412927675_0069"/>in furno: <add>assatur</add>. sic iterum impensam facies: rutam, piper satis, cepam, satureiam, dactylos, liquamen, caroenum vel conditum. diu combulliat donec spisset, et sic perfunditur. sed lepus in piperato liquamine et lasere maneat. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>lus album in assum leporem: piper, ligusticum, cuminum, apii semen, ovi duri medium. trituram colligis et facies globum ex ea. in caccabulo coques liquamen, vinum, oleum, acetum modice, cepulam concisam, postea globulum condimentorum mittes et agitabis origano vel satureia. si opus fuerit, amulas. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter in leporem: exsanguine <milestone unit="section" n="399"/> et iecinere et pulmonibus leporinis minutal: adicies in caccabum liquamen et oleum <add>et</add> cocturam, porrum et coriandrum minutatim concides, iecinera et pulmones in caccabum mittes. cum cocta fuerint, teres piper, cuminum, coriandrum, laseris radicem, mentam, rutam, puleium, suffundes acetum, adicies iecinera leporum et sanguinem, teres. <add>adicies</add> mel et <add>ius</add> de suo sibi, aceto temperabis, exinanies in caccabum, pulmones leporum minutatim concisos in eundem caccabum mittes, facies ut ferveat. cum ferbuerit, amulo obligas, piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Aliter leporem ex suo iure: leporem curas, exossas, ornas, mittes in caccabo, adicies oleum, liquamen, cocturam, fasciculum porri, coriandrum, anethum. dum coquitur, adicies in mortarium piper, ligusticum, cuminum, coriandri semen, laseris radicem, cepam aridam, mentam, rutam, apii semen, fricabis, suffundes liquamen, adicies mel, ius de suo sibi, defrito, aceto temperabis. facies ut ferveat. cum ferbuerit, amulo obligabis. exornas, ius perfundes, <add>piper</add> asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Leporem Passenianum: leporem curas, exossas, extensum ornas, suspendes ad fumum. cum coloraverit, facies ut dimidia coctura coquatur. levas, asperges salem,  <sic>massam</sic> oenogaro tanges, adicies in mortarium piper, ligusticum, fricabis, suffundes liquamen, vino et liquamine temperabis. in caccabum. adi <pb facs="apicapic_412927675_0070"/>cies oleum modicum, facies ut ferveat. cum ferbuerit, amulo obligas. leporem assum a dorso tangis, piper asperges <milestone unit="section" n="40"/> et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>Leporem isiciatum: eadem conditura condies pulpam, nucleos infusos admisces, omento teges <milestone unit="section" n="403"/> vel charta, colliges lacinias et surcula. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<p>Leporem farsislem: leporem curas, ornas, quadratum imponis. adicies in mortarium piper, ligusticum, origanum, suffundes liquamen, adicies iecinera gallinarum cocta, cerebella cocta, pulpam concisam, ova cruda tria, liquamine temperabis. omento teges et charta et surclas. lento igni subassas. adicies in mortarium piper, ligusticum, fricabis, suffundes liquamen, vino et liquamine temperabis, facies ut ferveat. cum ferbuerit, amulo obligas, et leporem subassatum perfundes. piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<p>Aliter leporem elixum: ornas, adicies in lance oleum, liquamen, acetum, passum, cepam concides et rutam viridem, thymum subcultratum, et sic adpones. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="11">
+<p>Leporis conditura: teritur piper, ruta, cepula, <del>et</del> iecur leporis, liquamen, caroenum, passum, olei modicum. amulum, cum bullit. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="12">
+<p>Leporem <add>pipere</add> sicco sparsum: et hunc praecondies sicut haedum Tarpeianum. antequam coquatur, ornatus suitur. piper, rutam, satureiam, cepam, thymum modicum, liquamine collues, postea in furnum <add>mittes</add>, coques et impensa tali circumsparges: piperis semunciam, rutam, cepam, satureiam, dactylos IV, uvam passam, iusculum coloratum super vatillum, vinum, oleum, liquamen, caroenum. frequenter tangitur ut condituram suam omnem tollat, <milestone unit="section" n="407"/> postea ex pipere sicco in disco sumitur. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="13">
+<p>Aliter leporem conditum: coques ex vino, liquamine, aqua, sisonapi modico, anetho, porro cum capillo suo. cum <add>in</add> se coxerit, condies: piper, satureiam, cepae rotundum, dactylos, Damascena duo, vinum, liquamen, caroenum, olei moDERE <pb facs="apicapic_412927675_0071"/>dice. stringatur amulo, modicum bulliat. conditura lepus in patina perfunditur. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>GLIRES. Glires: isicio porcino, item pulpis ex <milestone unit="section" n="408"/> omni membro glirium trito, cum pipere, nucleis, lasere, liquamine farcies glires, et sutos in tegula positos mittes in furnum aut farsos in clibano coques. </p></div>
+</div>
+</div>
+<div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><del>IVS</del> IN LVCVSTA. Ius in lucusta et cappari: indura cepam pallachanam concisam.  <sic>eius</sic> piper, ligusticum, careum, cuminum, caryotam, mel, acetum, vinum, liquamen, oleum, defritum. hoc ius adicito sinapi in elixuris. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Lucustas assas sic facies: aperiuntur lucustae, ut adsolet, cum testa sua et infunditur eis piperatum, coriandratum, et sic in craticula assantur. cum siccaverint, adicies ius in craticula quotiens siccaverint quousque assantur bene, <add>et</add> inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Lucustam elixam cum <milestone unit="section" n="411"/> cuminato: piper, ligusticum, petroselinum, mentam siccam, cuminum plusculum, mel, acetum, liquamen. si voles, folium et malabathrum addes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter lucustam: isicia de cauda eius sic facies: folium noci <sic>uvam</sic> prius demes et elixas deinde pulpam, concides, cum liquamine, pipere et ovis isicia formabis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>In lucusta elixa: <milestone unit="section" n="413"/> piper, cuminum, rutam, mel, acetum, liquamen et oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Aliter in lucusta: piper, ligusticum, cuminum, mentam, <milestone unit="section" n="414"/> rutam, nucleos, mel, acetum, liquamen et vinum. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="415"/> IN TORPEDINE. In torpedine: teritur piper, ruta, copula arida. <add>addes</add> mel, liquamen, passum, vinum modice, olei boni guttas. cum bullire coeperit, amulo obligas. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>In torpedine elixa: piper, ligusticum, petroselinum, mentam, origanum, ovi medium, mel, liquamen, passum, vinum, oleum. si voles, addes sinape, acetum. si calidum volueris, uvam passam addes.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="417"/> IN LOLLIGINE. In lolligine in patina: teres piper, rutam, mel modicum, liquamen, caroenum, olei guttas. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>In lolligine farsili: piper, ligusticum, coriandrum, apii semen, ovi vitellum, mel, acetum, liquamen, vinum et oleum. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="418"/> IN SEPIIS. In sepia farsili: piper, ligusticum, apii semen, careum, mel, liquamen, vinum, condimenta coctiva. calefacies, et sic aperies sepiam et perfundes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Sic farcies eam sepiam coctam: cerebella elixa enervata teres cum pipere, cui commisces ova cruda quod satis erit, piper integrum, isicia minuta, et sic consues et in bullientem ollam mittes ita ut coire impensa possit. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Sepias elixas ab aheno: in frigidam missas cum pipere, lasere, liquamine, nucleis. ova <add>addes</add>, et condies <milestone unit="section" n="421"/> ut voles. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter sepias: piper, ligusticum, cuminum, coriandrum viride, mentam aridam, ovi vitellum, mel, liquamen, vinum, acetum et oleum modicum. et, ubi bullierit, amulo obligas.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="422"/> IN POLYPO. In polypo: pipere, liquamine, lasere, </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="423"/> IN OSTREIS. In ostreis: piper, ligusticum, ovi vitellum, acetum, liquamen, oleum et vinum. si volueris, et mel addes.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="424"/> IN OMNE GENVS CONCHYLIORVM. In omne genus conchyliorum: piper, ligusticum, petroselinum, mentam siccam, cuminum plusculum, mel, liquamen. si voles, folium et malabathrum addes. <pb facs="apicapic_412927675_0073"/>
+</p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>IN ECHINO. In echino: accipies pultarium <milestone unit="section" n="425"/> novum, oleum modicum, liquamen, vinum dulce, piper minutum. facies ut ferveat, cum ferbuerit, in singulos echinos mittes, agitabis, ter bulliat. cum coxeris, piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter <add>in</add> echino: piper, costum modice, <milestone unit="section" n="426"/> mentam siccam, mulsum, liquamen, spicam Indicam et folium. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter <add>in</add> echino: lotum mittes in aqua calida, coques, levas, in patella compones, addes folium, piper, mel, liquamen, olei modice, ova, et sic obligas. in thermospodio coques, piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>In echino salso: <milestone unit="section" n="428"/> echinum salsum cum liquamine optimo, caroeno, pipere, temperabis et adpones. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter: echinis salsis liquamen <milestone unit="section" n="429"/>  optimum admisces, et quasi recentes apparebunt, ita ut a balneo sumi possint. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>IN MITVLIS. In mitulis: liquamen, porrum concisum, <milestone unit="section" n="430"/> cuminum, passum, satureiam, vinum. mixtum facies aquatius et ibi mitulos coques. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>IN SARDA CORDVLA MVGILE. In Sardis: <milestone unit="section" n="431"/> Sardam farsilem sic facere oportet: Sarda exosSatur, et teritur puleium, cuminum, piperis grana, menta, nuces, mel. impletur et consuitur. involvitur in charta et sic supra vaporem ignis in operculo componitur, conditur ex oleo, caroeno, allece. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Sarda ita fit: coquitur sarda et exossatur. teritur piper <add>cum</add> ligustico, thymo, origano, ruta, caryota, melle, et in vasculo ovis concisis ornatur impensa: vinum modice, acetum, defritum et oleum viride. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Ius in Sarda: piper, origanum, mentam, cepam, aceti modicum et oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Ius in Sarda: piper, ligusticum, mentam aridam, cepam coctam, mel, acetum, oleum. perfundes, <pb facs="apicapic_412927675_0074"/><milestone unit="section" n="435"/> asperges ovis duris concisis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Ius in cordula assa: piper, ligusticum, apii semen, mentam, rutam, caryotam, mel, <milestone unit="section" n="437"/> acetum, vinum et oleum. convenit et in Sarda. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Ius in mugile salso: piper, ligusticum, cuminum, cepam, mentam, rutam, calvam, caryotam, mel, acetum, sinape et <milestone unit="section" n="438"/> oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Aliter ius in mugile salso: piper, origanum, erucam, mentam, rutam, calvam, caryotam, mel, oleum, acetum et sinape.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="11">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="439"/> IVS IN SILVRO, IN PELAMYDE ET IN THYNNO SALSIS: piper, ligusticum, cuminum, cepam, mentam, rutam, calvam, caryotam, mel, acetum, sinape, </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="12">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="440"/> IVS IN MVLLO TARICHO: piper, rutam, cepam, dactylum, sinapi, trito commisces echino <add>et</add> oleo, et sic perfundes piscem frictum vel assatum.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="13">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="441"/> SALSVM SINE SALSO: lecur coques, teres, et mittes piper aut liquamen aut salem. addes oleum. iecur leporisaut haedi aut agni aut pulli; et, si volueris, in formella piscem <milestone unit="section" n="442"/>  formabis. oleum viride supra adicies. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter vice salsi: cuminum, piper, liquamen teres, et passum modice vel caroenum et nuces tritas plurimas misces et simul conteres et salsari defundes. oleum modice superstillabis <milestone unit="section" n="443"/> et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter salsum sine salso: cumini tantum quantum quinque digitis tollis, piperis ad dimidium eius et unam spicam alei purgatam teres, liquamen supersfundes, oleum modice superstillabis. hoc aegrum stomachum valde reficit et digestionem facit.</p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="14">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="444"/> EMBRACTVM BAIANVM. Embractum Baianum: ostreas minutas, sphondylos, urticas in caccabum mittes, nucleos tostos concisos, rutam, apium, piper, coriandrum, cuminum, passum, liquamen, caryotam, oleum. <pb facs="apicapic_412927675_0075"/>
+</p>
+</div>
+</div>
+</div>
+<div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>IN PISCIBVS. Ius diabotanon in pisce frixo: <milestone unit="section" n="445"/> piscem quemlibet curas, salsas, friges. teres piper, cuminum, coriandri semen, laseris radicem, origanum, rutam, fricabis, suffundes acetum, adicies caryotam, mel, defritum, oleum, liquamen, temperabis, refundes in caccabum, facies ut ferveat. cum ferbuerit, piscem frictum perfundes, piper asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Ius in pisce elixo: piper, ligusticum, cuminum, cepulam, origanum, nucleos, caryotam, mel, acetum, liquamen, sinapi, oleum modice. ius calidum. si velis, uvam passam. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter in pisce elixo: teres piper, ligusticum, coriandrum viride, satureiam, cepam, ovorum vitella cocta, passum, acetum, oleum et liquamen. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p><add>Aliter</add> ius in pisce elixo: piscem curabis diligenter, mittes in mortarium salem, coriandri semen, conteres bene, volves eum, adicies in patinam, cooperies, gypsabis, coques in furno. cum coctus fuerit, tolles, aceto acerrimo asperges et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter ius in pisce elixo: cum curaveris piscem, adicies in sartaginem <add>coriandri</add> semen, aquam, anethum viride et ipsum piscem. cum coctus fuerit, asperges aceto et inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Ius Alexandrinum in pisce asso: piper, cepam siccam, ligusticum, cuminum, origanum, apii semen, pruna Damascena enucleata, mulsum, acetum, liquamen, defritum, oleum, et coques. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>Aliter ius Alexandrinum in pisce asso: piper, ligusticum, COriandrum viride, uvam passam enucleatam, vinum, passum, liquamen, oleum, et coques. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>Aliter ius Alexandrinum <milestone unit="section" n="452"/> in pisce asso: piper, ligusticum, coriandrum viride, cepam, Damascena enucleata, passum, liquamen, acetum, oleum, et coques. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<p>Ius in gongro asso: piper, ligusticum, cuminum frictum, origanum, cepam siccam, ovorum vitella <pb facs="apicapic_412927675_0076"/>cocta, vinum, mulsum, acetum, liquamen, defritum, et coques. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<p>Ius in cornutam: piper, ligusticum, origanum, cepam, uvam passam enucleatam, vinum, mel, acetum, liquamen, oleum, et coques. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="11">
+<p>Ius in mullos assos: piper, ligusticum, rutam, mel, nucleos, acetum, vinum, liquamen, <milestone unit="section" n="456"/> oleum modice. calefacies et perfundes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="12">
+<p>Aliter ius in mullos assos: rutam, mentam, coriandrum, feniculum, omnia viridia, piper, ligusticum, mel, liquamen et oleum <milestone unit="section" n="457"/> modice. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="13">
+<p>Ius in pelamyde assa: piper, ligusticum, origanum, coriandrum viride, cepam, uvam passam enucleatam, passum, acetum, liquamen, defritum, oleum, et coques. hoc ius convenit et in elixa. si vis, et mel addes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="14">
+<p><milestone unit="section" n="458"/> Ius in percam: piper, ligusticum, cuminum frictum, cepam, pruna Damascena enucleata, vinum, mulsum, acetum, <milestone unit="section" n="459"/> oleum, defritum, et coques. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="15">
+<p>Ius in pisce rubellione: piper, ligusticum, careum, serpyllum, apii semen, cepam siccam, vinum, passum, acetum, liquamen, oleum. amulo obligas. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><milestone unit="section" n="460"/> <add>IN MVRENAM</add>. Ius in murena assa: piper, ligusticum, satureiam, crocomagma, cepam, pruna Damascena enucleata, vinum, mulsum, acetum, liquamen, deiritum, <milestone unit="section" n="46"/> oleum, et coques. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Aliter ius in murena assa: piper, ligusticum, pruna Damascena, vinum, mulsum, acetum, <milestone unit="section" n="462"/> liquamen, defritum, oleum, et coques. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Aliter ius in murena assa: piper, ligusticum, nepetam montanam, coriandri semen, cepam, nucleos pineos, mel, acetum, liquamen, <milestone unit="section" n="463"/>  oleum, et coques. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Aliter ius in murena elixa: piper, ligusticum, anethum, apii semen, rhus Syriacum, caryotam, mel, acetum, liquamen, oleum, sinape, <milestone unit="section" n="464"/> defritum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Aliter ius in murena elixa: piper, ligusticum, careum, apii semen, coriandrum, mentam aridam, nuj cleos pineos, rutam, mel, acetum, vinum, liquamen, oleum <milestone unit="section" n="465"/> modice. calefacies et amulo obligas. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p><add>Aliter</add> ius in murena elixa: piper, ligusticum, careum, cuminum, nucleos, <pb facs="apicapic_412927675_0077"/>caryotam, sinape, mel, acetum, liquamen et oleum et defritüm, </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p>Ius in lacertos elixos: piper, ligusticum; <milestone unit="section" n="467"/> cuminum, rutam viridem, cepam, mel, acetum, liquamen, oleum modice. cum bullierit, amulo obligas. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p>Ius in pisce <milestone unit="section" n="466"/> elixo: piper, ligusticum, petroselinum, origanum, cepam  aridam, mel, acetum, liquamen, vinum, oleum modice. cum bullierit, amulo obligas. et in lance inferes. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="3">
+<p>Ius in pisce <milestone unit="section" n="468"/> asso: piper, ligusticum, thymum, coriandrum viride, mel, acetum, liquamen, vinum, oleum, defritum. calefacies et agitabis rutae surculo et obligabis amulo. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<p>Ius in thynno: <milestone unit="section" n="469"/> piper, cuminum, thymum, coriandrum, cepam, uvam passum, acetum, mel, vinum, liquamen, oleum. calefacies; amulo obligabis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="5">
+<p>Ius in thynno elixo: piper, ligusticum, <milestone unit="section" n="470"/>  thymum, condimenta moretaria, cepam, caryotam, mel, acetum, liquamen et oleum et sinape. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="6">
+<p>Ius in dentice <milestone unit="section" n="471"/>  asso: piper, ligusticum, coriandrum, mentam, rutam aridam, malum Cydonium coctum, mel, vinum, liquamen, oleum. calefacies, amulo obligabis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="7">
+<p>In dentice elixo: <milestone unit="section" n="472"/> piper, anethum, cuminum, thymum, mentam, rutam viridem, mel, acetum, liquamen, vinum, oleum modice. calefacies et amulo obligabis. Ius in pisce aurata: piper, </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="8">
+<p>ligusticum, careum, origanum, rutae bacam, mentam, myrtae bacam, ovi vitellum, mel, acetum, oleum, vinum, liquamen. calefacies et sic uteris. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="9">
+<p>Ius in pisce aurata assa: piper, coriandrum, mentam aridam, apii semen, cepam, uvam passam, mel, acetum, vinum, liquamen et oleum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="10">
+<p>Ius in scorpione elixo: piper, careum, petroselinum, caryotam, mel, acetum, liquamen, sinape, oleum, defritum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="11">
+<p>In pisce oenogarum: teres piper, rutam, mel commíisces, passum, liquamen, caroenum, et igni mollissimo <milestone unit="section" n="476"/> calefacies. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="12">
+<p><add>Aliter</add> in pisce oenogarum: ut supra facies. cum bullierit, amulo obligabis. </p></div>
+</div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="1">
+<p><add>IN ANGVILLAM.</add> Ius in anguillam: piper, ligusticum, apii semen, anethum, rhus Syriacum, caryotam, mel, acetum, liquamen, oleum, sinape et defritum. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi001.opp-lat3" n="2">
+<p><add>Aliter</add> ius in anguillam: piper, ligusticum, rhus Syriacum, mentam siccam, rutae bacas, ovorum vitella cocta, mulsum, acetum, liquamen, oleum. coques. <pb facs="apicapic_412927675_0079"/></p></div>
+</div>
+</div>
+    </div>
+</body>
+</text>
+</TEI>

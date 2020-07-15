@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+<fileDesc>
+<titleStmt>
+<title xml:lang="lat">Appendicula.</title>
+<author>Apicius</author>
+<editor>Friedrich Vollmer</editor>
+<editor>Caesar Giarratano</editor>
+
+<funder>Perseus Digital Library</funder>
+<respStmt>
+<resp>Published original versions of the electronic texts</resp>
+<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>  
+<persName role="principal">Gregory Crane</persName>
+<persName role="principal">Leonard Muellner</persName>
+<persName role="principal">Bruce Robertson</persName>
+</respStmt>
+
+<respStmt>
+<resp>Proofreading</resp>
+<orgName>Tufts University</orgName>
+<persName>Pearl Spear</persName>
+</respStmt>
+
+<respStmt>
+<resp>CTS conversion</resp>
+<orgName>Perseus Digital Library</orgName>
+<persName>Lisa M. Cerrato</persName>
+</respStmt>
+</titleStmt>    
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">phi2003.phi004.opp-lat2.xml</idno>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+</availability>
+<date>2020-07-14</date>
+</publicationStmt> 
+
+<sourceDesc>
+<biblStruct>
+<monogr>
+<author>Apicius</author>
+<title xml:lang="lat">Apicii Librorum X Qui Dicuntur De Re Coquinaria.</title>
+<editor>
+<persName><name>Friedrich Vollmer</name></persName>
+<persName><name>Caesar Giarratano</name></persName>
+</editor>
+<imprint>
+<pubPlace>Leipzig</pubPlace>
+<publisher>Teubner</publisher>
+<date type="printing">1922</date>
+</imprint>
+<biblScope unit="volume"/>
+</monogr>
+<ref target="http://digital.slub-dresden.de/id412927675">SLUB</ref>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>    
+<editorialDecl>
+<quotation marks="none"/>
+<normalization>
+<p></p>
+</normalization>
+<correction>
+<p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+</correction>
+</editorialDecl>
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+<refsDecl n="CTS">
+<cRefPattern n="section" matchPattern="(\w+)"  replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+<p>This pointer pattern extracts sections</p>
+</cRefPattern>  
+</refsDecl>
+</encodingDesc>
+
+<profileDesc>
+<langUsage>
+<language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
+</langUsage>
+</profileDesc>
+
+<revisionDesc>      
+<change when="2020-07-14" who="Lisa Cerrato">initial markup of new file</change>
+</revisionDesc>
+</teiHeader>
+
+<text>
+<body>
+<div type="edition" n="urn:cts:latinLit:phi2003.phi004.opp-lat1" xml:lang="lat">
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="1">
+<p rend="indent"><pb facs="apicapic_412927675_0085"/>Athenaeus XII 516c <foreign xml:lang="grc">πρῶτοι δὲ Λυδοὶ καὶ τὴν καρύκην ἐξεὺρον, περὶ ἡς τὴς σκευασίας οἱ τὰ Ὀψαρτυτικὰ συνθέντες εἰρήκασιν, Ἰλαῦκός τε ὁ Λοκρὸς</foreign> (PW VII 1421 n. 41) <foreign xml:lang="grc">καὶ Μίταικος καὶ Διονύσιος</foreign> (PW V 977 n. 133) <foreign xml:lang="grc">Ἠρακλειδαί</foreign> (PW VIII 496 n. 58. 59) <foreign xml:lang="grc">τε δύο γένος Συρακόδιοι καὶ Ἄγις</foreign> (Oder PW I 822 n. 10) <foreign xml:lang="grc">καὶ Ἐπαίνετος</foreign> (PW V 2672 n. 9) [<foreign xml:lang="grc">καὶ Διονύσιος</foreign>], <foreign xml:lang="grc">ἕτι τε Ἡγήσιππος</foreign> (PW VII 2611 n. 5) <foreign xml:lang="grc">καὶ Ἐρασίστρατος</foreign> (PW VI 333—350 n.2) <foreign xml:lang="grc">καὶ Εὐθύδηνος</foreign> (PW VI 1505 n. 15) <foreign xml:lang="grc">καὶ Κρίτων, πρὸς τούτοις δὲ Στέφανος, Ἀρκύτας</foreign> (PW II 602 n. 5. 6) <foreign xml:lang="grc">[Ἀκέστιος], Ακεσίας</foreign> (PW I 1163 n. 1), <foreign xml:lang="grc">Διοκλὴς</foreign> (PW V 802 n. 53), <foreign xml:lang="grc">Φιλιστίων τοσούτους γὰρ οἶδα γράψαωτας Ὀψαρτυτικά</foreign>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="2">
+                    <p rend="indent">Ath. XIV 662c <foreign xml:lang="grc">ἀοιδίμων δ' ὀψαρτυτὼν ὀνόματα καταλέγει Βάτων ἐν Εὐεργέταις</foreign> (Com. III p. 327 Kock) <foreign xml:lang="grc">οὕτως</foreign> </p>           
+                                        <p><foreign xml:lang="grc"><lb rend="indent"/>εὐ γ', ὧ Σιβύνη, τὰς νύκτας οὐ καθεύδομεν 
+                                        <lb rend="indent"/>οὐδ' ἀναγεγράμμεθ', ἀλλὰ καίεται λύχνος 
+                                        <lb rend="indent"/>καὶ βιβλίον <add>ἐν</add> ταῖς χερσί, καὶ φροντίξομεν 
+                                        <lb rend="indent"/>τί Σόφων καταλέλοιπ' ἢ τί Σημωνακτίδης 
+                                        <lb rend="indent"/>ὀ Χῖος ἢ Τυνδάριχος [-κος <foreign xml:lang="lat">trad.</foreign>] ὁ Σικυώνιος 
+                                         <lb rend="indent"/>ἢ Ζωπυρῖνος.</foreign></p> 
+<p>cl. coquorum catalogum apud Euphronem com. frg. 1, 5-9 (Kock III p. 317): Agis Rhodius, Nereus Chius, Chariades Atheniensis, Lamprias, Apthonetus, Euthynus 11, 1: Soterides; Sosipatrem com. fr. 1, 11. 19 (Kock III p. 314) al. Geoponica 20, 6. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="3">
+                    <p rend="indent">Anaxippos com. fr. 1, 1 (III p. 296 Kock): </p>
+                                        <p><foreign xml:lang="grc"><lb rend="indent"/>Σόφων Ἀκαρνὰν καὶ Ρόδιος Δαμόξεωος 
+                                        <lb rend="indent"/>ἐγένονθ' ἐαυτῶν συμμαθηταὶ τῆς τέχνης· 
+                                        <lb rend="indent"/>ἐδίδασκε δ' αὐτοὺς Σικελιώτης Λάβδακος</foreign>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="4">
+                    <p rend="indent">Pollux onom. V170 p.245 Bekker<foreign xml:lang="grc"> πολλὰ δ' ἂν εἰη τῶν περὶ την ἠδυντικὴν σκενασίαν ἐξευρεῖν ἐκ τῶν ὀψοποιικῶν συγγραμμάτων Παντολέοντος καὶ Μιθαίκου καὶ Ζωπυρίνου καὶ Σόφωνος καὶ Ἠγησίππου καὶ Παξάμου</foreign> (cf. Athen. IX 376d) <foreign xml:lang="grc">καὶ Ἐπαινέτον συναριθμοῖτο δ' ἂν τοντοις Ἠρακλείδης τε ὁ</foreign> <pb facs="apicapic_412927675_0086"/> <foreign xml:lang="grc">Συρακούσιος καὶ Τυνδάριχος ὁ Σικυώνιος καὶ Σιμωνακτί- δης ὁ Χῖος καὶ Γλαῦκος ὁ Λοκρός, ὀψοποιητικῆς πραγματείας σοψισταί</foreign>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="5">
+                    <p rend="indent">Suidas <foreign xml:lang="grc">Πάξαμος... Ὀψαρτθτικὰ κατὰ στοιχεῖον</foreign>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="6">
+                    <p rend="indent">Ath. VII p. 325f.: <foreign xml:lang="grc">Μίθαικος δ' ἐν Ὀψαρτθτικῷ</foreign> <q xml:lang="grc">ταινίαν φησίν' ἐκκοιλίξας, τὰν κεφαλὰν ὰποταμὼν, ἀποπλύνας καὶ ταμὼν τεμάχεα κατάχει τυρὸν καὶ ἔλαιον.</q> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="7">
+                    <p>— Ath. II 58b: <foreign xml:lang="grc">Ἐπαίνετος δὲ καὶ Ἡρακλείδης ὁ Συρακούσιος ἐν Ὀψαρτθτικῷ τ῀ν ᾠῶν φασι (φησι trad.) πρωτεύειν τὰ τῶν ταῶν. μεθ' ἂ εἷναι τὰ χηναλωπέκεια· τρίτα καταλέγοωτες</foreign> (<foreign xml:lang="grc">-γει</foreign> E, non C) <foreign xml:lang="grc">τὰ ὀρνίθεια</foreign>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="8">
+<p>— Ath. III 88c <foreign xml:lang="grc">τὸ δ' ἐντὸς τῆς πίνης Ἐπαίνετος ἑν <add>Ὀψ</add> αρτθτικῷ καλεῖσθαί φησι μ´γκωνα</foreign>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="9">
+<p>— Ath. VII 294d <foreign xml:lang="grc">Ἐκαίνετος δ' ἐν Ὀψαρτθτιλῷ ἐπινωτιδέα καλεῖ</foreign> (scil. <foreign xml:lang="grc">γαλεόν</foreign>), <foreign xml:lang="grc">χείρονα δ' εἷναο τὸν κεντρίνην καὶ δυσώδη· γνωρίζεσθαι δ' ἐκ τοῦ πρὸς τῆ πρῴτῃ λοφιᾷ ἔχειν κέντρον τῶν ὁμοειδῶν οὐκ ἐχόντων· οὔτε δὲ στέαρ οὔτε πιμελὴν ἔχειν τοὺς ἰχθῦς τούτους διὰ τὸ χονδρώδεις εἷναι.</foreign> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="10">
+                    <p rend="indent">Ath. VII 297c <foreign xml:lang="grc">μνημονεύει δ' αὐτοῦ</foreign> (scil. <foreign xml:lang="grc">τοῦ γωαφέως</foreign> piscis) <foreign xml:lang="grc">καὶ Ἐπαίνετος ἐν Ὀψαρτθτικῷ.</foreign> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="11">
+<p>— Ath. VII 304d <foreign xml:lang="grc">Ἐπαίνετος δ᾽ ἐν Ὀψαρτυτικοῖς κορύφαιναν αὐτόν</foreign> (scil. <foreign xml:lang="grc">τὸν ἵππουρον</foreign>) <foreign xml:lang="grc">φησιν ὀνομάζεσθαι</foreign>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="12">
+ <p>— Ath. VIL 305e <foreign xml:lang="grc">τοῦ δὲ κάπρου</foreign> piscis <foreign xml:lang="grc">μνημονεύει καὶ Δωρίων καὶ Ἐπαίνετος</foreign>. — </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="13">
+<p>Ath. VII 312f <foreign xml:lang="grc">ἐστὶ δὲ λευκόσαρκος</foreign> (scil. <foreign xml:lang="grc">ὁ λειόβατος</foreign> piscis), <foreign xml:lang="grc">ὠς Ἐπαίνετος ἐν Ὀψαρτυτικῷ</foreign>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="14">
+<p>— Ath. VII 313b <foreign xml:lang="grc">Ἐπαίνετος δ' ἐν Ὀψαρτυτικῷ φησι·</foreign> <q xml:lang="grc">σμαρίδα, ἣν ἔνιοι καλοῦσι κυνὸς εὐναί.</q> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="15">
+<p>— Ath. IX 371 <foreign xml:lang="grc">Ἐπαίνετος δ' ἐν Ὀχαρτυτι κῷ τὼ κεφαλωτὰ</foreign> herbas <foreign xml:lang="grc">καλεῖθαί φησι γηθυλλίδας</foreign>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="16">
+<p>— Ath. IX 387a <foreign xml:lang="grc">Ἀρτεμίδωρος δὲ ὁ Ἀριστοφάνειος ἐν ταῖς ἐπιγραφομέναις Ὀψαρτυτικαῖς γλὠσσαις καὶ Πάμφιλος ὁ Ἀλεξανδρεὺς ἐν τοῖς περὶ ὀνομάτων καὶ γλωσσῶν Ἐκαίνετον καρατίθεται λέγοντα ἐν τῷ Ὀψαρτυτικῷ ὄτι ὁ φασιανὸς ὄρνις τατύρας καλεῖται.</foreign> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="17">
+                    <p rend="indent">— Ath. IX 395e <foreign xml:lang="grc">οἱ καλούμενοι παραστάται, ὦν μνημονεύει Ἐπαίνετος ἐν Ὀψαρτυτικῷ.</foreign> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="18">
+ <p>— Ath. XIV p. 662d <foreign xml:lang="grc">Ἐπαίνετος δ' ἐν Ὀψαρτυτικῷ λέγει ταῦτα·</foreign> <q xml:lang="grc">μῦμα δὲ παντὸς ἱερείου, καὶ ὄρνιθος δὲ χρὴ ποιεῖν τὰ ἁπαλὰ τῶν κρεῶν μικρὰ Gvvvtuóvre καὶ τὰ σπλάγχνα καὶ τὸ ἔντερον καὶ τὸ αἷμα διαθρύψαντα  καὶ ἀρτύσαντα ὄξει, τυρῷ ὀπτῷ, σιλφίῳ, κυμίνῳ, θύμῳ χλωρῷ καὶ ξηρῷ, θύμβρᾳ, κοριάννῳ χλωρῷ τε καὶ ξηρῷ καὶ γητίῳ καὶ χρομμύῳ καθαρῷ πεφωσμένῳ ἢ μήκωνι καὶ σταφίδι ἢ μέλιτι καὶ ῥόας ὀξείας κόκκοις. εἶναι δέ σοι τὸ αὐτὸ [μῦμα] καὶ ὄψον.</q></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="19">
+                    <p>— Ath. VII 324a <foreign xml:lang="grc">ἐστὶ δὲ τὸ ὐκόσφαγμα ὡς Ἐρασίστρατὸς <pb facs="apicapic_412927675_0087"/> φησιν ἐν Ὀψαρτυτικῷ ὑπότριμμα. γράφει δὲ οὕτως.</foreign> <q xml:lang="grc">ὑπόσφαγμα δ' εἷναι κρέασιν ὀπτοῖς ἐκ τοῦ αἵματος τεταραγμένου μέλιτι, τυρῷ, ἁλί, κυμἰνῳ, σιλφίῳ, ὄξει ἑφθοῖς'. καὶ Γλαῦκος δ' ὁ Λοκρὸς ἐν Ὀψαρτυτικῷ οὕτως γράφει· 'ὑπόσφαγμα δ' αἴμα ἑφθὸν καὶ σίλφιον καὶ ἕψημα ἢ μέλι καὶ ὄξος καὶ γάλα καὶ τυρὸς καὶ φύλλα εὐώδη τετμημένα.</q> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="20">
+<p>— Ath. IX 369b <foreign xml:lang="grc">τὴν δὲ ῥάφυν Γλαῦκος ἐν τῷ Ὀφαρτυτικῷ διὰ τοῦ Π ψιλῶς καλεῖ ῥάπυν</foreign>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="21">
+                    <p>— Ath. XIV 661e  <foreign xml:lang="grc">καὶ οἱ τὰ Ὀψαρτυτικὰ δὲ συγγράψαντες Ἡρακλείδης τε καὶ Γλαῦκος ὁ Λοκρὸς οὐχ ἀρμόττειν φασὶ</foreign> <q xml:lang="grc"><add>δούλοισι</add> τὴν μαγειρικἠν, ἀλλ' οὐδὲ τοὶς τυχοῦσι τῶν ἐλευθέρων.</q></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="22">
+                    <p>— Ath. III 105c <foreign xml:lang="grc">κολύβδαιναν</foreign> piscem <foreign xml:lang="grc">δ' εἴρηκεν Ἐπίχαρμος... ὡς δ᾽ ὁ Ἡρακλείδης ἐν Ὀψαρτυτικῷ, τὴν καρῖδα</foreign>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="23">
+ <p>— Ath. III 114a <foreign xml:lang="grc">πόδεν ὑμῖν <add>ἄυ εἴη</add> εἰδέναι ὄτι καὶ 'κύβοι', οὐχ οὒς ἀεὶ μεταχειρίζεσθε</foreign> (<foreign xml:lang="grc">-ζεσθαι</foreign> trad.), <foreign xml:lang="grc">ἄρτοι εἰσὶ τετράγωνοι, ἡδυσμένοι ἀννήθῳ καὶ τυρῷ καὶ ἐλαίῳ, ὥς φησιν Ἡρακλείδης ἐν Ὀψαρτυτικῷ;</foreign> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="24">
+<p>— Ath. VII 328d <foreign xml:lang="grc">διαφέρει δὲ τῆς χαλίκδος ὁ χαλκεύς</foreign> piscis, <foreign xml:lang="grc">οὑ μνημονεύει Ἡρακλείδης ἐν Ὀχαρτυτικῷ.</foreign> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="25">
+<p>— Ath. XII 516d <foreign xml:lang="grc">γίνεσθαι δ' αὐτόν</foreign> (scil. <foreign xml:lang="grc">τὸν κάνδαυλον</foreign> placentam Lydiam) <foreign xml:lang="grc">φησιν ὁ Ταραντῖνος Ἡρήδιππος ἐξ ἑφθοῦ κρέως καὶ κνηστοῦ ἄρτου καὶ φρυγίου τυροῦ ἀνήθου τε καὶ ζωμοῦ πίονος</foreign>. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="26">
+<p>— Ath. VII 308c <foreign xml:lang="grc">Εὐθύδημος δ' έν τῷ περὶ ταρίχων τὸν κοραῖμόυ</foreign> piscem <foreign xml:lang="grc">φησιν ὐπό πολλῶν σαπέρδην προςαγορεύεσθαι· ὁμοίως δ' εἴρηκε καὶ Ἡρακλέων ὁ Ἐφέσιος</foreign> (PW VIII 514 n. 6), <foreign xml:lang="grc">ἔτι δὲ Φιλότιμος</foreign> (nisi legendum <foreign xml:lang="grc">Φυλ-</foreign>) <foreign xml:lang="grc">ἐν Ὀψαρτυτικῷ. ὅτι δὲ καὶ κλατιστα[τι]κὸς καλεῖται ὁ σαπέρδης, καθάπερ καὶ ὁ κορακῖνος, Παρμένων φησὶν ὁ Ῥόδιος ἐν πρώτῳ μαγειρικῆς διδασκαλίας.</foreign> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="27">
+<p>— Ath. VII 326e <foreign xml:lang="grc">καὶ Διονύσιος δ' ἐν Ὀψαρτυτικῷ τῆς ὑαίνης μνημονεύει.</foreign> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="28">
+                    <p rend="indent">Ath. XIV 643a <foreign xml:lang="grc">οἷδα δὲ καὶ Καλλίμαχον ἐν τῷ τῳν παντοδαπῶν σθγγραμμάτων πίνακι ἀναγράωαντα πλακουντοποιικὰ σθγγρὰμματα Αλγιμίου</foreign> (PW I 964 n.3) <foreign xml:lang="grc">καὶ Ἡρησίππου καὶ Μητροβίου, ἔτι δὲ Φαίτου</foreign> (<foreign xml:lang="grc">Φαίστου</foreign> Meineke) — nominantur: <foreign xml:lang="grc">Ἀρποκρατίων ὁ Μενδήσιος</foreign> (PW VII 2416 n. 8) <foreign xml:lang="grc">ἐν τῷ περὶ πλακούντων</foreign> Ath. XIV 648b cum praecepto. — <foreign xml:lang="grc">Ἰατροκλῆς</foreign> (PW IX 801 n. 3) <foreign xml:lang="grc">ἐν Ἀρτοποιικῷ</foreign> Ath. VII 326e. XIV 646a <foreign xml:lang="grc">ἐν τῷ περὶ πλακούντων.</foreign> 646b fragmentum. 646e. 647b fragmentum. — <foreign xml:lang="grc">Φιλιστίων ὁ λοκρός</foreign> Ath. III 115d <foreign xml:lang="grc">τῶν χονδριτῶν (ἄρτων) τούς σεμιδαλίτας πρός ἰσχύν φησι μᾶλλον πεφυκέναι· μεδ' οὓς τοὺς χονδρίτας τίθησιν, εἶτα τοὺς ἀλευρίτας.</foreign> — <foreign xml:lang="grc">Χρύσιππος ὁ Τυανεύς</foreign> (PW III 2511 n. 21) Ath. III 113a d <pb facs="apicapic_412927675_0088"/> <foreign xml:lang="grc">ἀρτοποιικόν</foreign> fragmentum longum. <foreign xml:lang="grc">ἐν τῷ ἀρτοκοπικῷ</foreign> Ath. XIV. 647c—648a fragmentum longum cum praeceptis variis. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="29">
+                    <p rend="indent"><foreign xml:lang="grc">Εὐθύδημος ὁ Ἀθηαῖος ἐν τῷ περὶ λαχάνων</foreign> Ath. I 58c. III 74b. IX 369e <foreign xml:lang="grc">Εὔδημος</foreign> trad. fragmentum. 371a <foreign xml:lang="grc">Εὔδημος</foreign> trad. — <foreign xml:lang="grc">ἐν τῷ περὶ ταρίχων</foreign> Ath. III 116a fragmentum cum versibus (Hesiodi?). 118b. VII 307b. 308c. 315f. 328d. — Schol. in Nicandri Ther. 585 p. 46 Schneider <foreign xml:lang="grc">(βουπλεύρου) μνημονεύει . . . . καὶ Ἐπαίνετος ἐν τῷ περὶ λαχάνων.</foreign> </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="30">
+                    <p rend="indent">Geoponica ed. Beckh 18, 21 p. 499 <foreign xml:lang="grc">Μέλκης σκευσία σύντομος. Παξάμου</foreign> (potius ex georgicis quam ex opsartyticis, modo verum sit nomen). <foreign xml:lang="grc">ἠ καλουμένη μέλκη αὐτοσχέδιος καὶ καλλίων ἔσται εἰ κεραμέοις ἀγγείοις καινοῖς ὄξος ἐμβάλης δριμὺ καὶ ἐπιθῆς αὐτὰ θερμοσποδιᾷ ἢ πυρὶ μαλθακῷ, τουτέστιν ἐπ' ἀνθρακιάν· καὶ ἐάν ὀλίγον ἀναζέσῃ τὸ ὄξος, ἵνα μὴ ἀπὸ τῶν σκευαρίων ἀναποθῇ, ἐλκύσας ἀπὸ τῆς ἀνθρακιᾶς, εἰς τὰ αὐτὰ σκευάρια βάλε γάλα καὶ θὲς αὐτὰ εἰς κιβωτάριον ἢ ἀρμά ριον ἢ ἔνθα ἀκίνητον μένει· καὶ τῇ ὐστεραίᾳ ἕξεις πολλῷ καλλίους μέλκας τῶν πολλῇ τέχνῃ κατασκευαζομένων τὰ μὲντοι σκευάρια μετὰ πρώτην ἢ δευτέραν χρῆσιν ἄλλασσε.</foreign> cf. Columella 12, 8 Apic. 7, 1 (308). </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="31">
+                    <p rend="indent">Ath. XIV 663d <foreign xml:lang="grc">ὁ Ἀρτεμίδωρος ἐν ταῖς Ὀψαρτυτικαῖς γλώσσαις τὴν ματτύην ἀποφαίνει κοινὸν εἶναι πάντων ὄνομα τῶν πολυτελὼν ἐδεσμάτων (ἡδυσ- <foreign xml:lang="lat">trad.</foreign>) γράφων οὔτως·</foreign> <q xml:lang="grc">ἔστι τις (εἴτις τῆς <foreign xml:lang="lat">trad.</foreign>) ὄρνιθος ματτύης. ἐσφάχθω μὲν διὰ τοὺ στόματος εἰς τὴν κεφαλήν. ἔστω δὲ ἕωλος χαθάπερ ὁ πέρδιξ. ἐὰν δὲ θέλῃς. ὡς ἕχει αὐτοῖς περοῖς ἑᾶν τετιλμένην.</q> <foreign xml:lang="grc">εἷτα τὸν τρόπον ἐχθεὶς τῆς ἀρτύσεως καὶ τῆς ἑψήσεως ἐπιφέρει εὐθύς.</foreign> <q xml:lang="grc">καὶ νομάδα παχεῖαν ἕψε καὶ νεσσοὺς τῶν ἤδη κοκκυζόντων, ἐὰν θέλῃς παρὰ πότον χρῆσθαι. εἷτ' ἐκελὼν τὰ λάχανα εἰς τρυβλίον καὶ τῆς ὄρνιθος τῶν κρεῶν ἐπιθεὶς παρατίθει· τοῦ θέρους ἀντὶ τοῦ ὄξους τῆς ὅμφακος ἐμβαλὼν εἰς τὸν ζωμὸν ὡς ἔχει τοὺς βὸτρυς· ἐπαιδὰν δὲ ἑφθὴ γένηται, ἔξελε μετὰ τοῦ βοτρυδίου πρὸ τοῦ τὸ γίγαρτου ἐξαφεῖναι εἷθ οὕτως τὸ λάγανον κατάθρυπτε. οὗτος <add>ὁ</add> ματτύης ἐν τοῖς ἡδίστοις.</q></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="32">
+                    <p rend="indent">Pollux Onom. VI 57 p. 242 Bekker <foreign xml:lang="grc">τὸ δὲ θρῖον ὧδε ἐσκεύαζον· στέαρ ὕειον ἑφθὸν μετὰ γάλακτος μίγνυ χόνδρῳ παχεῖ, συμφυράσας δ' αὐτὰ τυρῷ χλωρῷ καὶ λεκίθοις ᾠῶν καὶ ἐγκεφάλοις, περιβαλὼν συκῆς φύλλῳ εὐώδει, ζωμῷ ὐρνιθείῳ ἢ ἐριφείῳ ἔνεψε, ἔπειτα ἐξελὼν καὶ τὸ φύλλον ἀφελὼν ἔμβαλε εἰς ἀγγεῖον γέμον μέλιτος ζέοντος. καὶ τὸ μὲν ὅνομα τῷ ἐδέσματι <pb facs="apicapic_412927675_0089"/> προςέθηκε τὸ φύλλον. ἠ δὲ μεῖξις πάντα ἐξ ἴσου δέχεται, τῶν δὲ λεχίυων πλέον. ὄτι κηγνύουσι καὶ συνιστᾶσιν.</foreign></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="33">
+                    <p>— Schol. Aristoph. eq. 954 p. 66 Dindorf: <foreign xml:lang="grc">θρῖον χόνδρος ἢ ὄρυζα ἕψεται ἢ σεμίδαλις ἀρκούτως. εἷτα ἐπιχεῖται τὸ ὕδωρ καὶ φυρᾶται τὸ ἡψημένον μετὰ άπαλοῦ τυροῦ καὶ ᾠῶν ὀλίγων. εἷτα περιλαμβάνεται φύλλοις σθκίνοις ὅλον καὶ περιειλεῖται καννάβῳ ἢ παπύρῳ ἢ λίνῳ καὶ καθίεται εἰς ζωμὸν κρεῶν ἠψημένων ἄχρι τοῦ λαβεῖν ἱκανὴν ἕψησιν. εἰτα ἐξαίρεται καὶ τῶν φύλλων περιαιρεθέντων εἰς λοπάδα νέαν ζέοντος μέλιτος ἐμβάλλεται καὶ ἔψεται. στρεφόμενον δὲ, ὄταν ἰκανῶς ἔχῃ καὶ ξανθὸν γένηται, ἐξαιρεθὲν παρατίθεται μέλιτος περιχυθέντος ἢ ἀπὸ τοῦ ἑφθοῦ ἢ ἀπὸ τοῦ ἄλλου. θπῖον δὲ καλεῖται ἀπὸ τῶν φύλλων τῆς συχῆς. ἅτινα οὕτω καλεῖται</foreign>. duo similia praecepta, alterum Didymi, leguntur in scholiis ibidem I p. 608 Dindorf. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="34">
+                    <p rend="indent">Papyrus Heidelberg (inv. 1701 a. b. c) ed. Fr. Bilabel Sitz.-Ber. Heid. Akad. philos. -hist. Kl. 1919 Abh. 23</p> 
+<p rend="center">A. pagina anterior</p> 
+<p><lb rend="indent"/>Col. <foreign xml:lang="grc">ς</foreign> <foreign xml:lang="grc">⟨..........⟩ω· ἔνιοι δὲ τη⟨......⟩ 
+<lb rend="indent"/>⟨τ⟩ρείβουσιν ἀλλα ...............⟩ 
+<lb rend="indent"/>κλην καὶ ὠμη η⟨........ὡσ-⟩ 
+<lb rend="indent"/>αὐ⟩τως ζεννύου ⟨σι καὶ τὰ ἄλλα⟩ 
+<lb rend="indent" n="5"/>πο⟨ιοῦσιν ὡς πρό⟨κειται. 
+<lb rend="indent"/>&#x1d212; Ζωμὸς ἰχθύος· εἰ⟨ς θυῖας ἔμβαλε⟩ 
+<lb rend="indent"/>χόνδρον. κόρι. πρ⟨άσον ...........⟩ 
+<lb rend="indent"/>κρόμμια, ἄνηθον ⟨.............ὠ-⟩ 
+<lb rend="indent"/>κιμον, ἄννησον λε⟨πτόν..........⟩ 
+<lb rend="indent" n="10"/>ἔψε ἐπ' ἀνθράκων κα⟨ὶ καταβρέ-⟩ 
+<lb rend="indent"/>χων ὕδατι. οἴνῳ, γάρῳ, ⟨ὄξει συμμε- 
+<lb rend="indent"/>μειγμένοις· ὅταν ἑψ⟨εθῇ καὶ μέλ-⟩ 
+<lb rend="indent"/>λῃς αἰρειν, ἐπίπασσε πίπερ ⟨λεῖ- 
+<lb rend="indent"/>ον‧ μετ᾽ ὄξους δρειμέως κα⟨θιστ- 
+<pb facs="apicapic_412927675_0090"/>
+<lb rend="indent" n="15"/>ᾶσιν ὀλίγον συμπεσεῖν, εἶ⟨τα με- 
+<lb rend="indent"/>τ⟨αί⟩ρουσιν ἀπὸ τοῦ πυρός‧ οἱ δ⟨ὲ ὄξ- 
+<lb rend="indent"/>ους ἐπιχέαντες πάντα ἕψ⟨ουσι 
+<lb rend="indent"/>προςυποστρώσαντες τὰ χ⟨λω- 
+<lb rend="indent"/>ρὰ καὶ τὰ ἄλλα ποι̣⟨ο⟩ῦσιν ὡς π⟨ρό- 
+<lb rend="indent" n="20"/>κειται. 
+<lb rend="indent"/>&#x1d212; Κρέα ταρειχηρὰ ἢ περνῶν τε⟨μά- 
+<lb rend="indent"/>χη‧ κρέα ὁμοίως ὠμά‧ τὰ μ⟨ὲν τα- 
+<lb rend="indent"/>ρειχηρὰ προζεννύουσιν ἵ⟨να ἐ- 
+<lb rend="indent"/>ξαλμίσῃ μόνον‧ εἶτα πάντ⟨α εἰς 
+<lb rend="indent" n="25"/>λοπάδα‧ οἴνου μέρη  δ, γλυκέ⟨ως 
+<lb rend="indent"/>μέρη β, ὄξους μέρος ᾱ, κόρι ξη⟨ρὸν, 
+<lb rend="indent"/>θύμον, ἄννησον, μάραθον‧ φρῦ- 
+<lb rend="indent"/>ξον, πάντα ἐξ ἀρχῆς όμο⟨ῦ ἐ⟩πιβα- 
+<lb rend="indent"/>λών. ἕψει‧ μεσάζουσιν ἐπι⟨βα⟩λὼν 
+<lb rend="indent" n="30"/>μέλι καὶ κύμεινον λεῖο⟨ν, ἄλ⟩λοι 
+<lb rend="indent"/>καὶ πίπερ, καὶ βαλό⟨ν⟩τες εἰ⟨ς ἀγγ⟩εῖ- 
+<lb rend="indent"/>ον θερμὸν τὸν ζωμὸν ἐ⟨πιβ⟩άλ- 
+<lb rend="indent"/>λουσιν ψωμοὺς ψοι⟨ῶν καὶ⟩ ἄρ- 
+<lb rend="indent"/>των θερμῶν. 
+<lb rend="indent" n="35"/>&#x1d212; Λαγανοφακῆ· λάγαν⟨ον ὀπτὸ⟩ν κα- 
+<lb rend="indent"/>λῶς [μ]έν ζωμῷ κρεῶν ⟨ὀρ⟩νεί- 
+<lb rend="indent"/>θων κατάθρυβε, ἕψε‧ ἢ ἐ⟨ν οἴ⟩νῳ, 
+<lb rend="indent"/>ὕδατι, ἀννήσῳ, κυμείν⟨ῳ λεί⟩οις 
+<lb rend="indent"/>ἄνηθον ξηρὸν, κύμε⟨ινον⟩, χω- 
+<lb rend="indent" n="40"/>ρὶς δἐ ἕψε φακῆν‧ κρόμμ⟨υα τρ⟩ῖψον</foreign> </p>
+                    
+<p><lb rend="indent"/>Col. <foreign xml:lang="grc">η</foreign> <foreign xml:lang="grc">⟨........ κύ⟩μ⟨ει⟩νον, ὄξος, ἔλαι- 
+<lb rend="indent"/>⟨ον..........⟩α χλωρὰ, ὕδωρ‧ εἶτα 
+<lb rend="indent"/>⟨........ ἑ⟩φθὰ καλῶς ἀμφό- 
+<lb rend="indent"/>⟨τερα....... κ⟩αὶ ἔλαιον χρ⟨η⟩στὸν 
+<lb rend="indent" n="5"/>⟨...........⟩ ἐπ᾽ ἀνθράκων ἔα 
+<lb rend="indent"/>⟨ζέσαι πάντα⟩ ἕως συμπίῃ. 
+<lb rend="indent"/>⟨&#x1d212; ...........φ⟩ακοὺς μετὰ χλωρῶν 
+<lb rend="indent"/>⟨...........⟩ ὅταν ἑψεθῇ, βάλε 
+<lb rend="indent"/>⟨.......... ἄν⟩νησον, κρόμμυ- 
+<lb rend="indent" n="10"/>⟨α.........⟩ι̣α, ἅλας ἢ γάρον ἐκ 
+<pb facs="apicapic_412927675_0091"/>
+<lb rend="indent"/>⟨..........⟩υ ὅταν ἑψε⟨θῇ⟩, τὰ 
+<lb rend="indent"/>⟨.......... κ⟩ατάθρυβ⟨ε.....⟩υ 
+<lb rend="indent"/>καὶ αὐ⟨τ.......⟩ν 
+<lb rend="indent"/><foreign xml:lang="lat">versus 15—25 toti perierunt</foreign> 
+<lb rend="indent" n="26"/>⟨..... ......ἐ⟩λαίῳ καὶ ὄ- 
+<lb rend="indent"/>⟨ξει.......βλασ⟩τὰ ἀμπέλων ἔα 
+<lb rend="indent"/>εἰς φ⟨ῶ⟩ς γενέσθαι, πλύνας. ξύσας 
+<lb rend="indent"/>σίναπι, μέλι, εἶτ᾽ ἔμβαμμα. 
+<lb rend="indent" n="30"/>&#x1d212; Ἥπαρ καλὸν‧ τεμὼν ἀναποίει με- 
+<lb rend="indent"/>τ' ἐλαίου ἁλὶ, κόρι, θύμῳ, ὀπῷ, ὄξει‧ 
+<lb rend="indent"/>εἰς ὀβελίσκον‧ ὄπτα θερμὸν καὶ 
+<lb rend="indent"/>χρῳ. 
+ <lb rend="indent"/>&#x1d212; Ψόας καὶ τὰ σαρκώγη· λογιστὶ ἀνα- 
+<lb rend="indent" n="35"/>ποιήσας ⟨ἐ⟩ν ἁλὶ, κόρι, ὀπῷ ὄπτα 
+<lb rend="indent"/>ἕως μόνον συμπίῃ· ἔστω δέ σοι 
+<lb rend="indent"/>ἐν κύθρᾳ ζωμὸς θερμός· ὄξος, ἔ- 
+<lb rend="indent"/>λαιον ἀνὰ μέρος ᾱ, οἴνου γλυκέ- 
+<lb rend="indent"/>ως ἀνὰ μέρη β̅, ἁλὸς βραχύ· ἂν ζέ- 
+<lb rend="indent" n="40"/>σῃ, βάλε ὀρειγάνου κορύμβους. κα- </foreign></p>
+
+<p><lb rend="indent"/>Col. <foreign xml:lang="grc">θ</foreign> <foreign xml:lang="grc">τασπάσας τ⟨........... ....⟩ 
+<lb rend="indent"/>ἐμβαλὼν ⟨.............. ...⟩ 
+<lb rend="indent"/>αὐτῶν. 
+ <lb rend="indent"/>&#x1d212; Ἥπαρ καλόν‧ τ⟨εμὼν....... μελί-⟩ 
+<lb rend="indent" n="5"/>κρατον ζεν⟨νυ................ ἀ-⟩ 
+<lb rend="indent"/>ποστραγγιζ ⟨.................. μέ-⟩ 
+<lb rend="indent"/>λιτι καλῷ κα⟨................⟩ 
+<lb rend="indent"/>νῳ ἔμβαμμα ⟨...............⟩ 
+<lb rend="indent"/>γάρον, οἴνο⟨ν ..............⟩ 
+<lb rend="indent" n="10"/>ἔα‧ ἄλλοι λεπ⟨τ..............⟩ 
+<lb rend="indent"/>⟨κ⟩νῆκον. 
+<lb rend="indent"/>&#x1d212; Ἀθήρα...ν̣ </foreign></p>
+                    
+<p>in reliquis versibus non servata sunt nisi brevia principia, in his duo initia praeceptorum v. 30 Εἰς <foreign xml:lang="grc">ψ⟨όας</foreign>? et v. 38</p> 
+                    
+<p rend="indent">Εἰς <foreign xml:lang="grc">π⟨έρναν</foreign>? scilicet <foreign xml:lang="grc">ζωμός</foreign>, ius in . . . </p>
+<pb facs="apicapic_412927675_0092"/>
+<p rend="indent">B. pagina posterior, non eiusdem cuius fuit A libri. </p>
+                    
+<p><lb rend="indent"/>Col. <foreign xml:lang="grc">ε</foreign> <foreign xml:lang="grc">⟨..πάντα β⟩αλὼν εἰς μέγα βατάνιον 
+<lb rend="indent"/>⟨θὲς εἰς τὸ⟩ν̣ κλείβα⟨ν⟩ον‧ ἐὰν μεσάσῃ. 
+<lb rend="indent"/>⟨τὸν ζωμὸν⟩ ἀπόχαιε καὶ τὰ κρέα δάε. 
+<lb rend="indent"/>⟨........⟩ ἐ⟨ς⟩ κύθραν. ἐπιβαλὼν ἔλεο⟨ν⟩ 
+<lb rend="indent" n="5"/>⟨.....⟩βάλε ἄνωθεν εἰς τὸν κλεί- 
+<lb rend="indent"/>⟨βανον‧ ἐ⟩ὰν ἑψεθῇ, ὄξος μετὰ τῶν 
+<lb rend="indent"/>⟨ἀρωμάτ⟩ων τῶν προκειμένων 
+<lb rend="indent"/>⟨....... ἐπίχ⟩ει ἅλα ὀλίγον‧ ὅταν εἰς 
+<lb rend="indent"/>⟨........ ⟩ν ὑγρὸν μεταθῇς καὶ ⟨β⟩α- 
+<lb rend="indent" n="10"/>⟨λὼν....τ⟩ὰ κρέα καὶ εἰς τετρημέ- 
+<lb rend="indent"/>⟨νον πίθ⟩ον καὶ άλῶν βώλου οὐ 
+<lb rend="indent"/>⟨........⟩τως ἵνα τὸ ἀπὸ τῶν κρε- 
+<lb rend="indent"/>⟨ῶν......⟩ν̣ καὶ τὰ ἄλλα ὁμοίως· ἔνιοι 
+<lb rend="indent"/>⟨.. ....⟩ μεικρὸν πρὸ τοῦ ὅξους 
+<lb rend="indent" n="15"/>⟨.... τὸ ⟩κρέας. 
+<lb rend="indent"/>⟨&#x1d212; ........⟩σελίου σκέρμα, γάρ⟨ο⟩ν· ἐὰν 
+<lb rend="indent"/>⟨...............⟩υν ⟨ἐ⟩ξαίρει 
+<lb rend="indent"/>⟨..............⟩ον. κύμεινον. 
+<lb rend="indent"/>⟨&#x1d212; ..........⟩ς, κόρι ξηρὸν, κύμινον 
+<lb rend="indent" n="20"/>⟨.........⟩κόρι ξηρὸν. ἀννήθου (διπλοῦν) 
+<lb rend="indent"/>⟨........γ⟩άρον· ἐὰν ἐψεθῆ, πίπερ 
+<lb rend="indent"/>⟨......... ἔ⟩λεον, οἶνον, δεσμὸν ὀρε⟨ι- 
+<lb rend="indent"/>⟨γάνου. σ⟩κορίδιον. ἕψεμα. 
+<lb rend="indent"/>⟨&#x1d212; ........ἔ⟩λεον, λιγυστικὸν, δεσ⟨μ...⟩ 
+<lb rend="indent" n="25"/>⟨.............⟩ε ἀκόριον χλ⟨ωρόν. 
+<lb rend="indent"/>⟨............δ⟩εσμίδιον οἰ⟨νάγ- </foreign></p>
+                    
+<p><lb rend="indent"/>Col. <foreign xml:lang="grc">ς</foreign> <foreign xml:lang="grc">ρας. ἀκόριον, κάρο⟨ν, ὄ⟩ξος. 
+<lb rend="indent"/>&#x1d212; ἀκόριον ξηρὸν, σ⟨ελ⟩ίνο⟨υ⟩ σπέρμα. 
+<lb rend="indent"/>ὄξος εἰς θυῖας· ἀνα ποίη⟨σ⟩ον· καὶ 
+<lb rend="indent"/>ὀπὸν ὀλίγο⟨ν⟩ καὶ γ⟨λ⟩υκὺν μετὰ τοῦ 
+<lb rend="indent" n="5"/>ὄξους· ὀλίγον ἄφες ἐφ' ὥρας δύο. 
+<lb rend="indent"/>εἶτα εἰς κύθραν· γάρον καλὸυ τὸν 
+<pb facs="apicapic_412927675_0093"/>
+<lb rend="indent"/>αὐτάρκη· εἰς κλείβανον· ἐὰν ἐψε- 
+<lb rend="indent"/>θῇ, πίπερ. ||
+<lb rend="indent"/>Λιγθστικόν. κύμεινον. οἴνου διπλοῦ(ν). 
+<lb rend="indent" n="10"/>γάρου ἁπλοῦν. σπουδαῖα ἀμφότερα· 
+<lb rend="indent"/>ἐὰν ἐωεθῇ, πίπερ. ὀμὸν. κόρι ξηρόν· 
+<lb rend="indent"/>αὐτὸ μόνον φρύσσ⟨ε⟩τα⟨ι⟩. ||
+<lb rend="indent"/>Τ̣ρ̣ι̣π̣τ̣ο̣ν̣ .... πλ..βανι τθραν ἀλη- 
+<lb rend="indent"/>α . . αν.υα </foreign></p>
+                    
+<p>extant praeterea versuum 19—26 aliquot verba finalia et columnae ζ aliquot principia, in his vocabulum <foreign xml:lang="grc">εῖμιέφθω⟨ν⟩</foreign> i. <foreign xml:lang="grc">ἡμι-</foreign> </p></div>
+                    
+<div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="35">
+                    <p rend="indent">addo fragmenta praeceptorum latinorum nuper a Bilabelio ex papyro Heidelberg (inv. n. 1001ab) cum photographis edita quamquam ad rei rusticae potius quam coquinariae librum pertinere videntur. papyrus sat bonae aetatis, apices haud rari, semper recte positi, litteratura uncialis </p>
+                    
+<p rend="center">fragmentum a </p>
+                    
+<p><lb rend="indent"/>............................... ⟨adip⟩ẹm ......... 
+<lb rend="indent"/>mitt⟩e in vini sextári(um) ⟨au⟩t Albáni aut Pra⟨etut- 
+<lb rend="indent"/>iani odoráti. deinde cum lique facta erit ade⟨ps, 
+<lb rend="indent"/>percolato in irin et ita cocito. signum aut⟨em 
+<lb rend="indent" n="5"/>erit hoc verum coctum ⟨e⟩sse simul quam ⟨... 
+<lb rend="indent"/>lis erit iris et adeps guttás ostendat. ⟨..... 
+<lb rend="indent"/>tollito vás aéneum et pónito in aquá fr⟨igida 
+<lb rend="indent"/>pe⟩r quadriduum, iis autem diebus macera⟨to 
+<lb rend="indent"/>..c̣c̣ṣ ṇ..ạẹ in vino Albáno habito a..e... </p>
+                    
+<p rend="center">fragmentum b </p>
+                    
+<p><cb n="1"/>
+<lb rend="indent"/>. . . . . . . . . . . . . . . . . . . .
+<lb rend="indent"/>. . . pondo sextantem
+<lb rend="indent"/>. . . drachm. I ob. <foreign xml:lang="grc">υλ</foreign>
+<lb rend="indent"/>. . . aniem. Hyginus
+<lb rend="indent"/>. . . miicuius libe⟨t . .   
+<lb rend="indent" n="5"/>cal⟩amisco . . . . . . . 
+<lb rend="indent"/>. . . . . . dioṛ . . . . . . . . . 
+<lb rend="indent"/>. . . . . ab áreant
+<lb rend="indent"/>. . . . . . . ⟩ . . . albo.
+<cb n="2"/>                    
+<lb rend="indent"/>. . . . . . . . . . . . . . . . . . . .
+<lb rend="indent"/>am iaciunt in solẹ⟨m
+<lb rend="indent"/>súcum uvae acerba⟨e
+<lb rend="indent"/>deinde reliqua et . .
+<lb rend="indent"/>nul spisso n . . . . . . .
+<lb rend="indent"/>rito oḅe . . . . . . . . . . .
+<lb rend="indent"/>intro su⟨ . . . . . . . di- 
+<lb rend="indent"/>ebus ír⟨in . . . . . . . . . 
+<lb rend="indent"/>eudde alio. m . . . . .
+</p></div></div>
+
+
+</body></text></TEI>
