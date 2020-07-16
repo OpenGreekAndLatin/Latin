@@ -21,7 +21,7 @@ jobs:
         run: pip3 install HookTest
       - name: Run Hooktest
         run: hooktest ./ --console table --scheme epidoc --workers 3 --verbose 5
-  buildrelease:
+  createTag:
     runs-on: macos-latest
     needs: hooktest
     steps:
@@ -33,18 +33,3 @@ jobs:
           echo "generated Tag: $bumpedTag"
           git tag $bumpedTag
           git push origin $bumpedTag
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: |
-            Automatically Generated Release:
-            The release is generated on commit to Master and
-            passed Hooktest
-          draft: false
-          prerelease: false
-        
