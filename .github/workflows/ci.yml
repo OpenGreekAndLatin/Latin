@@ -19,7 +19,7 @@ jobs:
       - name: Install Hooktest
         run: pip3 install HookTest
       - name: Run Hooktest
-        run: hooktest ./ --console table --scheme epidoc --workers 3 --verbose 5
+        run: hooktest ./ --console table --scheme epidoc --workers 3 --verbose 10
   release-on-push:
     runs-on: ubuntu-latest
     needs: hooktest
