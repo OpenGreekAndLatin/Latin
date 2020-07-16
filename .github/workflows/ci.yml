@@ -21,17 +21,11 @@ jobs:
         run: pip3 install HookTest
       - name: Run Hooktest
         run: hooktest ./ --console table --scheme epidoc --workers 3 --verbose 5
-  createTag:
-    runs-on: macos-latest
-    needs: hooktest
+  release-on-push:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: actions/checkout@v2
-      - name: Tag and prepare release
-        run: |
-          git fetch --prune --unshallow
-          bumpedTag=$(git describe --abbrev=0 | awk -F. '{$NF+=1; OFS="\."; print $0}')
-          echo "generated Tag: $bumpedTag"
-          gitCommand="git tag -a '$bumpedTag' -m 'Automatically Generated $bumpedTag'"
-          echo $gitCommand
-          $gitCommand
-          git push origin $bumpedTag
+      - uses: rymndhng/release-on-push-action@master
+        with:
+          bump_version_scheme: minor
