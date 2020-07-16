@@ -1,4 +1,4 @@
-name: CI
+name: Scaife-Ready
 
 # Start CI when Commit is pushed to Master
 on:
