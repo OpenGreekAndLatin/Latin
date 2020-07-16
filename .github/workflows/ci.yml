@@ -26,9 +26,6 @@ jobs:
     needs: build
     steps:
       - name: Tag and prepare release
-        id: tag_and_prepare_release
-        uses: K-Phoen/semver-release-action@master
-        with:
-          release_branch: master
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN }}
+        run: |
+          git describe --abbrev=0
+        
