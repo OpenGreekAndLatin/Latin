@@ -31,7 +31,7 @@ jobs:
           git fetch --prune --unshallow
           bumpedTag=$(git describe --abbrev=0 | awk -F. '{$NF+=1; OFS="\."; print $0}')
           echo "generated Tag: $bumpedTag"
-          gitCommand="git tag -a $bumpedTag -m \"Automatically Generated $bumpedTag\""
+          gitCommand="git tag -a "$bumpedTag" -m \"Automatically Generated $bumpedTag\""
           echo $gitCommand
           $gitCommand
           git push origin $bumpedTag
