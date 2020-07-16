@@ -31,9 +31,8 @@ jobs:
           git fetch --prune --unshallow
           bumpedTag=$(git describe --abbrev=0 | awk -F. '{$NF+=1; OFS="\."; print $0}')
           echo "generated Tag: $bumpedTag"
-          gitMessage="automatically generated Version: $bumpedTag"
-          echo "generated message: $gitMessage"
-          git tag -a $bumpedTag -m $gitMessage
+          git tag $bumpedTag
+          git push origin $bumpedTag
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
