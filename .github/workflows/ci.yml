@@ -30,5 +30,19 @@ jobs:
         run: |
           git fetch --prune --unshallow
           bumpedTag=$(git describe --abbrev=0 | awk -F. '{$NF+=1; OFS="."; print $0}')
-          echo $bumpedTag
+          git tag -a $bumpedTag -m "automatically generated Version: $bumpedTag"
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            Automatically Generated Release:
+            The release is generated on commit to Master and
+            passed Hooktest
+          draft: false
+          prerelease: false
         
