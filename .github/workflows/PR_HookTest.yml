@@ -1,0 +1,23 @@
+name: PR_HookTest
+
+# Performs Hooktest on Pull Request
+on:
+  pull_request:
+    branches:
+      - master
+jobs:
+  hooktest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+     # Setup Python 
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v2
+        with:
+          # Semantic version range syntax or exact version of a Python version
+          python-version: '3.x'
+    # Display Version
+      - name: Install Hooktest
+        run: pip3 install HookTest
+      - name: Run Hooktest
+        run: hooktest ./ --console table --scheme epidoc --workers 3 --verbose 5
