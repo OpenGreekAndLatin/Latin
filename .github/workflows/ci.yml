@@ -22,7 +22,7 @@ jobs:
       - name: Run Hooktest
         run: hooktest ./ --console table --scheme epidoc --workers 3 --verbose 5
   buildrelease:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     needs: hooktest
     steps:
       - uses: actions/checkout@v2
