@@ -1,0 +1,27 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Start CI when Commit is pushed to Master
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+   build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+     # Setup Python 
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v2
+      with:
+        # Semantic version range syntax or exact version of a Python version
+        python-version: '3.x'
+    # Display Version
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
+    - name: Run Hooktest
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
