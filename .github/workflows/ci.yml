@@ -19,9 +19,7 @@ jobs:
         # Semantic version range syntax or exact version of a Python version
         python-version: '3.x'
     # Display Version
-    - name: Display Python version
-      run: python -c "import sys; print(sys.version)"
+    - name: Install Hooktest
+      run: pip3 install HookTest
     - name: Run Hooktest
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+      run: travis_wait 60 hooktest ./ --console table --scheme epidoc --workers 3 --verbose 5
