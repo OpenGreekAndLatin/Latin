@@ -22,4 +22,4 @@ jobs:
     - name: Install Hooktest
       run: pip3 install HookTest
     - name: Run Hooktest
-      run: travis_wait 60 hooktest ./ --console table --scheme epidoc --workers 3 --verbose 5
+      run: hooktest ./ --console table --scheme epidoc --workers 3 --verbose 5
