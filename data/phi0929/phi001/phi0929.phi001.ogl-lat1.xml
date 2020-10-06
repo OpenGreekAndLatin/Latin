@@ -97,7 +97,7 @@
 <body>
 <div type="edition" n="urn:cts:latinLit:phi0929.phi001.ogl-lat1" xml:lang="lat">
 
-<div type="textpart" subtype="book" n="urn:cts:latinLit:phi0929.phi001.ogl-lat1:1">
+<div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi0929.phi001.ogl-lat1" n="1">
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi0929.phi001.ogl-lat1" n="1.1">
 <p>
 <pb facs="melapomp_412926644_0007"/>Orbis situm dicere aggredior, impeditum opus et facundiae minime capax (constat enim fere gentium locorumque nominibus et eorum perplexo satis ordine, quem persequi longa est magis quam benigna materia) verum aspici tamen cognoscique dignissimum, et quod, si non ope ingenii orantis, at ipsa sui contemplatione pretium operae attendentium absolvat. </p></div>
@@ -325,7 +325,7 @@
 <p>ripas eius Sauromatae et ripis haerentia possident, una gens aliquot populi et aliquot nomina. primi Maeotidae Gynaecocratumenoe regna Amazonum, fecundos pabulo at alia steriles nudosque campos tenent. Budini Gelonion urbem ligneam habitant. iuxta Thyssagetae Turcaeque vastas silvas occupant alunturque venando. </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi0929.phi001.ogl-lat1" n="1.117">
 <p>tum continuis rupibus late aspera et deserta regio ad Aremphaeos usque permittitur. his iustissimi mores, nemora pro domibus, alimenta bacae, et feminis et maribus nuda sunt capita. sacri itaque habentur, adeoque ipsos nemo de tam feris gentibus violat, ut aliis quoque ad eos confugisse pro asylo sit. ultra surgit mons Riphaeus ultraque eum iacet ora quae spectat </p></div></div>
-<div type="textpart" subtype="book" n="urn:cts:latinLit:phi0929.phi001.ogl-lat1:2">
+<div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi0929.phi001.ogl-lat1" n="2">
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi0929.phi001.ogl-lat1" n="2.1">
 <p>Asiae in Nostrum mare Tanainque vergentis quem dixi finis ac situs est, ac per eundem amnem in Maeotida remeantibus ad dexteram Europa est, modo sinistro latere innavigantium adposita. inde Riphaeis montibus proxuma, et huc enim pertinent, cadentes adsidue nives adeo invia efficiunt, ut ultra ne visum quidem intendentium admittant. deinde est regio ditis admodum soli, inhabitabilis tamen, quia grypi saevum et pertinax ferarum genus aurum terra penitus egestum mire amant mireque custodiunt, et <pb facs="melapomp_412926644_0034"/> sunt infesti attingentibus. </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi0929.phi001.ogl-lat1" n="2.2">
@@ -568,7 +568,7 @@
 <p>Ebusos e regione promunturii quod in Sucronensi sinu Ferrariam vocant eodem nomine urbem habet, frumentis tantum non fecunda ad alia largior, et omnium animalium quae nocent adeo expers, ut ne ea quidem quae de agrestibus mitia sunt aut generet aut si invecta sunt sustineat. </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi0929.phi001.ogl-lat1" n="2.126">
 <p>contra est Colubraria cuius meminisse succurrit, quod cum scateat multo ac malefico genere serpentium et sit ideo inhabitabilis, tamen ingressis eam intra id spatium quod Ebusitana humo circumsignaverunt sine pernicie et grata est, isdem illis serpentibus qui alioqui solent obvios adpetere adspectum eius pulveris, aliudve quod virus, procul et cum pavore fugientibus. </p></div></div>
-<div type="textpart" subtype="book" n="urn:cts:latinLit:phi0929.phi001.ogl-lat1:3">
+<div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi0929.phi001.ogl-lat1" n="3">
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi0929.phi001.ogl-lat1" n="3.1">
 <p>1 Dicta est ora Nostri maris, dictae insulae quas amplectitur. restat ille circuitus quem ut initio diximus cingit oceanus. ingens infinitumque pelagus <pb facs="melapomp_412926644_0062"/> et magnis aestibus concitum, ita enim motus eius appellant, modo inundat campos modo late nudat ac refugit, non alios aliosque in vicem neque alternis accessibus nunc in hos nunc in illos toto impetu versum, sed ubi in omnia litora, quamvis diversa sint, terrarum insularumque ex medio pariter effusum est, rursus ab illis colligitur in medium et in semet ipsum redit, tanta vi semper inmissum ut vasta etiam flumina retro agat, et aut terrestria deprehendat animalia aut marina destituat. </p></div>
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi0929.phi001.ogl-lat1" n="3.2">
