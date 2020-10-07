@@ -1,7 +1,7 @@
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:latinLit:phi0684" xml:lang="lat" urn="urn:cts:latinLit:phi0684.phi002">
   <ti:title xml:lang="lat">Res rusticae</ti:title>
   
-  <ti:edition urn="urn:cts:latinLit:phi0684.phi002.opp-lat1" workUrn="urn:cts:latinLit:phi0684.phi002" xml:lang="lat">
+  <ti:edition urn="urn:cts:latinLit:phi0684.phi002.ogl-lat1" workUrn="urn:cts:latinLit:phi0684.phi002" xml:lang="lat">
     <ti:label xml:lang="lat">Res rusticae</ti:label>
     <ti:description xml:lang="mul">M. Terenti Varronis. Rerum rusticarum libri tres. Keil, Heinrich, editor. Leipzig: Teubner, 1929.</ti:description>
   </ti:edition>
