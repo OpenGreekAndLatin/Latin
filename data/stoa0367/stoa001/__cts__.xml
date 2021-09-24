@@ -1,0 +1,9 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:latinLit:stoa0367" xml:lang="lat" urn="urn:cts:latinLit:stoa0367.stoa001">
+    <ti:title xml:lang="lat">Sacrorum Fastorum Libri XII</ti:title>
+    
+    <ti:edition urn="urn:cts:latinLit:stoa0367.stoa001.ogl-lat1" workUrn="urn:cts:latinLit:stoa0367.stoa001" xml:lang="lat">
+        <ti:label xml:lang="lat">Sacrorum Fastorum Libri XII</ti:label>
+        <ti:description xml:lang="mul">Ambrogio Novidio Fracco. Ambrosii Novidii Fracci Ferentinatis Sacrorum fastorum libri XII. Rome: M. Antonius Bladus Asulanus, 1547.</ti:description>
+    </ti:edition>
+</ti:work>
+
