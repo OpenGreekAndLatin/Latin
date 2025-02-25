@@ -103,7 +103,6 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 <text>
   <body>
     <div type="edition" n="urn:cts:latinLit:phi0684.phi002.ogl-lat1" xml:lang="lat">
-         
 <div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi0684.phi002.ogl-lat1" n="1">
 <div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi0684.phi002.ogl-lat1:1" n="1">
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi0684.phi002.ogl-lat1:1.1" n="1"><p><pb facs="varrmt_415467926_0037"/> Otium si essem consecutus, Fundania, commodius tibi haec scriberem, quae nunc, ut potero, exponam cogitans esse properandum, quod, ut dicitur, si est homo bulla, eo magis senex. annus enim octogesimus admonet me ut sarcinas conligam, antequam proficiscar e vita. </p></div>
