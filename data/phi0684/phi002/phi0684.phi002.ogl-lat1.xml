@@ -99,7 +99,6 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 </revisionDesc>
 </teiHeader>
 
-
 <text>
   <body>
     <div type="edition" n="urn:cts:latinLit:phi0684.phi002.ogl-lat1" xml:lang="lat">
