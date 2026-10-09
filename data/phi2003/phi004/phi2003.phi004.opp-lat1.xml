@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader xml:lang="eng">
 <fileDesc>
@@ -72,9 +72,15 @@
 <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
 <refsDecl n="CTS">
 <cRefPattern n="section" matchPattern="(\w+)"  replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
-<p>This pointer pattern extracts sections</p>
+<p>This pointer pattern extracts section.</p>
 </cRefPattern>  
 </refsDecl>
+ 
+ <refsDecl xml:id="CTS">
+  <citeStructure match="/TEI/text/body" use="@xml:base">
+   <citeStructure unit="section" delim=":" match="div/div[@subtype='section']" use="@n"/>
+  </citeStructure>
+ </refsDecl>
 </encodingDesc>
 
 <profileDesc>
@@ -89,8 +95,8 @@
 </revisionDesc>
 </teiHeader>
 
-<text>
-<body>
+<text xml:lang="lat">
+<body xml:base="phi2003.phi004.opp-lat1.xml">
 <div type="edition" n="urn:cts:latinLit:phi2003.phi004.opp-lat1" xml:lang="lat">
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi004.opp-lat1" n="1">
 <p rend="indent"><pb facs="apicapic_412927675_0085"/>Athenaeus XII 516c <foreign xml:lang="grc">πρῶτοι δὲ Λυδοὶ καὶ τὴν καρύκην ἐξεὺρον, περὶ ἡς τὴς σκευασίας οἱ τὰ Ὀψαρτυτικὰ συνθέντες εἰρήκασιν, Ἰλαῦκός τε ὁ Λοκρὸς</foreign> (PW VII 1421 n. 41) <foreign xml:lang="grc">καὶ Μίταικος καὶ Διονύσιος</foreign> (PW V 977 n. 133) <foreign xml:lang="grc">Ἠρακλειδαί</foreign> (PW VIII 496 n. 58. 59) <foreign xml:lang="grc">τε δύο γένος Συρακόδιοι καὶ Ἄγις</foreign> (Oder PW I 822 n. 10) <foreign xml:lang="grc">καὶ Ἐπαίνετος</foreign> (PW V 2672 n. 9) [<foreign xml:lang="grc">καὶ Διονύσιος</foreign>], <foreign xml:lang="grc">ἕτι τε Ἡγήσιππος</foreign> (PW VII 2611 n. 5) <foreign xml:lang="grc">καὶ Ἐρασίστρατος</foreign> (PW VI 333—350 n.2) <foreign xml:lang="grc">καὶ Εὐθύδηνος</foreign> (PW VI 1505 n. 15) <foreign xml:lang="grc">καὶ Κρίτων, πρὸς τούτοις δὲ Στέφανος, Ἀρκύτας</foreign> (PW II 602 n. 5. 6) <foreign xml:lang="grc">[Ἀκέστιος], Ακεσίας</foreign> (PW I 1163 n. 1), <foreign xml:lang="grc">Διοκλὴς</foreign> (PW V 802 n. 53), <foreign xml:lang="grc">Φιλιστίων τοσούτους γὰρ οἶδα γράψαωτας Ὀψαρτυτικά</foreign>. </p></div>

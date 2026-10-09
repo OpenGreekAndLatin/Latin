@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader xml:lang="eng">
 <fileDesc>
@@ -84,6 +84,16 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 <p>This pointer pattern extracts book.</p>
 </cRefPattern>
 </refsDecl>
+  
+  <refsDecl xml:id="CTS">
+    <citeStructure match="/TEI/text/body" use="@xml:base">
+      <citeStructure unit="book" delim=":" match="div/div[@subtype='book']" use="@n">
+        <citeStructure unit="chapter" delim="." match="div[@subtype='chapter']" use="@n">
+          <citeStructure unit="section" delim="." match="div[@subtype='section']" use="@n"/>
+        </citeStructure>
+      </citeStructure>
+    </citeStructure>
+  </refsDecl>
 
 </encodingDesc>
 
@@ -99,8 +109,8 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 </revisionDesc>
 </teiHeader>
 
-<text>
-  <body>
+<text xml:lang="lat">
+  <body xml:base="phi0684.phi002.ogl-lat1.xml">
     <div type="edition" n="urn:cts:latinLit:phi0684.phi002.ogl-lat1" xml:lang="lat">
 <div type="textpart" subtype="book" xml:base="urn:cts:latinLit:phi0684.phi002.ogl-lat1" n="1">
 <div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi0684.phi002.ogl-lat1:1" n="1">

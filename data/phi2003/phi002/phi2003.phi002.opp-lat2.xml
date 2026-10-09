@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader xml:lang="eng">
 <fileDesc>
@@ -76,12 +76,20 @@
  <refsDecl n="CTS">
   <cRefPattern n="section" matchPattern="(\w+).(\w+)"
    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
-   <p>This pointer pattern extracts chapter and section</p>
+   <p>This pointer pattern extracts chapter and section.</p>
   </cRefPattern>
   <cRefPattern n="chapter" matchPattern="(\w+)"
    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
-   <p>This pointer pattern extracts chapter</p>
+   <p>This pointer pattern extracts chapter.</p>
   </cRefPattern>
+ </refsDecl>
+ 
+ <refsDecl xml:id="CTS">
+  <citeStructure match="/TEI/text/body" use="@xml:base">
+   <citeStructure unit="chapter" delim=":" match="div/div[@subtype='chapter']" use="@n">
+    <citeStructure unit="section" delim="." match="div[@subtype='section']" use="@n"/>
+   </citeStructure>
+  </citeStructure>
  </refsDecl>
 </encodingDesc>
  
@@ -97,8 +105,8 @@
  </revisionDesc>
 </teiHeader>
   
-<text>
-<body>
+<text xml:lang="lat">
+<body xml:base="phi2003.phi002.opp-lat2.xml">
 <div type="edition" n="urn:cts:latinLit:phi2003.phi002.opp-lat2" xml:lang="lat">
 <div type="textpart" subtype="chapter" xml:base="urn:cts:latinLit:phi2003.phi002.opp-lat2" n="1">
 <div type="textpart" subtype="section" xml:base="urn:cts:latinLit:phi2003.phi002.opp-lat2:1" n="1">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader xml:lang="eng">
 <fileDesc>
@@ -75,9 +75,15 @@
 <refsDecl n="CTS">
 <cRefPattern n="paragraph" matchPattern="(\w+)"
 replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:div[@n='$1'])">
-<p>This pointer pattern extracts paragraph</p>
+<p>This pointer pattern extracts paragraph.</p>
 </cRefPattern>
 </refsDecl>
+ 
+ <refsDecl xml:id="CTS">
+  <citeStructure match="/TEI/text/body" use="@xml:base">
+   <citeStructure unit="paragraph" delim=":" match="div/div[@subtype='paragraph']" use="@n"/>
+  </citeStructure>
+ </refsDecl>
 </encodingDesc>
 
 <profileDesc>
@@ -91,8 +97,8 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:div[@n='$1'])
 </revisionDesc>
 </teiHeader>
 
-<text>
-<body>
+<text xml:lang="lat">
+<body xml:base="phi2003.phi003.opp-lat2.xml">
 <div type="edition" n="urn:cts:latinLit:phi2003.phi003.opp-lat2" xml:lang="lat">
 <div type="textpart" subtype="paragraph" xml:base="urn:cts:latinLit:phi2003.phi003.opp-lat2" n="1">
 <p><pb facs="apicapic_412927675_0079"/>Breuis pimentorum que in domo esse debeant ut condimentis nihil desit: crocu, piper, zingiber, lasar, foliu, baca murre, costu, cariofilu, spica indica, addena, cardamomu, spica nardi. </p></div>
